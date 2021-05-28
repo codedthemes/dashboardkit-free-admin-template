@@ -1,2 +1,2 @@
-# dashboardkit-free-bootstrap-admin-template
+# Dashboardkit
 DashboardKit Bootstrap 5 Admin Dashboard Template
