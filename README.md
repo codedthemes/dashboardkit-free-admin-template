@@ -5,7 +5,7 @@ Save your development time with ready to use DashboardKit Bootstrap Admin Templa
 
 [Pro version](https://dashboardkit.io) of DashboardKit contains features like 10+ Ready to use layouts, Advance UI compoents, Form components & plugins, Advance Table examples, Chart, 11+ Apps, Extra page, and lots more.
 
-![Berry React Material Admin Template](https://dashboardkit.io/adv-banner/dashboardkit-git.jpg)
+![Berry React Material Admin Template](https://dashboardkit.io/adv-banner/git-main.gif)
 
 ## Why DashboardKit?
 
