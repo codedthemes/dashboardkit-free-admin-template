@@ -1,5 +1,5 @@
 # Dashboardkit Bootstrap
-DashboardKit Bootstrap 5 Admin Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Berry%20React%20-%20The%20most%20beautiful%20Material%20designed%20Admin%20Dashboard%20Template%20&url=https://berrydashboard.io&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
+DashboardKit Bootstrap 5 Admin Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20DashboardKit%20Bootstrap%205%20Admin%20Template&url=https://berrydashboard.io&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
 
 Save your development time with ready to use DashboardKit Bootstrap Admin Template. DashboardKit is made for everyone, no matter you are a novice developer, designer, project manager/owner. It is made by an Elite Author with having 5+ years of experience in dashboard making.
 
