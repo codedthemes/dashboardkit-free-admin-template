@@ -79,7 +79,7 @@
             }
 
             .marketing-header {
-                background-color: transparentize($body-bg,0.5);
+                background-color: transparentize($body-bg, 0.5);
             }
 
             td {
@@ -355,7 +355,7 @@
             color: $primary;
         }
 
-        ~p {
+        ~ p {
             font-size: 11px;
         }
     }
@@ -674,7 +674,8 @@
             border-bottom: none;
         }
 
-        > [class*=col-] {
+        > [class*="col-"] {
+            border-bottom: none;
             &:first-child {
                 background-color: darken($primary, 5%);
                 text-align: center;
@@ -699,7 +700,8 @@
             border-bottom: none;
         }
 
-        > [class*=col-] {
+        > [class*="col-"] {
+            border-bottom: none;
             &:first-child {
                 background-color: darken($success, 5%);
             }
@@ -716,9 +718,9 @@
         width: 100%;
         margin: 0;
 
-        &:first-child {
-            border-bottom: 1px solid $border-color;
-        }
+        // &:first-child {
+        //     border-bottom: 1px solid $border-color;
+        // }
 
         .br {
             border-right: 1px solid $border-color;
@@ -739,15 +741,24 @@
             margin-right: 0;
         }
 
-        > [class*=col-] {
-            display: table-cell;
+        > [class*="col-"] {
+            display: inline-block;
             float: none;
             table-layout: fixed;
             vertical-align: middle;
+            width: calc(100% / 3);
 
             .row {
                 display: flex;
                 align-items: center;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            display: block;
+            > [class*="col-"] {
+                display: inline-block;
+                width: calc(50% - 2px) !important;
+                border-bottom: 1px solid $border-color;
             }
         }
     }
@@ -1060,38 +1071,38 @@
 }
 @keyframes blue-blink-bar {
     0% {
-        box-shadow: 0 0 0 0 transparentize($primary,0.9);
+        box-shadow: 0 0 0 0 transparentize($primary, 0.9);
     }
 
     50% {
-        box-shadow: 0 0 0 6px transparentize($primary,0.7);
+        box-shadow: 0 0 0 6px transparentize($primary, 0.7);
     }
 }
 @keyframes green-blink-bar {
     0% {
-        box-shadow: 0 0 0 0 transparentize($success,0.9);
+        box-shadow: 0 0 0 0 transparentize($success, 0.9);
     }
 
     50% {
-        box-shadow: 0 0 0 6px transparentize($success,0.7);
+        box-shadow: 0 0 0 6px transparentize($success, 0.7);
     }
 }
 @keyframes red-blink-bar {
     0% {
-        box-shadow: 0 0 0 0 transparentize($danger,0.9);
+        box-shadow: 0 0 0 0 transparentize($danger, 0.9);
     }
 
     50% {
-        box-shadow: 0 0 0 6px transparentize($danger,0.7);
+        box-shadow: 0 0 0 6px transparentize($danger, 0.7);
     }
 }
 @keyframes yellow-blink-bar {
     0% {
-        box-shadow: 0 0 0 0 transparentize($warning,0.9);
+        box-shadow: 0 0 0 0 transparentize($warning, 0.9);
     }
 
     50% {
-        box-shadow: 0 0 0 6px transparentize($warning,0.7);
+        box-shadow: 0 0 0 6px transparentize($warning, 0.7);
     }
 }
 
@@ -1108,7 +1119,7 @@
 
     .download-icon {
         color: #fff;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         position: absolute;
         height: 125px;
         width: 125px;
@@ -1195,7 +1206,7 @@
             height: 8px;
             text-align: center;
             margin: 0 auto;
-            background-color: #E5E5E5;
+            background-color: #e5e5e5;
             border-radius: 30px;
             position: relative;
             overflow: inherit;
@@ -1311,7 +1322,7 @@
             margin: 0 20px;
         }
 
-        > [class*=col-] {
+        > [class*="col-"] {
             display: table-cell;
             float: none;
             table-layout: fixed;
@@ -1389,7 +1400,7 @@
         border-left: 1px solid $border-color;
     }
     @media screen and (max-width: 767px) {
-        .card-active [class*=col-]:last-child {
+        .card-active [class*="col-"]:last-child {
             border-left: 0;
             margin-top: 20px;
         }
@@ -1398,7 +1409,7 @@
 
 .card-Revenue {
     .rev-icon {
-        background: rgba(255,255,255,0.2);
+        background: rgba(255, 255, 255, 0.2);
         width: 70px;
         height: 70px;
         border-radius: 50%;
@@ -1420,7 +1431,7 @@
     }
 
     .inv-icon {
-        background: rgba(255,255,255,.2);
+        background: rgba(255, 255, 255, 0.2);
         width: 70px;
         height: 70px;
         border-radius: 50%;
@@ -1435,7 +1446,7 @@
         background: rgba(255, 255, 255, 0.22);
         border-radius: 0;
         height: 7px;
-        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -1553,7 +1564,7 @@
         li {
             width: 10px;
             height: 10px;
-            background-color: scale-color($primary, $soft-bg-level);
+            background-color: shift-color($primary, $soft-bg-level);
             margin: 0 6px;
             border-radius: 50px;
         }
@@ -1623,7 +1634,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -1793,7 +1804,7 @@
             width: 17px;
             height: 17px;
             z-index: 2;
-            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
         }
     }
 }

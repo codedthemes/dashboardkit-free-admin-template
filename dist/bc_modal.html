@@ -13,24 +13,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="DashboardKit is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
-	<meta name="keywords" content="DashboardKit, Dashboard Kit, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Free Bootstrap Admin Template">
-	<meta name="author" content="DashboardKit ">
-
+	<meta name="description" content="DashboardKit is modern yet powerful Bootstrap 5 Admin Template comes with thousands of UI components & 180+ pages."/>
+	<meta name="keywords" content="DashboardKit, Dashboard Kit, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Free Bootstrap Admin Template"/>
+	<meta name="author" content="DashboardKit" />
 
 	<!-- Favicon icon -->
 	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
 
 	<!-- font css -->
+	<link rel="stylesheet" href="assets/fonts/tabler-icons.min.css">
 	<link rel="stylesheet" href="assets/fonts/feather.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome.css">
 	<link rel="stylesheet" href="assets/fonts/material.css">
 
 	<!-- vendor css -->
 	<link rel="stylesheet" href="assets/css/style.css" id="main-style-link">
+	<link rel="stylesheet" href="assets/css/customizer.css">
 
 </head>
-
 <body class="">
 	<!-- [ Pre-loader ] start -->
 	<div class="loader-bg">
@@ -51,6 +51,7 @@
 						<div class="hamburger-inner"></div>
 					</div>
 				</div>
+				<!-- <i data-feather="menu"></i> -->
 			</a>
 			<a href="#!" class="pc-head-link" id="headerdrp-collapse">
 				<i data-feather="align-right"></i>
@@ -190,10 +191,10 @@
 	<!-- [ Header ] start -->
 	<header class="pc-header ">
 		<div class="header-wrapper">
-			<div class="mr-auto pc-mob-drp">
+			<div class="me-auto pc-mob-drp">
 				<ul class="list-unstyled">
 					<li class="dropdown pc-h-item">
-						<a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+						<a class="pc-head-link active dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 							Level
 						</a>
 						<div class="dropdown-menu pc-h-dropdown">
@@ -204,7 +205,7 @@
 							<div class="pc-level-menu">
 								<a href="#!" class="dropdown-item">
 									<i class="material-icons-two-tone">list_alt</i>
-									<span class="float-right"><i data-feather="chevron-right" class="mr-0"></i></span>
+									<span class="float-end"><i data-feather="chevron-right" class="me-0"></i></span>
 									<span>Level2.1</span>
 								</a>
 								<div class="dropdown-menu pc-h-dropdown">
@@ -248,15 +249,70 @@
 							</a>
 						</div>
 					</li>
+					<li class="dropdown pc-h-item pc-mega-menu">
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+							Mega
+						</a>
+						<div class="dropdown-menu pc-h-dropdown pc-mega-dmenu">
+							<div class="row g-0">
+								<div class="col">
+									<h6 class="mega-title">Primitives</h6>
+									<ul class="pc-mega-list">
+										<li><a href="#!" class="dropdown-item"><i class="material-icons-two-tone">account_circle</i><span>My Account</span></a></li>
+										<li><a href="#!" class="dropdown-item"><i class="material-icons-two-tone">settings</i><span>Settings</span></a></li>
+										<li><a href="#!" class="dropdown-item"><i class="material-icons-two-tone">support</i><span>Support</span></a></li>
+										<li><a href="#!" class="dropdown-item"><i class="material-icons-two-tone">https</i><span>Lock Screen</span></a></li>
+										<li><a href="#!" class="dropdown-item"><i class="material-icons-two-tone">chrome_reader_mode</i><span>Logout</span></a></li>
+										<li><a href="#!" class="dropdown-item"><i class="material-icons-two-tone">movie_creation</i><span>Button</span></a></li>
+										<li><a href="#!" class="dropdown-item"><i class="material-icons-two-tone">devices_other</i><span>Avatars</span></a></li>
+									</ul>
+								</div>
+								<div class="col">
+									<h6 class="mega-title">UI Components</h6>
+									<ul class="pc-mega-list">
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Alerts</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Accordions</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Avatars</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Badges</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Breadcrumbs</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Button</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Buttons Groups</a></li>
+									</ul>
+								</div>
+								<div class="col">
+									<h6 class="mega-title">UI Components</h6>
+									<ul class="pc-mega-list">
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Menus</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Media Sliders / Carousel</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Modals</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Pagination</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Progress Bars &amp; Graphs</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Search Bar</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Tabs</a></li>
+									</ul>
+								</div>
+								<div class="col">
+									<h6 class="mega-title">Advance Components</h6>
+									<ul class="pc-mega-list">
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Advanced Stats</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Advanced Cards</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Lightbox</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Notification</a></li>
+										<li><a href="#!" class="dropdown-item"><i class="fas fa-circle"></i> Pnotify</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
-			<div class="ml-auto">
+			<div class="ms-auto">
 				<ul class="list-unstyled">
 					<li class="dropdown pc-h-item">
-						<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 							<i class="material-icons-two-tone">search</i>
 						</a>
-						<div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
+						<div class="dropdown-menu dropdown-menu-end pc-h-dropdown drp-search">
 							<form class="px-3">
 								<div class="form-group mb-0 d-flex align-items-center">
 									<i data-feather="search"></i>
@@ -265,20 +321,115 @@
 							</form>
 						</div>
 					</li>
+					<li class="dropdown pc-h-item pc-cart-menu">
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+							<i class="material-icons-two-tone">local_mall</i>
+							<span class="badge bg-success pc-h-badge">3</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end pc-h-dropdown drp-cart">
+							<div class="cart-head">
+								<h4 class="mb-0">3 Items</h4>
+								<a href="#!" class="text-danger float-end"><u>Remove All</u></a>
+								<p class="mb-0">in your cart</p>
+							</div>
+							<div class="cart-item">
+								<img src="assets/images/product/prod-1.jpg" alt="Product-img" title="Product-img" class="rounded me-3 border">
+								<div class="cart-desc">
+									<a href="#!" class="text-body">
+										<h6 class="d-inline-block mb-0">Villus Snow Ankle b...</h6>
+									</a>
+									<p class="mb-0">Army green,7</p>
+									<span><span class="text-primary">$ 148.66</span> for <span class="text-primary">9</span> </span>
+									<a href="#!" class="text-danger float-end"><i data-feather="trash-2"></i></a>
+								</div>
+							</div>
+							<div class="cart-item">
+								<img src="assets/images/product/prod-2.jpg" alt="Product-img" title="Product-img" class="rounded me-3 border">
+								<div class="cart-desc">
+									<a href="#!" class="text-body">
+										<h6 class="d-inline-block mb-0">Bullets Wireless Black</h6>
+									</a>
+									<p class="mb-0">Dark Black</p>
+									<span><span class="text-primary">$ 299</span> for <span class="text-primary">5</span> </span>
+									<a href="#!" class="text-danger float-end"><i data-feather="trash-2"></i></a>
+								</div>
+							</div>
+							<div class="cart-item">
+								<img src="assets/images/product/prod-3.jpg" alt="Product-img" title="Product-img" class="rounded me-3 border">
+								<div class="cart-desc">
+									<a href="#!" class="text-body">
+										<h6 class="d-inline-block mb-0">Parkas Thick Jackets</h6>
+									</a>
+									<p class="mb-0">Am Wine Red</p>
+									<span><span class="text-primary">$ 599</span> for <span class="text-primary">3</span> </span>
+									<a href="#!" class="text-danger float-end"><i data-feather="trash-2"></i></a>
+								</div>
+							</div>
+							<div class="table-responsive cart-item">
+								<table class="table table-borderless mb-0 table-xs">
+									<tbody>
+										<tr>
+											<td>
+												<h6 class="m-0">Sub Total:</h6>
+											</td>
+											<td class="text-right">
+												$1070
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h6 class="m-0">Shipping:</h6>
+											</td>
+											<td class="text-right">
+												FREE
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h5 class="m-0">Total:</h5>
+											</td>
+											<td class="text-right">
+												<h5 class="m-0 text-primary font-weight-bold">$1070</h5>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<button class="btn btn-primary btn-sm btn-block mt-2">Check out</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+					<li class="pc-h-item">
+						<a class="pc-head-link me-0" href="#" data-bs-toggle="modal" data-bs-target="#notification-modal">
+							<i class="material-icons-two-tone">notifications_active</i>
+							<span class="bg-danger pc-h-badge dots"><span class="sr-only"></span></span>
+						</a>
+					</li>
 					<li class="dropdown pc-h-item">
-						<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 							<img src="assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
 							<span>
 								<span class="user-name">Joseph William</span>
 								<span class="user-desc">Administrator</span>
 							</span>
 						</a>
-						<div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
+						<div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
 							<div class=" dropdown-header">
-								<h5 class="text-overflow m-0"><span class="badge bg-light-primary"><a href="https://gumroad.com/dashboardkit" target="_blank">Upgrade to Pro</a></span></h5>
+								<h5 class="text-overflow m-0"><span class="badge bg-light-success">Pro</span></h5>
 							</div>
-				
-							<a href="auth-signin.html" class="dropdown-item">
+							<a href="user-profile.html" class="dropdown-item">
+								<i class="material-icons-two-tone">account_circle</i>
+								<span>Profile</span>
+							</a>
+
+							<a href="auth-lockscreen.html" class="dropdown-item">
+								<i class="material-icons-two-tone">https</i>
+								<span>Lock Screen</span>
+							</a>
+							<a href="auth-signin-3.html" class="dropdown-item">
 								<i class="material-icons-two-tone">chrome_reader_mode</i>
 								<span>Logout</span>
 							</a>
@@ -289,8 +440,216 @@
 
 		</div>
 	</header>
-	<!-- [ Header ] end -->
 
+	<!-- Modal -->
+	<div class="modal notification-modal fade" id="notification-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="btn-close float-end" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+					<ul class="nav nav-pill tabs-light mb-3" id="pc-noti-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="pc-noti-home-tab" data-bs-toggle="pill" href="#pc-noti-home"
+								role="tab" aria-controls="pc-noti-home" aria-selected="true">Notification</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pc-noti-news-tab" data-bs-toggle="pill" href="#pc-noti-news"
+								role="tab" aria-controls="pc-noti-news" aria-selected="false">News<span
+									class="badge bg-danger ms-2 d-none d-sm-inline-block">4</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pc-noti-settings-tab" data-bs-toggle="pill" href="#pc-noti-settings"
+								role="tab" aria-controls="pc-noti-settings" aria-selected="false">Setting<span
+									class="badge bg-success ms-2 d-none d-sm-inline-block">Update</span></a>
+						</li>
+					</ul>
+					<div class="tab-content pt-4" id="pc-noti-tabContent">
+						<div class="tab-pane fade show active" id="pc-noti-home" role="tabpanel"
+							aria-labelledby="pc-noti-home-tab">
+							<div class="media">
+								<img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-l">
+								<div class="media-body ms-3 align-self-center">
+									<div class="float-end">
+										<div class="btn-group card-option">
+											<button type="button" class="btn shadow-none">
+												<i data-feather="heart" class="text-danger"></i>
+											</button>
+											<button type="button"
+												class="btn shadow-none px-0 dropdown-toggle arrow-none"
+												data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i data-feather="more-horizontal"></i>
+											</button>
+											<div class="dropdown dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#!"><i data-feather="refresh-cw"></i>
+													reload</a>
+												<a class="dropdown-item" href="#!"><i data-feather="trash"></i>
+													remove</a>
+											</div>
+										</div>
+									</div>
+									<h6 class="mb-0 d-inline-block">Ashoka T.</h6>
+									<p class="mb-0 d-inline-block f-12 text-muted"> • 06/20/2019 at 6:43 PM </p>
+									<p class="my-3">Cras sit amet nibh libero in gravida nulla Nulla vel metus
+										scelerisque ante sollicitudin.</p>
+									<div class="p-3 border rounded">
+										<div class="media align-items-center">
+											<div class="media-body">
+												<h6 class="mb-1 f-14">Death Star original maps and blueprint.pdf</h6>
+												<p class="mb-0 text-muted">by<a href="#!"> Ashoka T </a>.</p>
+											</div>
+											<div class="btn-group d-none d-sm-inline-flex">
+												<button type="button" class="btn shadow-none">
+													<i data-feather="download-cloud"></i>
+												</button>
+												<button type="button"
+													class="btn shadow-none px-0 dropdown-toggle arrow-none"
+													data-bs-toggle="dropdown" aria-haspopup="true"
+													aria-expanded="false">
+													<i data-feather="more-horizontal"></i>
+												</button>
+												<div class="dropdown dropdown-menu dropdown-menu-end">
+													<a class="dropdown-item" href="#!"><i data-feather="refresh-cw"></i>
+														reload</a>
+													<a class="dropdown-item" href="#!"><i data-feather="trash"></i>
+														remove</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr class="mb-4">
+							<div class="media">
+								<img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-l">
+								<div class="media-body ms-3 align-self-center">
+									<div class="float-end">
+										<div class="btn-group card-option">
+											<button type="button"
+												class="btn shadow-none px-0 dropdown-toggle arrow-none"
+												data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i data-feather="more-horizontal"></i>
+											</button>
+											<div class="dropdown dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#!"><i data-feather="refresh-cw"></i>
+													reload</a>
+												<a class="dropdown-item" href="#!"><i data-feather="trash"></i>
+													remove</a>
+											</div>
+										</div>
+									</div>
+									<h6 class="mb-0 d-inline-block">Ashoka T.</h6>
+									<p class="mb-0 d-inline-block  f-12 text-muted"> • 06/20/2019 at 6:43 PM </p>
+									<p class="my-3">Cras sit amet nibh libero in gravida nulla Nulla vel metus
+										scelerisque ante sollicitudin.</p>
+									<img src="assets/images/slider/img-slide-3.jpg" alt="images"
+										class="img-fluid wid-90 rounded m-r-10 m-b-10">
+									<img src="assets/images/slider/img-slide-7.jpg" alt="images"
+										class="img-fluid wid-90 rounded m-r-10 m-b-10">
+								</div>
+							</div>
+							<hr class="mb-4">
+							<div class="media mb-3">
+								<img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-l">
+								<div class="media-body ms-3 align-self-center">
+									<div class="float-end">
+										3 <i data-feather="heart" class="text-danger fill-danger"></i>
+									</div>
+									<h6 class="mb-0 d-inline-block">Ashoka T.</h6>
+									<p class="mb-0 d-inline-block  f-12 <text-muted></text-muted>"> • 06/20/2019 at 6:43
+										PM </p>
+									<p class="my-3">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum
+										nulla sed consectetur.</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pc-noti-news" role="tabpanel" aria-labelledby="pc-noti-news-tab">
+							<div class="pb-3 border-bottom mb-3 media">
+								<a href="#!"><img src="assets/images/news/img-news-2.jpg" class="wid-90 rounded"
+										alt="..."></a>
+								<div class="media-body ms-3">
+									<p class="float-end mb-0 text-success"><small>now</small></p>
+									<a href="#!">
+										<h6>This is a news image</h6>
+									</a>
+									<p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting
+										industry. Lorem Ipsum has been the industry's standard dummy.</p>
+								</div>
+							</div>
+							<div class="pb-3 border-bottom mb-3 media">
+								<a href="#!"><img src="assets/images/news/img-news-1.jpg" class="wid-90 rounded"
+										alt="..."></a>
+								<div class="media-body ms-3">
+									<p class="float-end mb-0 text-muted"><small>3 mins ago</small></p>
+									<a href="#!">
+										<h6>Industry's standard dummy</h6>
+									</a>
+									<p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting.
+									</p>
+									<a href="#" class="bg-light">Html</a>
+									<a href="#" class="bg-light">UI/UX designed</a>
+								</div>
+							</div>
+							<div class="pb-3 border-bottom mb-3 media">
+								<a href="#!"><img src="assets/images/news/img-news-2.jpg" class="wid-90 rounded"
+										alt="..."></a>
+								<div class="media-body ms-3">
+									<p class="float-end mb-0 text-muted"><small>5 mins ago</small></p>
+									<a href="#!">
+										<h6>Ipsum has been the industry's</h6>
+									</a>
+									<p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting.
+									</p>
+									<a href="#" class="bg-light">JavaScript</a>
+									<a href="#" class="bg-light">Scss</a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pc-noti-settings" role="tabpanel"
+							aria-labelledby="pc-noti-settings-tab">
+							<h6 class="mt-2"><i data-feather="monitor" class="me-2"></i>Desktop settings</h6>
+							<hr>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" id="pcsetting1" checked>
+								<label class="custom-control-label f-w-600 pl-1" for="pcsetting1">Allow desktop
+									notification</label>
+							</div>
+							<p class="text-muted ms-5">you get lettest content at a time when data will updated</p>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" id="pcsetting2">
+								<label class="custom-control-label f-w-600 pl-1" for="pcsetting2">Store Cookie</label>
+							</div>
+							<h6 class="mb-0 mt-5"><i data-feather="save" class="me-2"></i>Application settings</h6>
+							<hr>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" id="pcsetting3">
+								<label class="custom-control-label f-w-600 pl-1" for="pcsetting3">Backup Storage</label>
+							</div>
+							<p class="text-muted mb-4 ms-5">Automaticaly take backup as par schedule</p>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" id="pcsetting4">
+								<label class="custom-control-label f-w-600 pl-1" for="pcsetting4">Allow guest to print
+									file</label>
+							</div>
+							<h6 class="mb-0 mt-5"><i data-feather="cpu" class="me-2"></i>System settings</h6>
+							<hr>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" id="pcsetting5" checked>
+								<label class="custom-control-label f-w-600 pl-1" for="pcsetting5">View other user
+									chat</label>
+							</div>
+							<p class="text-muted ms-5">Allow to show public user message</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-light-danger btn-sm" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-light-primary btn-sm">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [ Header ] end -->
 <!-- [ Main Content ] start -->
 <div class="pc-container">
 	<div class="pcoded-content">
@@ -309,37 +668,43 @@
 									<div class="modal-content">
 										<div class="modal-header">
 											<h5 class="modal-title">Modal Title</h5>
-											<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
 										</div>
 										<div class="modal-body">
 											<p>Modal body text goes here.</p>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
-											<button type="button" class="btn  btn-primary mr-0">Save changes</button>
+											<button type="button" class="btn  btn-secondary"
+												data-bs-dismiss="modal">Close</button>
+											<button type="button" class="btn  btn-primary me-0">Save changes</button>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
+						<div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title" id="exampleModalLiveLabel">Modal Title</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
 										<p>Woohoo, you're reading this text in a modal!</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn  btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 										<button type="button" class="btn  btn-primary">Save changes</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalLive">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModalLive">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -351,41 +716,75 @@
 						<h5>Scrolling Long Content</h5>
 					</div>
 					<div class="card-body">
-						<div id="exampleModalLong" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						<div id="exampleModalLong" class="modal fade" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title" id="exampleModalLongTitle">Modal Title</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn  btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 										<button type="button" class="btn  btn-primary">Save changes</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalLong">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModalLong">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -397,24 +796,30 @@
 						<h5>Vertically Centered</h5>
 					</div>
 					<div class="card-body">
-						<div id="exampleModalCenter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div id="exampleModalCenter" class="modal fade" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 							<div class="modal-dialog modal-dialog-centered" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title" id="exampleModalCenterTitle">Modal Title</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn  btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 										<button type="button" class="btn  btn-primary">Save changes</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModalCenter">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -426,31 +831,39 @@
 						<h5>Tooltips Modal</h5>
 					</div>
 					<div class="card-body">
-						<div id="exampleModalPopovers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
+						<div id="exampleModalPopovers" class="modal fade" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title" id="exampleModalPopoversLabel">Modal Title</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
 										<h5>Tooltips in a Button</h5>
-										<p>This <a href="#!" role="button" class="btn  btn-secondary tooltip-test" data-toggle="tooltip" title="Button Tooltip" data-container="#exampleModalPopovers">button</a>
+										<p>This <a href="#!" role="button" class="btn  btn-secondary tooltip-test"
+												data-bs-toggle="tooltip" title="Button Tooltip"
+												data-container="#exampleModalPopovers">button</a>
 											triggers a popover on click.</p>
 										<hr />
 										<h5>Tooltips in a modal</h5>
-										<p><a href="#!" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-container="#exampleModalPopovers">This link</a> and <a href="#!" class="tooltip-test" data-toggle="tooltip" title="Tooltip"
+										<p><a href="#!" class="tooltip-test" data-bs-toggle="tooltip" title="Tooltip"
+												data-container="#exampleModalPopovers">This link</a> and <a href="#!"
+												class="tooltip-test" data-bs-toggle="tooltip" title="Tooltip"
 												data-container="#exampleModalPopovers">that
 												link</a> have tooltips on hover.</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn  btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 										<button type="button" class="btn  btn-primary">Save changes</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalPopovers">Launch demo modal</button>
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModalPopovers">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -462,25 +875,27 @@
 						<h5>Using the Grid</h5>
 					</div>
 					<div class="card-body">
-						<div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+						<div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog"
+							aria-labelledby="gridModalLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title" id="gridModalLabel">Grids in Modals</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
 										<div class="container-fluid bd-example-row">
 											<div class="row">
 												<div class="col-md-4">.col-md-4</div>
-												<div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+												<div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
 											</div>
 											<div class="row">
-												<div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-												<div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+												<div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+												<div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
 											</div>
 											<div class="row">
-												<div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+												<div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
 											</div>
 											<div class="row">
 												<div class="col-sm-9">
@@ -498,32 +913,38 @@
 										</div>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn  btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 										<button type="button" class="btn  btn-primary">Save changes</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#gridSystemModal">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal"
+							data-bs-target="#gridSystemModal">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
 			<!-- [ grid-modal ] end -->
 			<!-- [ optional-modal ] start -->
-			<div class="col-xl-8 col-md-6">
+			<div class="col-xl-4 col-md-6">
 				<div class="card">
 					<div class="card-header">
 						<h5>Optional Sizes</h5>
 					</div>
 					<div class="card-body">
-						<button type="button" class="btn  btn-primary " data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-						<button type="button" class="btn  btn-primary " data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
-						<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<button type="button" class="btn  btn-primary mr-2 mb-2" data-bs-toggle="modal"
+							data-bs-target=".bd-example-modal-lg">Large modal</button>
+						<button type="button" class="btn  btn-primary mr-2 mb-2" data-bs-toggle="modal"
+							data-bs-target=".bd-example-modal-sm">Small modal</button>
+						<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+							aria-labelledby="myLargeModalLabel" aria-hidden="true">
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title h4" id="myLargeModalLabel">Large Modal</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
 										...
@@ -531,12 +952,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+						<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+							aria-labelledby="mySmallModalLabel" aria-hidden="true">
 							<div class="modal-dialog modal-sm">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title h4" id="mySmallModalLabel">Small Modal</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
 										...
@@ -548,6 +971,60 @@
 				</div>
 			</div>
 			<!-- [ optional-modal ] end -->
+			<!-- [ Toggle between modals ] start -->
+			<div class="col-xl-4 col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h5>Toggle between modals</h5>
+					</div>
+					<div class="card-body">
+						<div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalToggleLabel"><span
+												class="badge bg-danger">1</span> First Modal</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										Show a second modal and hide this one with the button below.
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-light-primary" data-bs-target="#exampleModalToggle2"
+											data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalToggleLabel2"><span
+												class="badge bg-success">2</span> Second Modal</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										Hide this modal and show the first with the button below.
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-light-secondary" data-bs-target="#exampleModalToggle"
+											data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"
+							role="button">Openfirst modal</a>
+					</div>
+				</div>
+			</div>
+			<!-- [ Toggle between modals ] end -->
+
 			<!-- [ Full screen modal ] start -->
 			<div class="col-xl-12">
 				<div class="card">
@@ -556,110 +1033,165 @@
 					</div>
 					<div class="card-body">
 						<div class="btn-page">
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreen">Full screen</button>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreenSm">Full screen below sm</button>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreenMd">Full screen below md</button>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreenLg">Full screen below lg</button>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreenXl">Full screen below xl</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#exampleModalFullscreen">Full screen</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#exampleModalFullscreenSm">Full screen below sm</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#exampleModalFullscreenMd">Full screen below md</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#exampleModalFullscreenLg">Full screen below lg</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#exampleModalFullscreenXl">Full screen below xl</button>
 						</div>
-						<div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+						<div class="modal fade" id="exampleModalFullscreen" tabindex="-1"
+							aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
 							<div class="modal-dialog modal-fullscreen">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+										<h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal
+										</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close">
 										</button>
 									</div>
 									<div class="modal-body">
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
+										<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+											facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+											vestibulum at eros.</p>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+											sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+										<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna,
+											vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper
+											nulla non metus auctor fringilla.</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="modal fade" id="exampleModalFullscreenSm" tabindex="-1" aria-labelledby="exampleModalFullscreenSmLabel" aria-hidden="true">
+						<div class="modal fade" id="exampleModalFullscreenSm" tabindex="-1"
+							aria-labelledby="exampleModalFullscreenSmLabel" aria-hidden="true">
 							<div class="modal-dialog modal-fullscreen-sm-down">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title h4" id="exampleModalFullscreenSmLabel">Full screen below sm</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+										<h5 class="modal-title h4" id="exampleModalFullscreenSmLabel">Full screen below
+											sm</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close">
 										</button>
 									</div>
 									<div class="modal-body">
 										...
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="modal fade" id="exampleModalFullscreenMd" tabindex="-1" aria-labelledby="exampleModalFullscreenMdLabel" aria-hidden="true">
+						<div class="modal fade" id="exampleModalFullscreenMd" tabindex="-1"
+							aria-labelledby="exampleModalFullscreenMdLabel" aria-hidden="true">
 							<div class="modal-dialog modal-fullscreen-md-down">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title h4" id="exampleModalFullscreenMdLabel">Full screen below md</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+										<h5 class="modal-title h4" id="exampleModalFullscreenMdLabel">Full screen below
+											md</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close">
 										</button>
 									</div>
 									<div class="modal-body">
 										...
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="modal fade" id="exampleModalFullscreenLg" tabindex="-1" aria-labelledby="exampleModalFullscreenLgLabel" aria-hidden="true">
+						<div class="modal fade" id="exampleModalFullscreenLg" tabindex="-1"
+							aria-labelledby="exampleModalFullscreenLgLabel" aria-hidden="true">
 							<div class="modal-dialog modal-fullscreen-lg-down">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title h4" id="exampleModalFullscreenLgLabel">Full screen below lg</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+										<h5 class="modal-title h4" id="exampleModalFullscreenLgLabel">Full screen below
+											lg</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close">
 										</button>
 									</div>
 									<div class="modal-body">
 										...
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="modal fade" id="exampleModalFullscreenXl" tabindex="-1" aria-labelledby="exampleModalFullscreenXlLabel" aria-hidden="true">
+						<div class="modal fade" id="exampleModalFullscreenXl" tabindex="-1"
+							aria-labelledby="exampleModalFullscreenXlLabel" aria-hidden="true">
 							<div class="modal-dialog modal-fullscreen-xl-down">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title h4" id="exampleModalFullscreenXlLabel">Full screen below xl</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+										<h5 class="modal-title h4" id="exampleModalFullscreenXlLabel">Full screen below
+											xl</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close">
 										</button>
 									</div>
 									<div class="modal-body">
 										...
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 									</div>
 								</div>
 							</div>
@@ -675,15 +1207,21 @@
 						<h5>Varying Modal Content</h5>
 					</div>
 					<div class="card-body btn-page">
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @bootstrap</button>
-						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for
+							@bootstrap</button>
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title" id="exampleModalLabel">New message</h5>
-										<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
 										<form>
@@ -698,7 +1236,8 @@
 										</form>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn  btn-secondary"
+											data-bs-dismiss="modal">Close</button>
 										<button type="button" class="btn  btn-primary">Send message</button>
 									</div>
 								</div>
@@ -712,75 +1251,231 @@
 		<!-- [ Main Content ] end -->
 	</div>
 </div>
-<!-- [ Main Content ] end --       >
-     <!-- Warning Section start -->
-     <!-- Older IE warning message -->
-     <!--[if lt IE 11]>
-         <div class="ie-warning">
-             <h1>Warning!!</h1>
-             <p>You are using an outdated version of Internet Explorer, please upgrade
-                <br/>to any of the following web browsers to access this website.
-             </p>
-             <div class="iew-container">
-                 <ul class="iew-download">
-                     <li>
-                         <a href="http://www.google.com/chrome/">
-                             <img src="assets/images/browser/chrome.png" alt="Chrome">
-                             <div>Chrome</div>
-                         </a>
-                     </li>
-                     <li>
-                         <a href="https://www.mozilla.org/en-US/firefox/new/">
-                             <img src="assets/images/browser/firefox.png" alt="Firefox">
-                             <div>Firefox</div>
-                         </a>
-                     </li>
-                     <li>
-                         <a href="http://www.opera.com">
-                             <img src="assets/images/browser/opera.png" alt="Opera">
-                             <div>Opera</div>
-                         </a>
-                     </li>
-                     <li>
-                         <a href="https://www.apple.com/safari/">
-                             <img src="assets/images/browser/safari.png" alt="Safari">
-                             <div>Safari</div>
-                         </a>
-                     </li>
-                     <li>
-                         <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                             <img src="assets/images/browser/ie.png" alt="">
-                             <div>IE (11 & above)</div>
-                         </a>
-                     </li>
-                 </ul>
-             </div>
-             <p>Sorry for the inconvenience!</p>
-         </div>
-     <![endif]-->
-     <!-- Warning Section Ends -->
-     <!-- Required Js -->
-     <script src="assets/js/vendor-all.min.js"></script>
-     <script src="assets/js/plugins/bootstrap.min.js"></script>
-     <script src="assets/js/plugins/feather.min.js"></script>
-     <script src="assets/js/pcoded.min.js"></script>
-     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script> -->
-     <!-- <script src="assets/js/plugins/clipboard.min.js"></script> -->
-     <!-- <script src="assets/js/uikit.min.js"></script> -->
+<!-- [ Main Content ] end -->
+    <!-- Warning Section start -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 11]>
+        <div class="ie-warning">
+            <h1>Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade
+               <br/>to any of the following web browsers to access this website.
+            </p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="assets/images/browser/chrome.png" alt="Chrome">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="assets/images/browser/firefox.png" alt="Firefox">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="assets/images/browser/opera.png" alt="Opera">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="assets/images/browser/safari.png" alt="Safari">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="assets/images/browser/ie.png" alt="">
+                            <div>IE (11 & above)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Js -->
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/feather.min.js"></script>
+    <script src="assets/js/pcoded.js"></script>
 
 <script>
-	$('#exampleModal').on('show.bs.modal', function(event) {
-		var button = $(event.relatedTarget)
-		var recipient = button.data('whatever')
-		var modal = $(this)
-		modal.find('.modal-title').text('New message to ' + recipient)
-		modal.find('.modal-body input').val(recipient)
+	var exampleModal = document.getElementById('exampleModal')
+	exampleModal.addEventListener('show.bs.modal', function (event) {
+		// Button that triggered the modal
+		var button = event.relatedTarget
+		// Extract info from data-bs-* attributes
+		var recipient = button.getAttribute('data-bs-whatever')
+		// If necessary, you could initiate an AJAX request here
+		// and then do the updating in a callback.
+		//
+		// Update the modal's content.
+		var modalTitle = exampleModal.querySelector('.modal-title')
+		var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+		modalTitle.textContent = 'New message to ' + recipient
+		modalBodyInput.value = recipient
 	})
 </script>
-<script>
-    $("body").append('<div class="fixed-button active"><a href="https://gumroad.com/dashboardkit" target="_blank" class="btn btn-md btn-success"><i class="material-icons-two-tone text-white">shopping_cart</i> Upgrade To Pro</a> </div>');
-</script>
+<div class="pct-customizer">
+    <div class="pct-c-btn">
+        <button class="btn btn-light-danger" id="pct-toggler">
+            <i data-feather="settings"></i>
+        </button>
+        <button class="btn btn-light-primary" data-bs-toggle="tooltip" title="Document" data-placement="left">
+            <i data-feather="book"></i>
+        </button>
+        <button class="btn btn-light-success" data-bs-toggle="tooltip" title="Buy Now" data-placement="left">
+            <i data-feather="shopping-bag"></i>
+        </button>
+        <button class="btn btn-light-info" data-bs-toggle="tooltip" title="Support" data-placement="left">
+            <i data-feather="headphones"></i>
+        </button>
+    </div>
+    <div class="pct-c-content ">
+        <div class="pct-header bg-primary">
+            <h5 class="mb-0 text-white f-w-500">DashboardKit Customizer</h5>
+        </div>
+        <div class="pct-body">
+            <h6 class="mt-2"><i data-feather="credit-card" class="me-2"></i>Header settings</h6>
+            <hr class="my-2">
+            <div class="theme-color header-color">
+                <a href="#!" class="" data-value="bg-default"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-primary"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-danger"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-warning"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-info"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-success"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-dark"><span></span><span></span></a>
+            </div>
+            <h6 class="mt-4"><i data-feather="layout" class="me-2"></i>Sidebar settings</h6>
+            <hr class="my-2">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="cust-sidebar">
+                <label class="form-check-label f-w-600 pl-1" for="cust-sidebar">Light Sidebar</label>
+            </div>
+            <div class="form-check form-switch mt-2">
+                <input type="checkbox" class="form-check-input" id="cust-sidebrand">
+                <label class="form-check-label f-w-600 pl-1" for="cust-sidebrand">Color Brand</label>
+            </div>
+            <div class="theme-color brand-color d-none">
+                <a href="#!" class="active" data-value="bg-primary"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-danger"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-warning"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-info"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-success"><span></span><span></span></a>
+                <a href="#!" class="" data-value="bg-dark"><span></span><span></span></a>
+            </div>
+            <h6 class="mt-4"><i data-feather="sun" class="me-2"></i>Layout settings</h6>
+            <hr class="my-2">
+            <div class="form-check form-switch mt-2">
+                <input type="checkbox" class="form-check-input" id="cust-darklayout">
+                <label class="form-check-label f-w-600 pl-1" for="cust-darklayout">Dark Layout</label>
+            </div>
+        </div>
+    </div>
+</div>
 
+<script>
+    feather.replace();
+    var pctoggle = document.querySelector("#pct-toggler");
+    if (pctoggle) {
+        pctoggle.addEventListener('click', function () {
+            if (!document.querySelector(".pct-customizer").classList.contains('active')) {
+                document.querySelector(".pct-customizer").classList.add("active");
+            } else {
+                document.querySelector(".pct-customizer").classList.remove("active");
+            }
+        });
+    }
+
+    var custsidebrand = document.querySelector("#cust-sidebrand");
+    custsidebrand.addEventListener('click', function () {
+        if (custsidebrand.checked) {
+            document.querySelector(".m-header").classList.add("bg-dark");
+            document.querySelector(".theme-color.brand-color").classList.remove("d-none");
+        } else {
+            removeClassByPrefix(document.querySelector(".m-header"), 'bg-');
+            // document.querySelector(".m-header > .b-brand > .logo-lg").setAttribute('src', 'assets/images/logo-dark.svg');
+            document.querySelector(".theme-color.brand-color").classList.add("d-none");
+        }
+    });
+
+
+    var brandcolor = document.querySelectorAll(".brand-color > a");
+    for (var t = 0; t < brandcolor.length; t++) {
+        var c = brandcolor[t];
+        c.addEventListener('click', function (event) {
+            var targetElement = event.target;
+            if (targetElement.tagName == "SPAN") {
+                targetElement = targetElement.parentNode;
+            }
+            var temp = targetElement.getAttribute('data-value');
+            if (temp == "bg-default") {
+                removeClassByPrefix(document.querySelector(".m-header"), 'bg-');
+            } else {
+                removeClassByPrefix(document.querySelector(".m-header"), 'bg-');
+                document.querySelector(".m-header > .b-brand > .logo-lg").setAttribute('src', 'assets/images/logo.svg');
+                document.querySelector(".m-header").classList.add(temp);
+            }
+        });
+    }
+
+
+    var headercolor = document.querySelectorAll(".header-color > a");
+    for (var h = 0; h < headercolor.length; h++) {
+        var c = headercolor[h];
+
+        c.addEventListener('click', function (event) {
+            var targetElement = event.target;
+            if (targetElement.tagName == "SPAN") {
+                targetElement = targetElement.parentNode;
+            }
+            var temp = targetElement.getAttribute('data-value');
+            if (temp == "bg-default") {
+                removeClassByPrefix(document.querySelector(".pc-header:not(.pc-mob-header)"), 'bg-');
+            } else {
+                removeClassByPrefix(document.querySelector(".pc-header:not(.pc-mob-header)"), 'bg-');
+                document.querySelector(".pc-header:not(.pc-mob-header)").classList.add(temp);
+            }
+        });
+    }
+
+
+    var custside = document.querySelector("#cust-sidebar");
+    custside.addEventListener('click', function () {
+        if (custside.checked) {
+            document.querySelector(".pc-sidebar").classList.add("light-sidebar");
+            // document.querySelector(".pc-horizontal .topbar").classList.add("light-sidebar");
+        } else {
+            document.querySelector(".pc-sidebar").classList.remove("light-sidebar");
+            // document.querySelector(".pc-horizontal .topbar").classList.remove("light-sidebar");
+        }
+    });
+
+
+    var custdarklayout = document.querySelector("#cust-darklayout");
+    custdarklayout.addEventListener('click', function () {
+        if (custdarklayout.checked) {
+            document.querySelector("#main-style-link").setAttribute('href', 'assets/css/style-dark.css');
+        } else {
+            document.querySelector("#main-style-link").setAttribute('href', 'assets/css/style.css');
+        }
+    });
+    function removeClassByPrefix(node, prefix) {
+        for (let i = 0; i < node.classList.length; i++) {
+            let value = node.classList[i];
+            if (value.startsWith(prefix)) {
+                node.classList.remove(value);
+            }
+        }
+    }
+</script>
 </body>
 
 </html>

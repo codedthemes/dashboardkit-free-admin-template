@@ -52,6 +52,7 @@
 </div>
 <!-- [ Main Content ] end -->
 @@include('./layouts/footer.html')
+<script src="assets/js/plugins/clipboard.min.js"></script>
 <script type="text/javascript">
     var iconlist = ['alert-octagon', 'alert-circle', 'activity', 'alert-triangle', 'align-center', 'airplay', 'align-justify', 'align-left', 'align-right', 'arrow-down-left',
         'arrow-down-right', 'anchor', 'aperture', 'arrow-left', 'arrow-right', 'arrow-down', 'arrow-up-left', 'arrow-up-right', 'arrow-up', 'award', 'bar-chart', 'at-sign',
@@ -73,30 +74,61 @@
         'zap', 'zoom-in', 'zoom-out', 'command', 'cloud', 'hash', 'headphones', 'underline', 'italic', 'bold', 'crop', 'help-circle', 'paperclip', 'shopping-cart',
         'tv', 'wifi-off', 'minimize', 'maximize', 'gitlab', 'sliders'
     ];
-
     for (var i = 0, l = iconlist.length; i < l; i++) {
-        $('#icon-wrapper').append(
-            '<div class="i-block" data-filter="' + iconlist[i] + '"  data-toggle="tooltip" title="' + iconlist[i] + '">' +
-            '<i data-feather="' + iconlist[i] + '"></i>' +
-            '</div>');
+        let iconblock = document.createElement('div');
+        iconblock.setAttribute('class', 'i-block');
+        iconblock.setAttribute('data-clipboard-text',iconlist[i]);
+        iconblock.setAttribute('data-bs-toggle', 'tooltip');
+        iconblock.setAttribute('data-filter', iconlist[i]);
+        iconblock.setAttribute('title', iconlist[i]);
+
+        let iconmain = document.createElement('i');
+        iconmain.setAttribute('data-feather', iconlist[i]);
+        iconblock.appendChild(iconmain);
+        document.querySelector('#icon-wrapper').append(iconblock);
     }
-    $(window).on('load', function() {
-        $("#icon-search").on("keyup", function() {
-            var g = $(this).val().toLowerCase();
-            $(".i-main .i-block").each(function() {
-                var t = $(this).attr('data-filter');
+    feather.replace();
+    window.addEventListener('load', (event) => {
+        var iclp = new ClipboardJS('.i-block');
+        iclp.on('success', function (e) {
+            var targetElement = e.trigger;
+            let iconbadge = document.createElement('span');
+            iconbadge.setAttribute('class', 'ic-badge badge bg-success');
+            iconbadge.innerHTML = "copied";
+            targetElement.append(iconbadge);
+            setTimeout(function () {
+                targetElement.children[1].remove();
+            }, 3000);
+        });
+
+        iclp.on('error', function (e) {
+            var targetElement = e.trigger;
+            let iconbadge = document.createElement('span');
+            iconbadge.setAttribute('class', 'ic-badge badge bg-danger');
+            iconbadge.innerHTML = "Error";
+            targetElement.append(iconbadge);
+            setTimeout(function () {
+                targetElement.children[1].remove();
+            }, 3000);
+        });
+        document.querySelector("#icon-search").addEventListener("keyup", function () {
+            var g = document.querySelector("#icon-search").value.toLowerCase();
+            var tc = document.querySelectorAll(".i-main .i-block");
+            for (var i = 0; i < tc.length; i++) {
+                var c = tc[i];
+                var t = c.getAttribute('data-filter');
                 if (t) {
                     var s = t.toLowerCase();
                 }
                 if (s) {
                     var n = s.indexOf(g);
                     if (n !== -1) {
-                        $(this).show();
+                        c.style.display = "inline-flex";
                     } else {
-                        $(this).hide();
+                        c.style.display = "none";
                     }
                 }
-            });
+            }
         });
     });
 </script>
