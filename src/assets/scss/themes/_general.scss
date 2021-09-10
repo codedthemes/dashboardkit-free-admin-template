@@ -117,12 +117,13 @@ strong {
 }
 
 .btn-page {
-    .btn-group{
+    .btn-group {
         .btn {
             margin-right: 0;
             margin-bottom: 0;
         }
     }
+
     .btn {
         margin-right: 5px;
         margin-bottom: 5px;
@@ -225,7 +226,7 @@ strong {
 
     .pc-example-btns {
         position: absolute;
-        right: 0;
+        right: 12px;
         top: -10px;
         opacity: 0;
         transform: rotateX(-90deg);
@@ -307,13 +308,15 @@ strong {
 }
 
 .md-pc-example-modal-copy {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
     position: fixed;
     top: 90px;
     right: 30px;
-    margin-right: 8px;
     border-radius: 50%;
-    padding: 15px;
     background: $primary;
     color: #fff;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
@@ -343,12 +346,17 @@ strong {
 }
 
 .pc-example-modal-close {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
     position: fixed;
     top: 40px;
-    right: 52px;
-    color: #fff;
-    opacity: 0.2;
+    right: 30px;
+    background: rgba($danger,0.2);
+    color: $danger;
+    border-radius: 50%;
     transition: all 0.3s ease-in-out;
     z-index: 1;
 
@@ -358,7 +366,6 @@ strong {
     }
 
     &:hover {
-        color: $danger;
         opacity: 0.9;
     }
 }
@@ -429,7 +436,7 @@ strong {
 }
 
 .bd-example-modal {
-    background-color: #fafafa;
+    background-color: $body-bg;
 
     .modal {
         position: relative;
@@ -445,6 +452,13 @@ strong {
         left: auto;
         margin-right: auto;
         margin-left: auto;
+    }
+    .offcanvas{
+        position: static;
+        display: block;
+        height: 200px;
+        visibility: visible;
+        transform: translate(0);    
     }
 }
 /* Example tabbable tabs */
@@ -494,10 +508,11 @@ pre[class*="language-"] {
 /* ================================    Blockquote Start  ===================== */
 
 svg.feather {
-    &:not([class*='wid-']){
+    &:not([class*='wid-']) {
         width: 20px;
     }
-    &:not([class*='hei-']){
+
+    &:not([class*='hei-']) {
         height: 20px;
     }
 }
@@ -506,16 +521,22 @@ svg.feather {
         max-width: 1540px;
     }
 }
-pre[class*="language-"]:before, pre[class*="language-"]:after{
+
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
     display: none;
 }
-:not(pre) > code[class*="language-"], pre[class*="language-"]{
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
     display: flex;
     margin: 0;
 }
-pre[class*="language-"]>code{
+
+pre[class*="language-"] > code {
     width: 100%;
 }
+
 .media {
     display: flex;
 
@@ -528,24 +549,34 @@ pre[class*="language-"]>code{
     border-left: 0.25rem solid $border-color;
     padding: 0.5rem 1rem;
 
-    &.text-right {
+    &.text-end {
         border-left: none;
         border-right: 0.25rem solid $border-color;
     }
 }
-/* ================================    Blockquote End  ===================== */
 
-.fixed-button {
-    position: fixed;
-    bottom: -50px;
-    right: 30px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
-    opacity: 0;
-    z-index: 9;
-    transition: all 0.5s ease;
+.breadcrumb {
+    svg.feather {
+        width: 16px;
+        height: 16px;
+        vertical-align: baseline;
+    }
 }
 
-.fixed-button.active {
-    bottom: 50px;
-    opacity: 1;
+[data-notify] .close {
+    border: 0;
+    opacity: 0.5;
+    width: 1em;
+    height: 1em;
+    margin-top: 5px;
+    color: transparent !important;
+    background: transparent escape-svg($btn-close-bg) center / $btn-close-width auto no-repeat;
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+/* ================================    Blockquote End  ===================== */
+.offcanvas{
+    z-index: 1075;
+}
+.pc-sidebar  .accordion-item{
+    border: none;
 }

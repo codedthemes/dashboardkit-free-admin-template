@@ -104,7 +104,7 @@
 }
 /* fixed header position */
 table.dataTable.fixedHeader-floating {
-    top: 0 !important;
+    top: calc(#{$header-height} + 55px) !important;
     @media screen and (max-width:992px) {
         display: none !important;
     }
@@ -304,5 +304,12 @@ div.dtk-focus-alt table.dataTable tbody {
         background: transparentize($warning,0.85);
         color: $warning;
     }
+}
+table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_asc:after, table.dataTable>thead .sorting_desc:before, table.dataTable>thead .sorting_desc:after, table.dataTable>thead .sorting_asc_disabled:before, table.dataTable>thead .sorting_asc_disabled:after, table.dataTable>thead .sorting_desc_disabled:before, table.dataTable>thead .sorting_desc_disabled:after {
+    top: 13px;
+}
+table.dataTable tbody > tr > .selected td.select-checkbox:after, table.dataTable tbody > tr > .selected th.select-checkbox:after, table.dataTable tbody > tr.selected td.select-checkbox:after, table.dataTable tbody > tr.selected th.select-checkbox:after{
+    margin-top: -21px;
+    margin-left: -7px;
 }
 /**====== Data Tables css end ======**/

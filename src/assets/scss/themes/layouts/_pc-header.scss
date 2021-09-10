@@ -60,7 +60,7 @@
         &:hover {
             text-decoration: none;
             color: $primary;
-            background: scale-color($primary, $soft-bg-level);
+            background: shift-color($primary, $soft-bg-level);
 
             .hamburger {
                 .hamburger-inner {
@@ -125,7 +125,7 @@
         transform: none !important;
         top: 100% !important;
 
-        &.dropdown-menu-right {
+        &.dropdown-menu-end {
             right: 0 !important;
             left: auto !important;
         }
@@ -147,9 +147,9 @@
         position: static;
 
         .pc-mega-dmenu {
-            left: 0 !important;
-            right: 0;
             transform: none !important;
+            left: 0 !important;
+            right: 0 !important;
             top: 100% !important;
             padding: 0;
 
@@ -186,7 +186,7 @@
         .cart-head {
             border-radius: 2px 2px 0 0;
             padding: 20px;
-            background: transparentize(scale-color($primary, $soft-bg-level),0.8);
+            background: transparentize(shift-color($primary, $soft-bg-level),0.8);
             border-bottom: 1px solid $border-color;
         }
 
@@ -212,7 +212,7 @@
 
             &.table-responsive {
                 border-top: 1px solid $border-color;
-                background: transparentize(scale-color($primary, $soft-bg-level),0.8);
+                background: transparentize(shift-color($primary, $soft-bg-level),0.8);
             }
 
             svg {

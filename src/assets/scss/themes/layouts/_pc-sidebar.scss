@@ -23,6 +23,7 @@
         padding: 15px 20px 10px;
         letter-spacing: 0.07em;
         text-transform: uppercase;
+
         font: {
             size: 11px;
             weight: 600;
@@ -34,11 +35,13 @@
 
         span:not(.badge) {
             display: block;
-            color: #67758A;
+            color: #67758a;
+
             font: {
                 size: 10px;
                 weight: 500;
             }
+
             text-transform: capitalize;
         }
     }
@@ -60,11 +63,11 @@
             }
         }
 
-        > svg {
+        >svg {
             width: 18px;
             height: 18px;
             color: $sidebar-icon-color;
-            fill: rgba(114,103,239,0.2);
+            fill: rgba(114, 103, 239, 0.2);
         }
     }
 
@@ -72,6 +75,7 @@
         display: block;
         padding: 13px 20px;
         color: $sidebar-color;
+
         font: {
             size: 13px;
             weight: 500;
@@ -84,6 +88,7 @@
             color: $sidebar-active-color;
 
             .pc-micon {
+
                 i,
                 svg {
                     color: $sidebar-active-color;
@@ -97,7 +102,7 @@
         display: inline-block;
         transition: all 0.2s ease-in-out;
 
-        > svg {
+        >svg {
             width: 14px;
             height: 14px;
         }
@@ -126,6 +131,7 @@
     }
 
     .pc-submenu {
+
         // display: none;
         // &:not(.pc-trigger){
         //     display: none;
@@ -148,13 +154,21 @@
     }
 
     .pc-item {
+        &.disabled {
+            a {
+                cursor: not-allowed;
+                user-select: none;
+            }
+        }
+
         &.active,
         &:focus,
         &:hover {
-            > .pc-link {
+            >.pc-link {
                 color: $sidebar-active-color;
 
                 .pc-micon {
+
                     i,
                     svg {
                         color: $sidebar-active-color;
@@ -165,11 +179,12 @@
     }
 
     .pc-navbar {
-        > .pc-item {
+        >.pc-item {
+
             &.active,
             &:focus,
             &:hover {
-                > .pc-link {
+                >.pc-link {
                     background: $brand-color;
                 }
             }
@@ -178,12 +193,12 @@
 
     .pc-hasmenu {
         &.pc-trigger {
-            > .pc-submenu {
+            >.pc-submenu {
                 display: block;
             }
 
-            > .pc-link {
-                > .pc-arrow {
+            >.pc-link {
+                >.pc-arrow {
                     transform: rotate(90deg);
                 }
             }
@@ -200,30 +215,15 @@ body:not(.minimenu) {
         .pc-submenu {
             position: relative;
 
-            &:after {
-                // content: "";
-                // width: 1px;
-                // height: calc(100% - 18px);
-                // background: #67758A;
-                // position: absolute;
-                // left: 38px;
-                // top: 0;
-                // opacity: 0.7;
-            }
-
             .pc-item {
                 position: relative;
 
                 &:before {
                     content: "→";
-                    // width: 6px;
-                    // height: 6px;
                     position: absolute;
                     left: 40px;
                     top: 10px;
-                    // border-radius: 50%;
                     z-index: 1;
-                    // opacity: 0.7;
                     transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
                     color: $sidebar-icon-color;
                 }
@@ -237,31 +237,19 @@ body:not(.minimenu) {
                 &:hover {
                     &:before {
                         left: 45px;
-                        // color: transparentize($primary,.8);
                     }
-                }
-
-                &:after {
-                    // content: "";
-                    // width: 18px;
-                    // height: 1px;
-                    // background: #67758A;
-                    // position: absolute;
-                    // left: 38px;
-                    // top: 21px;
-                    // opacity: 0.7;
                 }
             }
 
             .pc-submenu {
-                > .pc-item {
+                >.pc-item {
                     &:before {
                         left: 60px;
                     }
                 }
 
                 .pc-submenu {
-                    > .pc-item {
+                    >.pc-item {
                         &:before {
                             left: 80px;
                         }
@@ -279,15 +267,15 @@ body:not(.minimenu) {
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .minimenu {
     .pc-sidebar {
         width: $sidebar-collapsed-width;
 
-        .pc-hasmenu.pc-trigger:not(:hover) > .pc-submenu,
-        .pc-hasmenu:not(:hover) > .pc-submenu {
+        .pc-hasmenu.pc-trigger:not(:hover)>.pc-submenu,
+        .pc-hasmenu:not(:hover)>.pc-submenu {
             display: none;
         }
 
@@ -306,7 +294,7 @@ body:not(.minimenu) {
         .pc-badge,
         .pc-caption,
         .pc-mtext,
-        .pc-navbar > li > a > .pc-arrow {
+        .pc-navbar>li>a>.pc-arrow {
             display: none;
         }
 
@@ -340,7 +328,7 @@ body:not(.minimenu) {
             position: relative;
 
             &:hover {
-                > .pc-link {
+                >.pc-link {
                     width: calc(200px + #{$sidebar-collapsed-width});
                     background: $brand-color;
                     color: $sidebar-active-color;
@@ -349,6 +337,7 @@ body:not(.minimenu) {
                         i {
                             color: #fff;
                         }
+
                         margin-right: 40px;
                     }
 
@@ -357,7 +346,7 @@ body:not(.minimenu) {
                     }
                 }
 
-                > .pc-submenu {
+                >.pc-submenu {
                     display: block;
                     width: 200px;
                 }
@@ -365,12 +354,12 @@ body:not(.minimenu) {
 
             .pc-item {
                 &:hover {
-                    > .pc-link {
+                    >.pc-link {
                         width: 200px;
                         background: $sidebar-background;
                     }
 
-                    > .pc-submenu {
+                    >.pc-submenu {
                         top: 0;
                     }
                 }
@@ -378,6 +367,7 @@ body:not(.minimenu) {
         }
     }
 }
+
 @media (min-width: 1025px) {
     .navbar-overlay {
         .pc-sidebar {
@@ -395,6 +385,7 @@ body:not(.minimenu) {
         }
     }
 }
+
 @media (max-width: 1024px) {
     .pc-sidebar {
         left: -#{$sidebar-width};
@@ -414,11 +405,10 @@ body:not(.minimenu) {
     }
 
     .minimenu {
-        .pc-sidebar.mob-sidebar-active {}
-
         .pc-container {
             margin-left: 0;
         }
     }
 }
+
 // Sidebar css end

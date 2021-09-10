@@ -67,7 +67,7 @@
 
 .swal-button {
     background-color: $primary;
-
+    margin: 0 10px;
     &:not([disabled]):hover {
         background-color: darken($primary,5%);
     }
@@ -84,7 +84,7 @@
 .swal-button--cancel {
     color: #555;
     background-color: #efefef;
-
+    margin: 0 10px;
     &:not([disabled]):hover {
         background-color: #e8e8e8;
     }
@@ -100,7 +100,7 @@
 
 .swal-button--danger {
     background-color: $danger;
-
+    margin: 0 10px;
     &:not([disabled]):hover {
         background-color: darken($danger,5%);
     }
@@ -262,6 +262,11 @@
 
     .swal2-progress-step-line {
         background: $primary;
+    }
+}
+.swal2-actions{
+    .btn{
+        margin: 0 10px;
     }
 }
 // ========================

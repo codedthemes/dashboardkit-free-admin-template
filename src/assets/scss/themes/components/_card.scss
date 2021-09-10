@@ -13,10 +13,8 @@
         h5 {
             margin-bottom: 0;
             color: #525f71;
-            font:{
-                size:14px;
-                weight: 600;
-            }
+            font-size: 14px;
+            font-weight: 600;
 
             +p,
             +small {
@@ -27,13 +25,14 @@
                 }
             }
         }
+
         .card-header-right {
             right: 10px;
             top: 10px;
-            display: inline-block;
             float: right;
             padding: 0;
             position: absolute;
+
             @media only screen and (max-width: 575px) {
                 display: none;
             }
@@ -70,6 +69,7 @@
                     outline: none;
                 }
             }
+
             // custom toggler
             .btn.dropdown-toggle {
                 border: none;
@@ -113,16 +113,19 @@
             box-shadow: none;
         }
     }
-    @each $color, $value in $theme-colors {
-        // .card-footer.bg-#{$color},
+
+    @each $color,
+    $value in $theme-colors {
         &.bg-#{$color} {
             box-shadow: 0 9px 9px -1px transparentize($value, 0.7);
         }
     }
 }
+
 @include media-breakpoint-down(sm) {
     .card {
         margin-bottom: 20px;
     }
 }
+
 // Card css end

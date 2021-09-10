@@ -64,9 +64,12 @@
         .select2-selection__choice__remove {
             color: #fff;
             margin-right: 8px;
+            position: relative;
+            padding: 0 8px 0 0;
 
             &:hover {
                 color: #fff;
+                background: transparent;
             }
         }
     }

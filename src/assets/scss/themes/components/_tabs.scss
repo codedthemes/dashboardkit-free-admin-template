@@ -33,7 +33,7 @@
 
             .nav-link {
                 color: $primary;
-                background: scale-color($primary, $soft-bg-level);
+                background: shift-color($primary, $soft-bg-level);
                 border-radius: 4px;
                 transition: background 0.3s ease-out;
             }

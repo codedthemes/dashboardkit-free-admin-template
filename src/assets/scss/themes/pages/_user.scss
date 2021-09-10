@@ -184,7 +184,7 @@
     }
 }
 .tab-content{
-    .btn.btn-sm.float-right i{
+    .btn.btn-sm.float-end i{
         font-size: 14px;
     }
 }
@@ -269,7 +269,7 @@
 // [ user profile page ] start
 
 .user-profile {
-    margin-top: -85px;
+    margin-top: -45px;
     margin-left: -30px;
     margin-right: -30px;
     background: #fff;
@@ -612,5 +612,8 @@
             }
         }
     }
+}
+.skill-mlt-select + .select2-container{
+    display: block;
 }
 /**====== user card css end ======**/
