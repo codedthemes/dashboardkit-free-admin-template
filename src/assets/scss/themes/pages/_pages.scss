@@ -48,7 +48,7 @@
             text-decoration: line-through;
         }
     }
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width:580px) {
         li {
             width: 100%;
         }
@@ -64,7 +64,7 @@
         }
     }
 
-    label input[type="checkbox"] {
+    label input[type=checkbox] {
         display: none;
     }
 }
@@ -182,22 +182,22 @@
             }
         }
 
-        label input[type="checkbox"] {
+        label input[type=checkbox] {
             display: none;
         }
 
-        label input[type="checkbox"] + .cr > .cr-icon {
+        label input[type=checkbox]+.cr > .cr-icon {
             transform: scale(3) rotateZ(-20deg);
             opacity: 0;
             transition: all 0.3s ease-in;
         }
 
-        label input[type="checkbox"]:checked + .cr > .cr-icon {
+        label input[type=checkbox]:checked+.cr > .cr-icon {
             transform: scale(1) rotateZ(0deg);
             opacity: 1;
         }
 
-        label input[type="checkbox"]:checked + .cr {
+        label input[type=checkbox]:checked+.cr {
             background: $primary;
             border: 0;
         }
@@ -213,7 +213,7 @@ new-task {
         }
     }
 
-    label input[type="checkbox"] {
+    label input[type=checkbox] {
         display: none;
     }
 }
@@ -271,23 +271,23 @@ new-task {
     }
 }
 
-.task-board-left {
-    .task-right-header-revision,
-    .task-right-header-status,
-    .task-right-header-users {
+.task-board-start {
+    .task-end-header-revision,
+    .task-end-header-status,
+    .task-end-header-users {
         padding-bottom: 10px;
         padding-top: 10px;
         border-bottom: 1px solid #f1f1f1;
         cursor: pointer;
     }
 
-    .taskboard-right-progress,
-    .taskboard-right-revision,
-    .taskboard-right-users {
+    .taskboard-end-progress,
+    .taskboard-end-revision,
+    .taskboard-end-users {
         padding-top: 10px;
     }
 
-    .taskboard-right-progress {
+    .taskboard-end-progress {
         .progress {
             height: 9px;
             margin-bottom: 25px;
@@ -301,7 +301,7 @@ new-task {
             cursor: pointer;
         }
 
-        .media-left {
+        .media-start {
             position: relative;
         }
 
@@ -331,9 +331,9 @@ new-task {
     .navbar {
         background-color: #fff;
         border-radius: 4px;
-        box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+        box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
         padding: 0.5rem 1rem;
-        @media screen and (max-width: 557px) {
+        @media screen and (max-width:557px) {
             .f-text {
                 display: block;
                 width: 100%;
@@ -406,7 +406,7 @@ new-task {
     margin-bottom: 30px;
     padding-top: 30px;
     align-items: center;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width:767px) {
         margin-bottom: 0;
     }
 }
@@ -442,27 +442,23 @@ new-task {
     }
 }
 
-.invoice-total {
+.invoice-total.table {
     background: #f3f3f3;
-    border-radius: 6px;
-    padding: 14px 0;
-    margin-bottom: 20px;
-    .table {
-        margin-bottom: 0;
-        th {
-            border: 0;
-            padding: 4px 0;
-            text-align: right;
-        }
+    padding: 30px 0;
 
-        td {
-            text-align: right;
-        }
+    th {
+        border: 0;
+        padding: 4px 0;
+        text-align: right;
+    }
 
-        tbody {
-            padding-right: 20px;
-            float: right;
-        }
+    td {
+        text-align: right;
+    }
+
+    tbody {
+        padding-right: 20px;
+        float: right;
     }
 }
 
@@ -524,7 +520,7 @@ new-task {
                 }
 
                 &.read {
-                    background: transparentize($body-bg, 0.3);
+                    background: transparentize($body-bg ,0.3);
                 }
 
                 &:hover {
@@ -583,7 +579,7 @@ new-task {
                 border-radius: 0 20px 20px 0;
                 text-transform: capitalize;
                 border: 1px solid transparent;
-                border-left: none;
+                border-start: none;
                 color: $body-color;
 
                 i {
@@ -641,12 +637,12 @@ new-task {
     .email-mob-toggle {
         display: none;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width:767px) {
         .email-mob-toggle {
             display: inline-block;
         }
 
-        .mail-left {
+        .mail-start {
             position: fixed;
             top: $header-height;
             left: -100vw;
@@ -673,7 +669,7 @@ new-task {
                 width: 100%;
                 top: $header-height;
                 left: 0;
-                background: rgba(0, 0, 0, 0.3);
+                background: rgba(0,0,0,0.3);
                 z-index: 1;
                 bottom: 0;
                 opacity: 0;
@@ -713,7 +709,7 @@ new-task {
     display: flex;
     align-items: flex-start;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width:575px) {
     .email-read {
         display: inline-block;
 
@@ -899,13 +895,11 @@ new-task {
 }
 /* ==================  image-cropper end  ======================================= */
 
-.mailsent-modal {
-    .trumbowyg-box,
-    .trumbowyg-editor {
-        min-height: 200px;
+.mailsent-modal{
+    .trumbowyg-box, .trumbowyg-editor{
+        min-height:200px;
     }
-    .trumbowyg-editor,
-    .trumbowyg-textarea {
-        min-height: 130px;
+    .trumbowyg-editor, .trumbowyg-textarea{
+        min-height:130px;
     }
 }

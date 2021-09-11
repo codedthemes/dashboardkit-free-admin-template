@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	@@include('./layouts/head.html')
 	@@include('./layouts/head-bottom-link.html')
@@ -11,15 +10,11 @@
 	<div class="pcoded-content">
 		<!-- [ Main Content ] start -->
 		<div class="row mb-3">
-			<div class="col-md-8">
-				<h3>Breadcrumb & Pagination</h3>
-				<p class="lead">Breadcrumb indicate the current page’s location within a navigational hierarchy that
-					automatically adds separators via CSS. Showing pagination to indicate a series of related content
-					exists across multiple pages.</p>
-				<p class="f-w-500">Check out <a
-						href="https://dashboardkit.io/bootstrap/docs/index-bc-package.html#page-breadcrumb"
-						target="_blank" class="badge bg-light-primary">Documentation</a></p>
-			</div>
+				<div class="col-md-8">
+					<h3>Breadcrumb & Pagination</h3>
+					<p class="lead">Breadcrumb indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS. Showing pagination to indicate a series of related content exists across multiple pages.</p>
+					<p class="f-w-500">Check out <a href="http://html.phoenixcoded.net/nextro-new/docs/index-bc-package.html#page-breadcrumb" target="_blank" class="badge bg-light-primary">Documentation</a></p>
+				</div>
 		</div>
 		<div class="row">
 			<!-- [ Breadcrumbs & Pagination ] start -->
@@ -64,70 +59,12 @@
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#!">
-										<i data-feather="home"></i></a>
+									<i data-feather="home"></i></a>
 								</li>
 								<li class="breadcrumb-item active" aria-current="page">Library</li>
 							</ol>
 						</nav>
 						<nav aria-label="breadcrumb">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="#!"><i data-feather="home"></i></a></li>
-								<li class="breadcrumb-item"><a href="#!">Library</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Data</li>
-							</ol>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="card">
-					<div class="card-header">
-						<h5>Breadcrumb Dividers [ character ]</h5>
-					</div>
-					<div class="card-body">
-						<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item active" aria-current="page"><i data-feather="home"></i></li>
-							</ol>
-						</nav>
-						<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="#!">
-										<i data-feather="home"></i></a>
-								</li>
-								<li class="breadcrumb-item active" aria-current="page">Library</li>
-							</ol>
-						</nav>
-						<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="#!"><i data-feather="home"></i></a></li>
-								<li class="breadcrumb-item"><a href="#!">Library</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Data</li>
-							</ol>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="card">
-					<div class="card-header">
-						<h5>Breadcrumb Dividers [ embedded SVG icon ]</h5>
-					</div>
-					<div class="card-body">
-						<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item active" aria-current="page"><i data-feather="home"></i></li>
-							</ol>
-						</nav>
-						<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="#!">
-										<i data-feather="home"></i></a>
-								</li>
-								<li class="breadcrumb-item active" aria-current="page">Library</li>
-							</ol>
-						</nav>
-						<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#!"><i data-feather="home"></i></a></li>
 								<li class="breadcrumb-item"><a href="#!">Library</a></li>
@@ -156,14 +93,11 @@
 						<hr>
 						<nav aria-label="Page navigation example">
 							<ul class="pagination">
-								<li class="page-item"><a class="page-link" href="#!" aria-label="Previous"><span
-											aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a>
-								</li>
+								<li class="page-item"><a class="page-link" href="#!" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
 								<li class="page-item"><a class="page-link" href="#!">1</a></li>
 								<li class="page-item"><a class="page-link" href="#!">2</a></li>
 								<li class="page-item"><a class="page-link" href="#!">3</a></li>
-								<li class="page-item"><a class="page-link" href="#!" aria-label="Next"><span
-											aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+								<li class="page-item"><a class="page-link" href="#!" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
 							</ul>
 						</nav>
 						<h5 class="mt-5">Disabled and Active States</h5>
@@ -172,8 +106,7 @@
 							<ul class="pagination">
 								<li class="page-item disabled"><span class="page-link">Previous</span></li>
 								<li class="page-item"><a class="page-link" href="#!">1</a></li>
-								<li class="page-item active"><span class="page-link">2<span
-											class="sr-only">(current)</span></span>
+								<li class="page-item active"><span class="page-link">2<span class="sr-only">(current)</span></span>
 								</li>
 								<li class="page-item"><a class="page-link" href="#!">3</a></li>
 								<li class="page-item"><a class="page-link" href="#!">Next</a></li>
