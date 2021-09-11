@@ -1,7 +1,6 @@
 /**  =====================
       Generic-class css start
 ========================== **/
-
 /*====== Padding , Margin css starts ======*/
 $i: 0;
 @while $i<=50 {
@@ -94,15 +93,12 @@ $i: 1;
 /*====== background starts ======*/
 
 .bg-body {
-    background: $body-bg !important;
+    background: $body-bg;
 }
 @each $color, $value in $theme-colors {
     .bg-light-#{$color} {
         background: shift-color($value, $soft-bg-level);
         color: $value;
-    }
-    .text-light-#{$color} {
-        color: shift-color($value, $soft-bg-level);
     }
 
     .icon-svg-#{$color} {

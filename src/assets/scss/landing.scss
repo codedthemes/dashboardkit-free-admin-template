@@ -1,8 +1,8 @@
 /**======================================================================
 =========================================================================
 Template Name: DashboardKit - Most Complete Bootstrap Admin Template
-Author: DashboardKit
-Support: dashboardkit@gmail.com
+Author: Phoenixcoded
+Support: support@phoenixcoded.net
 File: style.css
 =========================================================================
 =================================================================================== */
@@ -210,14 +210,14 @@ header {
         &:nth-child(1),
         &:nth-child(4) {
             .feature-block {
-                border-left-color: transparent;
+                border-start-color: transparent;
             }
         }
 
         &:nth-child(3),
         &:nth-child(6) {
             .feature-block {
-                border-right-color: transparent;
+                border-end-color: transparent;
             }
         }
     }
@@ -638,8 +638,8 @@ footer {
 
     .feature-block {
         border-bottom-color: transparent;
-        border-left-color: transparent;
-        border-right-color: transparent;
+        border-start-color: transparent;
+        border-end-color: transparent;
         border-top-color: $border-color !important;
     }
 
