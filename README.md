@@ -23,15 +23,11 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
  * Flexible & High-Performance code
  * Easy Documentation Guide
 
-## Free version preview & download
+## Free version preview
 #### Preview
 
  - [Demo](https://dashboardkit.io/free-dashboardkit/index.html)
 
-#### Download
-
- - [Download from Github](https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template)
- 
 ## Pro version preview & Purchase
 #### Preview
 
@@ -54,10 +50,10 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
  
 ## Getting Started
 
-Clone from Github 
-```
-git clone https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template.git
-```
+- Clone from Github - https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template.git
+- Go to root dir
+- Run command 'yarn' or 'npm install'
+- Run command 'gulp'
 
 ## Documentation
 
@@ -89,3 +85,6 @@ Please generate a Github issue if you found a bug in any version. We are trying 
  - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
  - Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
  - Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)
+
+## Further Support
+ - Create Ticket here: https://codedthemes.support-hub.io/
