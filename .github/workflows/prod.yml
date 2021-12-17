@@ -24,7 +24,7 @@ jobs:
 
       - name: 🔨 Build Project
         run: |
-          npm install    
+          yarn    
           gulp build-prod
 
       - name: 📂 Deploy to Server

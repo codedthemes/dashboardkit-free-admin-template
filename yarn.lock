@@ -1405,10 +1405,10 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-bootstrap@^5.0.0-alpha2:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.1.1.tgz#9d6eed81e08feaccedf3adaca51fe4b73a2871df"
-  integrity sha512-/jUa4sSuDZWlDLQ1gwQQR8uoYSvLJzDd8m5o6bPKh3asLAMYVZKdRCjb1joUd5WXf0WwCNzd2EjwQQhupou0dA==
+bootstrap@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.1.3.tgz#ba081b0c130f810fa70900acbc1c6d3c28fa8f34"
+  integrity sha512-fcQztozJ8jToQWXxVuEyXWW+dSo8AiXWKwiSSrKWsRB/Qt+Ewwza+JWoLKiTuQLaEPhdNAJ7+Dosc9DOIqNy7Q==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -1694,6 +1694,15 @@ clean-css@^3.1.9:
     commander "2.8.x"
     source-map "0.4.x"
 
+clipboard@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.8.tgz#ffc6c103dd2967a83005f3f61976aa4655a4cdba"
+  integrity sha512-Y6WO0unAIQp5bLmk1zdThRhgJt/x3ks6f30s3oE3H1mgIEU33XyQjEf8gsf6DxC7NPX8Y1SsNWjUjL/ywLnnbQ==
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
+
 cliui@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-3.2.0.tgz#120601537a916d29940f934da3b48d585a39213d"
@@ -1893,13 +1902,6 @@ concat-stream@^2.0.0:
     inherits "^2.0.3"
     readable-stream "^3.0.2"
     typedarray "^0.0.6"
-
-concat-with-sourcemaps@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/concat-with-sourcemaps/-/concat-with-sourcemaps-1.1.0.tgz#d4ea93f05ae25790951b99e7b3b09e3908a4082e"
-  integrity sha512-4gEjHJFT9e+2W/77h/DS5SGUgwDaOwprX8L/gl5+3ixnzkVJJsZWDSelmN3Oilw3LNDZjZV0yqH1hLG3k6nghg==
-  dependencies:
-    source-map "^0.6.1"
 
 connect-history-api-fallback@^1:
   version "1.6.0"
@@ -2133,6 +2135,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
+
+delegate@^3.1.2:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
+  integrity sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -2856,6 +2863,13 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
+good-listener@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
+  integrity sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
+  dependencies:
+    delegate "^3.1.2"
+
 graceful-fs@4.X, graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
@@ -2934,15 +2948,6 @@ gulp-cli@^2.2.0:
     v8flags "^3.2.0"
     yargs "^7.1.0"
 
-gulp-concat@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/gulp-concat/-/gulp-concat-2.6.1.tgz#633d16c95d88504628ad02665663cee5a4793353"
-  integrity sha1-Yz0WyV2IUEYorQJmVmPO5aR5M1M=
-  dependencies:
-    concat-with-sourcemaps "^1.0.0"
-    through2 "^2.0.0"
-    vinyl "^2.0.0"
-
 gulp-cssbeautify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gulp-cssbeautify/-/gulp-cssbeautify-1.0.1.tgz#136903ab47e8d6c14ec1306acd1064433c5cc592"
@@ -3014,11 +3019,6 @@ gulp-minify@^3.1.0:
     through2 "^2.0.3"
     vinyl "^2.1.0"
 
-gulp-rename@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.4.0.tgz#de1c718e7c4095ae861f7296ef4f3248648240bd"
-  integrity sha512-swzbIGb/arEoFK89tPY58vg3Ok1bw+d35PfUNwWqdo7KM4jkmuGA78JiDNqR+JeZFaeeHnRg9N7aihX3YPmsyg==
-
 gulp-rename@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.1.0.tgz#93090aaaf4d386c07f20538a6888f15efba727a1"
@@ -3039,13 +3039,6 @@ gulp-sass@^4.0.2:
     strip-ansi "^4.0.0"
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
-
-gulp-sequence@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-sequence/-/gulp-sequence-1.0.0.tgz#862f93e6503e67c350a42948fa666953cf88ba67"
-  integrity sha512-c+p+EcyBl1UCpbfFA/vUD6MuC7uxoY6Y4g2lq9lLtzOHh9o1wijAQ4o0TIRQ14C7cG6zR6Zi+bpA0cW78CFt6g==
-  dependencies:
-    thunks "^4.9.0"
 
 gulp-smushit@^1.2.0:
   version "1.2.0"
@@ -3633,11 +3626,6 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
-
-jquery@^3.4.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
-  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
 
 js-base64@^2.1.8:
   version "2.6.4"
@@ -5204,6 +5192,11 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
+select@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+  integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
+
 semver-greatest-satisfied-range@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/semver-greatest-satisfied-range/-/semver-greatest-satisfied-range-1.1.0.tgz#13e8c2658ab9691cb0cd71093240280d36f77a5b"
@@ -5841,11 +5834,6 @@ through2@^4.0.2:
   dependencies:
     readable-stream "3"
 
-thunks@^4.9.0:
-  version "4.9.6"
-  resolved "https://registry.yarnpkg.com/thunks/-/thunks-4.9.6.tgz#08f268ab32ad12b8e1838d2b819dbd7d9b3262a0"
-  integrity sha512-ulXG17ZokTO8j0rTx/23YHsBuz6KAK1xdBPLH4zB1FRDUkttCQeli3DxGhhYtrrsRwzacSG+ZIebjSgLseluMw==
-
 time-stamp@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/time-stamp/-/time-stamp-1.1.0.tgz#764a5a11af50561921b133f3b44e618687e0f5c3"
@@ -5858,6 +5846,11 @@ timers-ext@^0.1.7:
   dependencies:
     es5-ext "~0.10.46"
     next-tick "1"
+
+tiny-emitter@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
+  integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
 to-absolute-glob@^2.0.0:
   version "2.0.2"
