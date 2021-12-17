@@ -1,12 +1,9 @@
 var gulp = require("gulp"), // main
   sass = require("gulp-sass"), // scss compiler
   sourcemaps = require("gulp-sourcemaps"), // scss sourcemaps
-  concat = require("gulp-concat"), // merge two files
   uglify = require("gulp-uglify"), // minify js files
-  rename = require("gulp-rename"), // rename files
   cssmin = require("gulp-cssmin"), // minify css files
   merge = require("merge-stream"), // mearge two task
-  gulpsequence = require("gulp-sequence"), //  execute multiple task
   babel = require("gulp-babel"), // convert next generation JavaScript, today.
   npmlodash = require("lodash"), // perfoming oops in gulp
   smushit = require("gulp-smushit"), // image optimizer
@@ -47,6 +44,7 @@ gulp.task("build", function () {
       "node_modules/bootstrap/dist/js/bootstrap.min.js",
       "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
       "node_modules/feather-icons/dist/feather.min.js",
+      "node_modules/clipboard/dist/clipboard.min.js",
       "node_modules/apexcharts/dist/apexcharts.min.js",
     ],
     css: [
