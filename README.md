@@ -16,38 +16,40 @@ Save your development time with ready to use DashboardKit Bootstrap Admin Templa
 
 DashboardKit free Bootstrap 5 admin template includes the following feature pages with having MIT license usage.
 
- * Professional UI design
- * Bootstrap 5 UI components
- * Fully Responsive, all modern browser supported
- * Gulp/non-Gulp Support
- * Flexible & High-Performance code
- * Easy Documentation Guide
+- Professional UI design
+- Bootstrap 5 UI components with Pure Javascript
+- Fully Responsive, all modern browser supported
+- Gulp/non-Gulp Support
+- Flexible & High-Performance code
+- Easy Documentation Guide
 
 ## Free version preview
+
 #### Preview
 
- - [Demo](https://dashboardkit.io/free-dashboardkit/index.html)
+- [Demo](https://dashboardkit.io/free-dashboardkit/index.html)
 
 ## Pro version preview & Purchase
+
 #### Preview
 
- - [Demo](https://dashboardkit.io)
+- [Demo](https://dashboardkit.io/bootstrap/navigation/index.html)
 
 #### Purchase
 
- - [Get DashboardKit](https://gumroad.com/l/dashboardkit)
+- [Get DashboardKit](https://dashboardkit.io/product/dashboardkit-vanillajs-bootstrap-5-admin-dashboard/)
 
 ## Table of contents
 
- * [Getting Started](#getting-started)
- * [Documentation](#documentation)
- * [Technology Stack](#technology-stack)
- * [Author](#author)
- * [Issues?](#issues)
- * [License](#license)
- * [More Products](#more-free-react-material-admin-templates)
- * [Follow us](#follow-us)
- 
+- [Getting Started](#getting-started)
+- [Documentation](#documentation)
+- [Technology Stack](#technology-stack)
+- [Author](#author)
+- [Issues?](#issues)
+- [License](#license)
+- [More Products](#more-free-react-material-admin-templates)
+- [Follow us](#follow-us)
+
 ## Getting Started
 
 - Clone from Github - https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template.git
@@ -61,10 +63,10 @@ DashboardKit documentation helps you out in all aspects from Installation to dep
 
 ## Technology Stack
 
- - [Bootstrap 5](https://getbootstrap.com/)
- - [Node](https://nodejs.org/)
- - [Gulp](https://gulpjs.com/)
- - [Saas](https://sass-lang.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Node](https://nodejs.org/)
+- [Gulp](https://gulpjs.com/)
+- [Saas](https://sass-lang.com/)
 
 ## Author
 
@@ -76,15 +78,17 @@ Please generate a Github issue if you found a bug in any version. We are trying 
 
 ## License
 
- - Licensed cover under [MIT](https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template/blob/main/LICENSE)
- 
+- Licensed cover under [MIT](https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template/blob/main/LICENSE)
+
 ## Follow us
- - Website [https://dashboardkit.io](https://dashboardkit.io)
- - Gumroad [https://gumroad.com/dashboardkit](https://gumroad.com/dashboardkit)
- - CodedThemes [https://codedthemes.com](https://codedthemes.com)
- - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
- - Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
- - Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)
+
+- Website [https://dashboardkit.io](https://dashboardkit.io)
+- Gumroad [https://gumroad.com/dashboardkit](https://gumroad.com/dashboardkit)
+- CodedThemes [https://codedthemes.com](https://codedthemes.com)
+- Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
+- Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
+- Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)
 
 ## Further Support
- - Create Ticket here: https://codedthemes.support-hub.io/
+
+- Create Ticket here: https://codedthemes.support-hub.io/
