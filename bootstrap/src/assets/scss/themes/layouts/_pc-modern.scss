@@ -1,0 +1,76 @@
+// ========================================
+//    Modern layout css start
+// ========================================
+.layout-modern {
+  --pc-brand-background: #1c232f;
+  --pc-header-background: #1c232f;
+  --pc-header-color: #fff;
+
+  &[data-pc-sidebar-theme='dark'] {
+    --pc-sidebar-background: #fff;
+    --pc-sidebar-color: #1c232f;
+    --pc-sidebar-color-rgb: #{to-rgb(#1c232f)};
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-submenu-border-color: #778290;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-main-active-color: #1c232f;
+    --pc-sidebar-main-active-background: #dfe7f1;
+    --pc-sidebar-shadow: 0px 0px 24px rgba(27, 46, 94, 0.05);
+    --pc-sidebar-caption-color: var(--bs-primary);
+    --pc-sidebar-border: none;
+  }
+
+  .page-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .pc-container .page-header + .row {
+    padding-top: 20px;
+  }
+
+  .pc-sidebar {
+    @media (min-width: 1025px) {
+      background: transparent;
+      box-shadow: none;
+
+      &:not(.pc-sidebar-hide) {
+        width: calc(#{$sidebar-width} + 20px);
+      }
+
+      .navbar-content {
+        height: calc(100vh - 110px);
+        background: var(--pc-sidebar-background);
+        box-shadow: var(--pc-sidebar-shadow);
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+      }
+    }
+  }
+  &[data-pc-theme='dark'][data-pc-sidebar-theme='dark'],
+  &[data-pc-theme='dark'] {
+    --pc-sidebar-background: #1c232f;
+    --pc-sidebar-color: #ced4dc;
+    --pc-sidebar-color-rgb: #{to-rgb(#ced4dc)};
+    --pc-sidebar-submenu-border-color: var(--bs-gray-600);
+    --pc-sidebar-caption-color: var(--bs-primary);
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-main-active-color: #fff;
+    --pc-sidebar-main-active-background: #161c25;
+    --pc-sidebar-shadow: 0px 0px 24px rgba(27, 46, 94, 0.05);
+    --pc-sidebar-border: none;
+    --pc-brand-background: #1c232f;
+
+    --pc-header-shadow: none;
+  }
+}
+
+// ========================================
+//    Modern layout css end
+// ========================================

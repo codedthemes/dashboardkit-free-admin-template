@@ -1,0 +1,305 @@
+/**  =====================
+  25. Application css start
+==========================  **/
+@import 'chat';
+@import 'mail';
+@import 'file-manager';
+@import 'calendar';
+@import 'e-commerce';
+// Common Application css start for all apllication pages
+.invoice-tab,
+.profile-tabs {
+  border-bottom: 0;
+  .nav-item {
+    margin-bottom: -0px;
+
+    .nav-link {
+      position: relative;
+      padding: 1rem 0;
+      margin: 0 1.5rem 0 0;
+      font-weight: 500;
+      color: var(--bs-body-color);
+      display: inline-flex;
+      align-items: center;
+      @include media-breakpoint-down(sm) {
+        padding: 0.8rem 0;
+      }
+      i {
+        font-size: 18px;
+      }
+      .material-icons-two-tone {
+        font-size: 20px;
+      }
+      &:after {
+        content: '';
+        background: var(--bs-primary);
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        left: 50%;
+        right: 50%;
+        bottom: -1px;
+        height: 2px;
+        border-radius: 2px 2px 0 0;
+      }
+    }
+  }
+
+  .nav-link:hover {
+    border-color: transparent;
+    background: transparent;
+    color: var(--bs-primary);
+    .material-icons-two-tone {
+      background-color: var(--bs-primary);
+    }
+  }
+
+  .nav-item.show .nav-link,
+  .nav-link.active {
+    border-color: transparent;
+    color: var(--bs-primary);
+    background: transparent;
+    .material-icons-two-tone {
+      background-color: var(--bs-primary);
+    }
+    &:after {
+      left: 0;
+      right: 0;
+    }
+  }
+}
+.table {
+  tr {
+    td {
+      .row {
+        margin-right: 50px;
+        .col {
+          display: flex;
+          flex-direction: column;
+          width: 1%;
+        }
+      }
+    }
+  }
+}
+/* ===================== to do page start ======================================= */
+#task-container {
+  ul {
+    overflow: hidden;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    width: 49%;
+    overflow: auto;
+    height: auto;
+    min-height: 10px;
+    background: var(--bs-card-bg);
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid var(--bs-border-color);
+    color: var(--bs-body-color);
+    border-top: 5px solid var(--bs-primary);
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    transition: all 0.3s;
+    position: relative;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  li.complete {
+    opacity: 1;
+    border-top: 9px solid $danger;
+    transition: all ease-in 0.3s;
+
+    &:before {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      content: '';
+      width: 55px;
+      height: 55px;
+      background-size: 100%;
+    }
+
+    p {
+      text-decoration: line-through;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    li {
+      width: 100%;
+    }
+  }
+}
+
+.new-task {
+  .to-do-list {
+    .cr {
+      float: left;
+      top: 0;
+      margin-right: 16px;
+    }
+  }
+
+  label input[type='checkbox'] {
+    display: none;
+  }
+}
+
+.check-task {
+  .custom-control-label {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--bs-primary);
+    }
+  }
+}
+
+.checkbox-fade {
+  .cr {
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin-right: 0.5em;
+    position: relative;
+    width: 24px;
+    margin-right: 16px;
+    top: 0;
+  }
+}
+
+.task-panel {
+  .to-do-label {
+    margin-bottom: 15px;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+}
+
+.done-task .captions,
+.done-task span {
+  color: #919aa3;
+  text-decoration: line-through;
+}
+
+.to-do-list {
+  i {
+    color: #ccc;
+    font-size: 17px;
+    opacity: 0;
+  }
+
+  &:hover {
+    i {
+      opacity: 1;
+      transition: opacity ease-in 0.3s;
+    }
+  }
+}
+
+.to-do-list {
+  h6 {
+    display: inline-block;
+  }
+
+  .done-task {
+    opacity: 0.7;
+
+    > div {
+      filter: grayscale(0.8);
+    }
+
+    h6,
+    p,
+    span {
+      text-decoration: line-through;
+    }
+  }
+
+  .checkbox-fade {
+    .check-task {
+      display: block;
+    }
+
+    .to-content {
+      display: inline-block;
+    }
+
+    .cr {
+      border-radius: 6px;
+      border: 1px solid #e3e3e3;
+      cursor: pointer;
+      display: inline-block;
+      float: left;
+      height: 24px;
+      margin-right: 0.5em;
+      position: relative;
+      width: 24px;
+      margin: 0;
+      top: 5px;
+
+      .cr-icon {
+        color: #fff;
+        font-size: 0.8em;
+        left: 0;
+        line-height: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 50%;
+      }
+    }
+
+    label input[type='checkbox'] {
+      display: none;
+    }
+
+    label input[type='checkbox'] + .cr > .cr-icon {
+      transform: scale(3) rotateZ(-20deg);
+      opacity: 0;
+      transition: all 0.3s ease-in;
+    }
+
+    label input[type='checkbox']:checked + .cr > .cr-icon {
+      transform: scale(1) rotateZ(0deg);
+      opacity: 1;
+    }
+
+    label input[type='checkbox']:checked + .cr {
+      background: var(--bs-primary);
+      border: 0;
+    }
+  }
+}
+
+new-task {
+  .to-do-list {
+    .cr {
+      float: left;
+      top: 0;
+      margin-right: 16px;
+    }
+  }
+
+  label input[type='checkbox'] {
+    display: none;
+  }
+}
+/* ===================== to do page end =========================================*/
+/**  =====================
+  25. Application css end
+==========================  **/

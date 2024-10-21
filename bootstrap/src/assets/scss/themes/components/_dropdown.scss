@@ -1,0 +1,99 @@
+// ============================
+//   14. Dropdown css start
+// ============================
+
+.dropdown-toggle {
+  &.arrow-none {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.pc-header {
+  .dropdown-menu {
+    animation: 0.3s ease-in-out 0s normal forwards 0.3s fadein;
+  }
+}
+
+@keyframes fadein {
+  from {
+    transform: translate3d(0, 8px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    background: var(--pc-active-background);
+    color: var(--bs-primary);
+
+    i {
+      &.material-icons-two-tone {
+        background-color: var(--bs-primary);
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  box-shadow: 0 0px 2px 0 rgb(52, 73, 94, 0.3);
+  border: 1px solid var(--bs-border-color);
+  padding: 8px 0;
+
+  .dropdown-item {
+    margin: 3px 0;
+    padding: 10px 25px;
+
+    i {
+      font-size: 18px;
+      margin-right: 10px;
+
+      &.material-icons-two-tone {
+        vertical-align: bottom;
+        font-size: 22px;
+        background-color: var(--bs-dropdown-link-color);
+        opacity: 0.67;
+      }
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      fill: #f2f2f2;
+    }
+
+    .float-end {
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+.dropdown-menu-dark {
+  .dropdown-item {
+    &.active,
+    &:active {
+      color: var(--bs-dropdown-link-hover-color);
+      background-color: var(--bs-dropdown-link-hover-bg);
+    }
+  }
+}
+
+// ============================
+//   14. Dropdown css end
+// ============================
