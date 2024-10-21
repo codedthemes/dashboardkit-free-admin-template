@@ -1,0 +1,152 @@
+/**  =====================
+   22. Pages css start
+==========================  **/
+@import 'price';
+.contact-map {
+  border: 0;
+  width: 100%;
+  height: 350px;
+  border-radius: var(--bs-border-radius);
+  overflow: hidden;
+}
+.contact-card-form {
+  margin-top: -100px;
+  .avtar:not(.avtar-s) {
+    min-width: 48px;
+  }
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255, 0.5);
+  z-index: 1031;
+  backdrop-filter: blur(8px);
+  display: none;
+  opacity: 0;
+}
+
+.custom-loader {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  --pc: radial-gradient(farthest-side, var(--bs-primary) 92%, #0000);
+  background:
+    var(--pc) 50% 0,
+    var(--pc) 50% 100%,
+    var(--pc) 100% 50%,
+    var(--pc) 0 50%;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  animation: spin 0.6s infinite linear;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: 3px;
+    background: repeating-conic-gradient(#0000 0 35deg, var(--bs-primary) 0 90deg);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 3px), #000 0);
+    border-radius: 50%;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+.login-modal {
+  ~ .modal-backdrop {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    --bs-backdrop-bg: rgba(var(--bs-dark-rgb), 0.7);
+  }
+}
+
+.btns-gallery {
+  .btn-light-primary {
+    &:not(:hover),
+    &:not(:focus),
+    &:not(:active),
+    &:not(.active) {
+      color: var(--pc-heading-color);
+      background: transparent;
+      border-color: transparent;
+    }
+  }
+}
+.card-gallery {
+  position: relative;
+  border-radius: var(--bs-border-radius);
+  overflow: hidden;
+  display: block;
+
+  .img-fluid {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .gallery-hover-data {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    .prod-likes .prod-likes-icon {
+      stroke: rgba(255, 255, 255, 0.5);
+      fill: rgba(255, 255, 255, 0.2);
+    }
+    .wid-30 {
+      min-width: 25px;
+    }
+  }
+  &:hover {
+    .gallery-hover-data {
+      opacity: 1;
+    }
+  }
+}
+
+// invoice start
+.table-invoice-comp {
+  border-spacing: 0 10px;
+  border-collapse: separate;
+  width: calc(100% - 10px);
+  margin: 0 5px;
+  tbody {
+    tr {
+      box-shadow: var(--pc-card-shadow);
+      background: var(--bs-card-bg);
+      border-radius: 4px;
+      position: relative;
+    }
+  }
+}
+
+.invoice-total {
+  width: 100%;
+  max-width: 400px;
+}
+
+// sweetalert
+div:where(.swal2-container) .swal2-file {
+  margin: 20px auto !important;
+}
+
+/**  =====================
+   22. Pages css end
+==========================  **/

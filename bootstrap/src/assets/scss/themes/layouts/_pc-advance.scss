@@ -1,0 +1,137 @@
+// ========================================
+//    Advance layout css start
+// ========================================
+.layout-advance {
+  &[data-pc-sidebar-theme='dark'] {
+    --pc-sidebar-background: #fff;
+    --pc-sidebar-color: #1c232f;
+    --pc-sidebar-color-rgb: #{to-rgb(#1c232f)};
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-submenu-border-color: #778290;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-main-active-color: #1c232f;
+    --pc-sidebar-main-active-background: #dfe7f1;
+    --pc-sidebar-shadow: 0px 0px 24px rgba(27, 46, 94, 0.05);
+    --pc-sidebar-caption-color: var(--bs-primary);
+    --pc-sidebar-border: none;
+  }
+
+  background-color: var(--bs-primary);
+  background-image: linear-gradient(to bottom, transparent 250px, var(--bs-body-bg) 0);
+  min-height: 100vh;
+  padding-bottom: 70px;
+
+  @media (min-width: 1025px) {
+    .pc-sidebar {
+      background: transparent;
+      box-shadow: none;
+
+      .m-header {
+        background: transparent;
+      }
+
+      .navbar-content {
+        border-radius: 0 4px 0 0;
+        height: calc(100vh - #{$header-height});
+        background: var(--pc-sidebar-background);
+        box-shadow: var(--pc-sidebar-shadow);
+      }
+    }
+
+    .page-header {
+      background: transparent;
+      box-shadow: none;
+      position: absolute;
+      top: 10px;
+      left: 0;
+
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='14' height='14' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1'%3E%3Cpolyline points='13 17 18 12 13 7'%3E%3C/polyline%3EE%3C/svg%3E");
+      }
+
+      .breadcrumb a,
+      .breadcrumb li,
+      h5 {
+        color: #fff;
+      }
+    }
+
+    .pc-header {
+      --pc-header-color: #fff;
+      z-index: 1026;
+      background: transparent;
+      box-shadow: none;
+
+      .m-header {
+        width: calc(#{$sidebar-width} - 15px);
+      }
+
+      .pc-head-link {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+          color: #fff;
+          background: rgba(255, 255, 255, 0.15);
+
+          i.material-icons-two-tone {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+    .pc-container {
+      .pcoded-content {
+        padding-top: calc(40px + 35px);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .pc-header {
+      &.dark-header,
+      &[class*='bg-'] {
+        .pc-head-link {
+          color: var(--pc-header-color) !important;
+        }
+      }
+
+      .b-brand {
+        display: none;
+      }
+    }
+
+    .pc-container {
+      background: var(--bs-body-bg);
+    }
+
+    .pc-sidebar {
+      .navbar-content {
+        height: 100vh;
+      }
+    }
+  }
+
+  .pct-customizer {
+    display: none;
+  }
+}
+
+[data-pc-theme='dark'] {
+  &.layout-advance {
+    --pc-sidebar-background: #1c232f;
+    --pc-sidebar-color: #ced4dc;
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-main-active-color: #fff;
+    --pc-sidebar-main-active-background: #161c25;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-caption: var(--bs-primary);
+    --pc-sidebar-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    --pc-brand-color: #161c25;
+  }
+}
+
+// ========================================
+//    Advance layout css end
+// ========================================

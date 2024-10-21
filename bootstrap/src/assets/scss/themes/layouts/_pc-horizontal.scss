@@ -1,0 +1,377 @@
+// ========================================
+//    8. Horizontal layout css start
+// ========================================
+
+[data-pc-layout='horizontal'] {
+  @media (min-width: 1025px) {
+    .pc-header {
+      z-index: 1027;
+      background: var(--pc-sidebar-background);
+      box-shadow: none;
+
+      .pc-h-item.pc-sidebar-collapse {
+        display: none;
+      }
+    }
+
+    .pc-sidebar {
+      width: 100%;
+      background: var(--pc-sidebar-background);
+      backdrop-filter: blur(7px);
+      box-shadow: var(--pc-sidebar-shadow);
+      height: calc(#{$topbar-height} + #{$header-height});
+      overflow: visible;
+
+      .m-header {
+        justify-content: flex-start;
+      }
+
+      .pc-badge {
+        margin-right: auto;
+        margin-left: 5px;
+      }
+
+      .navbar-content,
+      .m-header {
+        background: var(--pc-sidebar-background);
+        backdrop-filter: blur(7px);
+      }
+
+      .pc-caption:not(:first-child):after {
+        display: none;
+      }
+
+      .navbar-wrapper {
+        width: 100%;
+      }
+
+      .navbar-content {
+        height: auto;
+        padding: 6px 20px;
+        border-top: 1px solid var(--pc-sidebar-border);
+      }
+
+      .pc-link {
+        display: block;
+        align-items: center;
+        padding: 10px 14px;
+        color: var(--pc-sidebar-color);
+
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+          text-decoration: none;
+          color: var(--pc-sidebar-active-color);
+        }
+
+        .pc-micon i {
+          vertical-align: middle;
+        }
+      }
+
+      .card {
+        display: none;
+      }
+
+      .pc-navbar {
+        display: inline-block !important;
+
+        .pc-link {
+          display: flex;
+          align-items: center;
+        }
+
+        > .pc-item {
+          position: relative;
+          margin: 0;
+
+          &:hover:not(.active) {
+            > .pc-link {
+              color: var(--bs-primary);
+
+              &:after {
+                background: var(--bs-primary);
+              }
+            }
+          }
+
+          .pc-submenu {
+            position: absolute;
+
+            &:after {
+              display: none;
+            }
+
+            > .pc-item {
+              &.active,
+              &:active,
+              &:focus,
+              &:hover {
+                > .pc-link {
+                  text-decoration: none;
+                  color: var(--pc-sidebar-active-color);
+                }
+              }
+            }
+          }
+
+          > .pc-submenu.edge {
+            left: auto;
+            right: 0;
+          }
+
+          > .pc-link {
+            margin-left: 2px;
+            margin-right: 2px;
+
+            > .pc-arrow {
+              transform: rotate(90deg);
+              margin-left: 10px;
+            }
+          }
+
+          .pc-submenu {
+            .pc-link {
+              padding: 12px 18px 12px 18px;
+            }
+
+            .pc-submenu {
+              .pc-link {
+                padding: 12px 18px 12px 18px;
+              }
+
+              .pc-submenu {
+                .pc-link {
+                  padding: 12px 18px 12px 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .pc-item {
+        display: inline-block;
+
+        &.pc-caption {
+          padding: 0 !important;
+        }
+      }
+
+      .pc-arrow {
+        margin-left: auto;
+        float: right;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+
+        > svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .pc-submenu {
+        position: absolute;
+        background: var(--pc-header-submenu-background);
+        padding: 15px 0;
+        min-width: 200px;
+        border-radius: 4px;
+        animation: 0.2s ease-in-out 0s normal forwards 1 fadein;
+        box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+
+        &:before {
+          display: none;
+        }
+
+        .pc-item {
+          display: block;
+          position: relative;
+
+          .pc-submenu > .pc-item:before,
+          &::before {
+            left: 20px;
+          }
+
+          .pc-link {
+            color: var(--pc-header-submenu-color);
+            position: relative;
+            padding: 12px 15px 12px 20px;
+
+            .pc-icon {
+              svg,
+              i {
+                color: var(--pc-sidebar-color);
+              }
+            }
+
+            &:after {
+              display: none;
+            }
+          }
+
+          &:hover > .pc-link,
+          & > .pc-link:hover {
+            color: var(--bs-primary);
+          }
+        }
+
+        .pc-submenu {
+          left: 100%;
+          top: -15px;
+          z-index: 1;
+
+          &.edge {
+            left: auto;
+            right: 100%;
+          }
+
+          &.edge-alt {
+            top: auto;
+            bottom: -15px;
+
+            &.edge-alt-full {
+              overflow-x: hidden;
+              overflow-y: auto;
+
+              &::-webkit-scrollbar {
+                width: 6px;
+                opacity: 0;
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+
+              &::-webkit-scrollbar-track {
+                background: transparent;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background: darken($body-bg, 05%);
+              }
+
+              &::-webkit-scrollbar-thumb:hover {
+                background: darken($body-bg, 25%);
+              }
+
+              .pc-submenu.edge,
+              .pc-submenu {
+                left: 0;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .pc-item {
+        .pc-submenu {
+          display: none;
+        }
+
+        &:hover {
+          > .pc-submenu {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .pc-container,
+    .pc-footer {
+      margin-left: 0px;
+    }
+
+    .pc-container {
+      .pc-content {
+        > .row:first-child {
+          padding-top: 20px;
+        }
+      }
+
+      top: calc(#{$header-height} + #{$topbar-height});
+      min-height: calc(100vh - #{$header-height} - #{$topbar-height * 2});
+    }
+
+    .pc-footer {
+      top: $topbar-height;
+    }
+
+    &.layout-horizontal-2 {
+      .pc-sidebar {
+        .pc-navbar {
+          > .pc-item {
+            &:hover {
+              > .pc-link {
+                position: relative;
+                z-index: 9;
+                color: var(--pc-header-submenu-color);
+              }
+              > .pc-submenu {
+                z-index: 7;
+                padding-top: 50px;
+                margin-top: -50px;
+                margin-left: -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &[data-pc-direction='rtl'] {
+    .pc-container,
+    .pc-footer {
+      margin-right: 20px;
+    }
+
+    @media (min-width: 1025px) {
+      .pc-sidebar {
+        .pc-arrow {
+          margin-right: auto;
+          margin-left: 0;
+        }
+
+        .pc-navbar > .pc-item .pc-submenu {
+          .pc-item {
+            &:before {
+              right: 20px;
+            }
+
+            .pc-link {
+              padding: 8px 20px 8px 15px;
+            }
+          }
+
+          .pc-submenu {
+            .pc-item:before {
+              right: 20px;
+            }
+
+            .pc-submenu {
+              .pc-item {
+                &:before {
+                  right: 20px;
+                }
+
+                .pc-link {
+                  padding: 8px 20px 8px 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ========================================
+//    8. Horizontal layout css end
+// ========================================

@@ -1,0 +1,133 @@
+// ========================================
+//    creative layout css start
+// ========================================
+
+$content-shadow: inset 0 1px 20px rgba(69, 90, 100, 0.08);
+
+.layout-creative {
+  background-color: #fff;
+  min-height: 100vh;
+  &[data-pc-sidebar-theme='dark'] {
+    --pc-sidebar-background: #fff;
+    --pc-sidebar-color: #1c232f;
+    --pc-sidebar-color-rgb: #{to-rgb(#1c232f)};
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-submenu-border-color: #778290;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-main-active-color: #1c232f;
+    --pc-sidebar-main-active-background: #dfe7f1;
+    --pc-sidebar-shadow: 0px 0px 24px rgba(27, 46, 94, 0.05);
+    --pc-sidebar-caption-color: var(--bs-primary);
+    --pc-sidebar-border: none;
+    --pc-brand-background: #161c25;
+  }
+
+  @media (min-width: 1025px) {
+    .pc-sidebar {
+      box-shadow: none;
+
+      .m-header {
+        background-color: var(--bs-card-bg);
+      }
+
+      .navbar-content {
+        height: calc(100vh - #{$header-height});
+      }
+
+      &.pc-sidebar-hide ~ .pc-container {
+        margin-left: 30px;
+      }
+    }
+
+    .page-header {
+      background: transparent;
+      box-shadow: none;
+      position: absolute;
+      top: 25px;
+      left: 0;
+    }
+
+    .pc-header {
+      z-index: 1026;
+      box-shadow: none;
+
+      .m-header {
+        width: calc(#{$sidebar-width} - 15px);
+      }
+    }
+
+    .pc-container {
+      background: var(--bs-body-bg);
+      box-shadow: $content-shadow;
+      border-radius: 14px;
+      margin-right: 30px;
+      height: calc(100vh - 70px);
+      overflow: scroll;
+      border: 1px solid rgba(69, 90, 100, 0.08);
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .pcoded-content {
+        padding-top: calc(40px + 35px);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .pc-header {
+      &.dark-header,
+      &[class*='bg-'] {
+        .pc-head-link {
+          color: var(--pc-header-color) !important;
+        }
+      }
+
+      .b-brand {
+        display: none;
+      }
+    }
+
+    .pc-container {
+      background: var(--pc-body-bg);
+    }
+
+    .pc-sidebar {
+      .m-header {
+        background: var(--bs-card-bg);
+      }
+
+      .navbar-content {
+        height: 100vh;
+      }
+    }
+  }
+
+  .pct-customizer {
+    display: none;
+  }
+}
+
+[data-pc-theme='dark'] {
+  &.layout-creative {
+    --pc-header-background: #1c232f;
+    --pc-header-color: #fff;
+    --pc-header-shadow: none;
+
+    --pc-sidebar-background: #1c232f;
+    --pc-sidebar-color: #ced4dc;
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-main-active-color: #fff;
+    --pc-sidebar-main-active-background: #161c25;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-caption: var(--bs-primary);
+    --pc-sidebar-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    --pc-brand-color: #161c25;
+
+    background-color: #1c232f;
+  }
+}
+
+// ========================================
+//    creative layout css end
+// ========================================
