@@ -1,0 +1,326 @@
+// ========================================
+//    7. Compact layout css start
+// ========================================
+
+[data-pc-layout='compact'] {
+  .pc-sidebar {
+    .pc-navbar > .pc-item {
+      margin: 4px 14px;
+    }
+    .pc-micon {
+      height: 27px;
+      width: 46px;
+      svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    .m-header {
+      .logo {
+        &.logo-sm {
+          width: 32px;
+        }
+      }
+    }
+    &:not(.pc-compact-submenu-active) {
+      width: $sidebar-collapsed-width;
+      .m-header {
+        padding: 16px 12px;
+        width: $sidebar-collapsed-width;
+        > a {
+          margin: 0 auto;
+        }
+        .logo {
+          &.logo-lg {
+            display: none;
+          }
+          &.logo-sm {
+            display: inline-block;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ~ .pc-footer,
+        ~ .pc-container {
+          margin-left: $sidebar-collapsed-width;
+        }
+      }
+      @media (max-width: 1024.98px) {
+        .m-header {
+          width: $sidebar-collapsed-width;
+          .b-brand {
+            width: 50px;
+            overflow: hidden;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1024.98px) {
+      &:not(.mob-sidebar-active) {
+        left: -#{$sidebar-collapsed-active-width};
+      }
+    }
+    .navbar-content {
+      width: $sidebar-collapsed-width;
+      height: calc(100vh - #{$header-height});
+    }
+    .pc-compact-submenu {
+      position: relative;
+      &::after {
+        content: '';
+        width: var(--bs-border-width);
+        background: var(--pc-brand-background);
+        height: calc(100% - 30px);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .pc-compact-title {
+        padding: 20px 18px;
+        margin-bottom: 14px;
+        border-bottom: var(--bs-border-width) var(--bs-border-style) var(--pc-brand-background);
+
+        .avtar {
+          i {
+            font-size: 18px;
+          }
+        }
+        h5 {
+          font-weight: 600;
+          color: var(--pc-sidebar-color);
+        }
+      }
+      .pc-compact-list {
+        height: calc(100vh - #{$header-height} - 80px);
+        .simplebar-content {
+          > .pc-submenu {
+            > .pc-item {
+              &:before {
+                left: 15px;
+              }
+              > .pc-link {
+                padding: 10px 16px;
+              }
+              .pc-submenu {
+                > .pc-item {
+                  &:before {
+                    left: 30px;
+                  }
+                  .pc-link {
+                    padding: 10px 16px 10px 30px;
+                  }
+                }
+                .pc-submenu {
+                  > .pc-item {
+                    &:before {
+                      left: 45px;
+                    }
+                    .pc-link {
+                      padding: 10px 16px 10px 45px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.pc-compact-submenu-active {
+      width: $sidebar-collapsed-active-width;
+      .navbar-wrapper {
+        display: flex !important;
+        flex-wrap: wrap;
+        width: $sidebar-collapsed-active-width;
+        .m-header {
+          width: 100%;
+          border-bottom: 1px solid var(--pc-brand-background);
+        }
+        .pc-compact-submenu {
+          flex: 1;
+          width: calc(100% - #{$sidebar-collapsed-width});
+          .pc-compact-list .simplebar-content > .pc-submenu {
+            display: block !important;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ~ .pc-footer,
+        ~ .pc-container {
+          margin-left: $sidebar-collapsed-active-width;
+        }
+      }
+    }
+    .pc-navbar {
+      > .pc-item {
+        > .pc-link {
+          padding: 14px 12px;
+          .pc-micon {
+            i {
+              vertical-align: middle;
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+    &.pc-sidebar-hide {
+      width: 0;
+      ~ .pc-footer,
+      ~ .pc-container {
+        margin-left: 0px;
+      }
+    }
+
+    .pc-badge,
+    .pc-caption,
+    .pc-mtext,
+    .pc-navbar > li > a > .pc-arrow {
+      display: none;
+    }
+  }
+  @media (min-width: 1025px) {
+    .pc-container .page-header,
+    .pc-header {
+      left: $sidebar-collapsed-width;
+    }
+  }
+  &.pc-sidebar-hide {
+    .pc-container .page-header,
+    .pc-header {
+      left: 0px;
+    }
+  }
+  &.pc-compact-submenu-active {
+    @media (min-width: 1025px) {
+      &.pc-sidebar-hide {
+        .pc-container .page-header,
+        .pc-header {
+          left: 0px;
+        }
+      }
+      .pc-container .page-header,
+      .pc-header {
+        left: $sidebar-collapsed-active-width;
+      }
+    }
+  }
+  &[data-pc-direction='rtl'] {
+    .pc-sidebar {
+      &:not(.pc-compact-submenu-active) {
+        ~ .pc-footer,
+        ~ .pc-container {
+          margin-left: 20px;
+          margin-right: $sidebar-collapsed-width;
+        }
+      }
+      &.pc-compact-submenu-active {
+        ~ .pc-container,
+        ~ .pc-footer {
+          margin-left: 20px;
+          margin-right: $sidebar-collapsed-active-width;
+        }
+      }
+      ~ .pc-footer,
+      ~ .pc-container {
+        transition: margin-right 0.15s ease;
+      }
+      &.pc-sidebar-hide {
+        ~ .pc-footer,
+        ~ .pc-container {
+          margin-right: 20px;
+        }
+      }
+      .pc-compact-submenu {
+        &::after {
+          left: auto;
+          right: 0;
+        }
+        .pc-compact-list {
+          .simplebar-content {
+            > .pc-submenu {
+              > .pc-item {
+                &:before {
+                  left: auto;
+                  right: 15px;
+                }
+                .pc-submenu {
+                  > .pc-item {
+                    &:before {
+                      left: auto;
+                      right: 30px;
+                    }
+                    .pc-link {
+                      padding: 10px 30px 10px 16px;
+                    }
+                  }
+                  .pc-submenu {
+                    > .pc-item {
+                      &:before {
+                        left: auto;
+                        right: 45px;
+                      }
+                      .pc-link {
+                        padding: 10px 45px 10px 16px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      ~ .pc-container .page-header,
+      .pc-header {
+        right: $sidebar-collapsed-width;
+      }
+      &.pc-sidebar-hide {
+        ~ .pc-container .page-header,
+        .pc-header {
+          right: 0;
+        }
+      }
+      &.pc-compact-submenu-active {
+        ~ .pc-container .page-header,
+        .pc-header {
+          right: $sidebar-collapsed-active-width;
+        }
+        &.pc-sidebar-hide {
+          ~ .pc-container .page-header,
+          .pc-header {
+            right: 0;
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      .pc-sidebar {
+        &:not(.pc-compact-submenu-active) {
+          ~ .pc-footer,
+          ~ .pc-container {
+            margin-right: 20px;
+          }
+        }
+        &.pc-compact-submenu-active {
+          ~ .pc-footer,
+          ~ .pc-container {
+            margin-right: 20px;
+          }
+        }
+        &:not(.mob-sidebar-active) {
+          left: auto;
+          right: -#{$sidebar-collapsed-active-width};
+        }
+      }
+    }
+  }
+}
+
+// ========================================
+//    7. Compact layout css end
+// ========================================
