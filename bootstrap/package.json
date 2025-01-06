@@ -32,18 +32,18 @@
     "gulp-smushit": "^1.2.0",
     "gulp-uglify": "^3.0.2",
     "merge-stream": "^2.0.0",
-    "prettier": "3.2.5",
-    "sass": "^1.71.1"
+    "prettier": "3.3.3",
+    "sass": "1.77.6"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "apexcharts": "^3.46.0",
+    "apexcharts": "^3.54.0",
     "bootstrap": "^5.3.3",
-    "browser-sync": "^3.0.2",
+    "browser-sync": "^3.0.3",
     "clipboard": "^2.0.11",
-    "feather-icons": "^4.29.1",
+    "feather-icons": "^4.29.2",
     "gulp-file-include": "^2.3.0",
     "gulp-sourcemaps": "^3.0.0",
-    "simplebar": "^6.2.5"
+    "simplebar": "^6.2.7"
   }
 }

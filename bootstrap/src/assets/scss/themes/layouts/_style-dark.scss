@@ -262,13 +262,13 @@ select.datatable-input,
     }
   }
 }
-&[data-pc-preset*=preset-] .mail-wrapper .mail-menulist .list-group-item.active .material-icons-two-tone{
+&[data-pc-preset*='preset-'] .mail-wrapper .mail-menulist .list-group-item.active .material-icons-two-tone {
   background-color: var(--bs-body-color);
 }
-&[data-pc-preset*=preset-] .mail-wrapper .mail-menulist .list-group-item.active .avtar{
+&[data-pc-preset*='preset-'] .mail-wrapper .mail-menulist .list-group-item.active .avtar {
   color: var(--bs-body-color);
 }
-@each $color, $value in $theme-colors {                                                                                                                                                                                                                                                                                                                                                       
+@each $color, $value in $theme-colors {
   .alert-#{$color} {
     color: $value;
     background: transparentize($value, 0.8);
@@ -887,7 +887,7 @@ text {
   color: var(--bs-body-color);
   border-color: var(--bs-border-color);
 }
-.apexcharts-theme-light .apexcharts-menu-item:hover{
+.apexcharts-theme-light .apexcharts-menu-item:hover {
   background: var(--bs-body-bg);
 }
 .apexcharts-xaxistooltip-bottom:after {

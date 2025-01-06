@@ -33,7 +33,7 @@
     color: rgba(255, 255, 255, 0.95);
   }
 
-  .form-check-input:not(:checked[type="radio"]) {
+  .form-check-input:not(:checked[type='radio']) {
     background: lighten($dark, 3%);
   }
 
@@ -759,10 +759,10 @@
       position: relative;
 
       &:after {
-        content: "";
+        content: '';
 
         font: {
-          family: "Font Awesome 5 Free";
+          family: 'Font Awesome 5 Free';
           weight: 900;
           size: 20px;
         }
@@ -869,7 +869,7 @@
 
       a {
         &:after {
-          content: "";
+          content: '';
           right: 10px;
         }
       }
