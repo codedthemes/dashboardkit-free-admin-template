@@ -1,4 +1,4 @@
-# Dashboardkit Bootstrap
+# Dashboard kit Bootstrap
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template/blob/main/LICENSE)
@@ -12,7 +12,7 @@ Save your development time with ready to use DashboardKit Bootstrap Admin Templa
 
 ![Berry React Material Admin Template](https://dashboardkit.io/adv-banner/git-main.gif)
 
-## Why DashboardKit?
+## Why Dashboard Kit?
 
 DashboardKit free Bootstrap 5 admin template includes the following feature pages with having MIT license usage.
 
