@@ -31,7 +31,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           # ARGS: "-rltgoDzvO --delete"
           SOURCE: "dist/"
-          REMOTE_HOST: 192.34.62.123
+          REMOTE_HOST: 92.112.197.121
           REMOTE_USER: dashboardkit
           TARGET: public_html/bootstrap/free
           EXCLUDE: "/bootstrap/node_modules/"
