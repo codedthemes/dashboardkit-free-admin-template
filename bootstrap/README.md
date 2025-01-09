@@ -2,7 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template/blob/main/LICENSE)
-[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/dashboardkit-free-bootstrap-admin-template)](https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template/)
 
 DashboardKit Bootstrap 5 Admin Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20DashboardKit%20Bootstrap%205%20Admin%20Template&url=https://dashboardkit.io&via=codedthemes&hashtags=bootstrap,webdev,developers)
 
