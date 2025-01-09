@@ -1,0 +1,248 @@
+/**======================================================================
+=========================================================================
+Template Name: DashboardKit - Most Complete Bootstrap Admin Template
+Author: DashboardKit
+Support: dashboardkit@gmail.com
+File: style.css
+=========================================================================
+=================================================================================== */
+// theme font
+// main framework
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'settings/color-variables';
+@import 'settings/bootstrap-variables';
+@import 'settings/theme-variables';
+// ============================
+//     pc-sidebar css start
+// ============================
+.setup-container {
+  display: none;
+}
+.sidebar-layouts {
+  .page-header {
+    background: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+    padding: 13px 0;
+    z-index: 1;
+
+    + .row {
+      margin-top: 10px;
+      padding-top: 0;
+    }
+  }
+
+  &.pc-container .pcoded-content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .pcoded-content {
+    height: calc(100vh - #{$header-height});
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    .page-sidebar {
+      width: 260px;
+      background: $card-bg;
+      box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.1);
+      min-height: 100%;
+      padding-top: 20px;
+      transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+    }
+
+    .page-content {
+      transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+      flex: 1 1 auto;
+
+      .inbox-read {
+        display: none;
+      }
+
+      .inbox-right {
+      }
+
+      .pc-head {
+        padding: 15px 25px;
+        background: $card-bg;
+        box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        line-height: 1;
+        position: relative;
+
+        .mail-search {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: $card-bg;
+          z-index: 5;
+          display: none;
+        }
+
+        .list-inline-item > .dropdown > a,
+        .list-inline-item > a,
+        .pc-toggle-sidemenu > a {
+          position: relative;
+          line-height: 1;
+          height: 24px;
+          display: inline-block;
+        }
+      }
+
+      .pc-body {
+        padding: 25px;
+      }
+    }
+
+    .sidebar-links {
+      .nav-item,
+      li {
+        .nav-link,
+        a {
+          color: var(--bs-body-color);
+          line-height: 1;
+          padding: 0.7rem 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 5px;
+          margin: 5px 15px;
+
+          > span {
+            display: inline-flex;
+            align-items: center;
+          }
+
+          .material-icons-two-tone {
+            margin-right: 12px;
+          }
+
+          &.active,
+          &:hover {
+            background: #dfe7f1;
+            color: #1c232f;
+            border-color: #dfe7f1;
+            font-weight: 600;
+
+            .material-icons-two-tone {
+              background-color: #525b69;
+            }
+          }
+          @each $color, $value in $theme-colors {
+            &.link-hover-#{$color} {
+              &.active,
+              &:hover {
+                background: transparentize($value, 0.9);
+                color: $value;
+                border-color: transparentize($value, 0.9);
+
+                .material-icons-two-tone {
+                  background-color: $value;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .inbox-right {
+      .nav-item,
+      li {
+        .nav-link,
+        a {
+          padding: 5px 12px 18px;
+
+          > span {
+            display: inline-flex;
+            align-items: center;
+          }
+
+          .material-icons-two-tone {
+            margin-right: 5px;
+            font-size: 24px;
+            top: 0;
+          }
+          @each $color, $value in $theme-colors {
+            &.link-hover-#{$color} {
+              &.active {
+                color: $value;
+
+                &:after,
+                .material-icons-two-tone {
+                  background-color: $value;
+                }
+              }
+            }
+          }
+
+          &.active {
+            .material-icons-two-tone {
+              background-color: $danger;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 769px) {
+      .page-sidebar {
+        z-index: 2;
+
+        &.active {
+          transform: translateX(-260px);
+          position: absolute;
+        }
+      }
+
+      .page-content {
+        width: calc(100% - 260px);
+      }
+    }
+    @media (max-width: 768px) {
+      display: block;
+
+      .page-sidebar {
+        z-index: 2;
+        position: absolute;
+
+        &:not(.active) {
+          transform: translateX(-260px);
+        }
+      }
+
+      .page-content {
+        .pc-sideoverlay {
+          &.active {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
+[data-pc-theme='dark'] {
+  .sidebar-layouts {
+    .pcoded-content {
+      .pc-head,
+      .page-sidebar {
+        background: lighten($dark-layout-color, 3%);
+      }
+    }
+  }
+}
+// pc-sidebar css end

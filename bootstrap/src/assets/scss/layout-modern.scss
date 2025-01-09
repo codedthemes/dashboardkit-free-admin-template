@@ -1,0 +1,92 @@
+/**======================================================================
+=========================================================================
+Template Name: DashboardKit - Most Complete Bootstrap Admin Template
+Author: DashboardKit
+Support: dashboardkit@gmail.com
+File: style.css
+=========================================================================
+=================================================================================== */
+// theme font
+// main framework
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'settings/color-variables';
+@import 'settings/bootstrap-variables';
+@import 'settings/theme-variables';
+// ============================
+//     Modern Layout css start
+// ============================
+
+.modern-layout {
+  .m-header {
+    @media (min-width: 992px) {
+      margin-right: 20px;
+    }
+  }
+  @media (min-width: 1025px) {
+    .pc-sidebar {
+      top: calc(#{$header-height} + 30px);
+      bottom: 30px;
+      left: 30px;
+
+      .navbar-content {
+        height: calc(100vh - 70px - #{$header-height});
+      }
+    }
+    .page-header {
+      background: transparent;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      box-shadow: none;
+      padding: 13px 0;
+
+      + .row {
+        margin-top: 0;
+        padding-top: 10px;
+      }
+    }
+    .pc-header {
+      left: 0;
+      z-index: 1029;
+    }
+
+    .pc-container {
+      margin-left: calc(#{$sidebar-width} + 30px);
+
+      .pcoded-content {
+        padding-top: 15px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .pc-sidebar {
+      .navbar-content {
+        height: 100vh;
+      }
+    }
+    .pc-header {
+      .b-brand {
+        display: none;
+      }
+    }
+  }
+  .pct-customizer {
+    display: none;
+  }
+}
+[data-pc-theme='dark'] {
+  &.modern-layout {
+    --pc-sidebar-background: #1c232f;
+    --pc-sidebar-color: #ced4dc;
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-main-active-color: #fff;
+    --pc-sidebar-main-active-background: #161c25;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-caption: var(--bs-primary);
+    --pc-sidebar-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    --pc-brand-color: #161c25;
+  }
+}
+// Modern Layout css end

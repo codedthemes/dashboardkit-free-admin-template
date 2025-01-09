@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <!-- [Head] start -->
+
+  <head>
+    @@include('../layouts/head-page-meta.html', {'title': 'Register'}) @@include('../layouts/head-css.html')
+  </head>
+  <!-- [Head] end -->
+  <!-- [Body] Start -->
+
+  <body @@bodySetup>
+    @@include('../layouts/loader.html')
+    <div class="auth-main v1">
+      <div class="bg-overlay bg-primary"></div>
+      <div class="auth-wrapper">
+        <div class="auth-form">
+          <div class="card my-5">
+            <div class="card-body">
+              <img src="../assets/images/logo-dark.svg" alt="" class="img-fluid mb-4 img-logo" />
+              <h4 class="mb-3 f-w-400">Register</h4>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i data-feather="user"></i></span>
+                <input type="text" class="form-control" placeholder="Username" />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i data-feather="mail"></i></span>
+                <input type="email" class="form-control" placeholder="Email address" />
+              </div>
+              <div class="input-group mb-4">
+                <span class="input-group-text"><i data-feather="lock"></i></span>
+                <input type="password" class="form-control" placeholder="Password" />
+              </div>
+              <div class="mb-3 mt-2">
+                <div class="form-check text-start">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="" />
+                  <label class="form-check-label" for="flexCheckChecked">I agree to all the Terms & Condition</label>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-block mb-4">Register</button>
+              <p class="mb-2">
+                Already have an account?
+                <a href="login-v1.html" class="f-w-400">Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+    @@include('../layouts/footer-js.html')
+  </body>
+  <!-- [Body] end -->
+</html>

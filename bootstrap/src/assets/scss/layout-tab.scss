@@ -1,0 +1,136 @@
+/**======================================================================
+=========================================================================
+Template Name: DashboardKit - Most Complete Bootstrap Admin Template
+Author: DashboardKit
+Support: dashboardkit@gmail.com
+File: style.css
+=========================================================================
+=================================================================================== */
+// theme font
+// main framework
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'settings/color-variables';
+@import 'settings/bootstrap-variables';
+@import 'settings/theme-variables';
+// ============================
+//     Tab Layout css start
+// ============================
+
+.tab-layout {
+  .tab-container {
+    display: flex;
+    @media (max-width: 1024px) {
+      background: inherit;
+    }
+  }
+
+  .navbar-wrapper {
+    width: calc(#{$sidebar-width} - 57px);
+  }
+
+  .pc-tabcontent:not(.active) {
+    display: none;
+  }
+
+  .pc-sidebar.light-sidebar .m-header {
+    background: transparent;
+  }
+
+  .tab-sidemenu {
+    width: 57px;
+    padding: 80px 4px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .nav-link {
+      cursor: pointer;
+      color: var(--bs-sidebar-color);
+      position: relative;
+      padding: 0.5rem 0.6rem;
+      border-radius: 4px;
+      line-height: 1;
+      text-align: center;
+
+      &.img-link {
+        padding: 0.5rem 0.5rem;
+      }
+
+      i {
+        font-size: 24px;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .material-icons-two-tone {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+        background-color: var(--pc-sidebar-icon-color);
+      }
+    }
+
+    li {
+      + li {
+        .nav-link {
+          margin-top: 20px;
+        }
+      }
+
+      &.active,
+      &:focus,
+      &:hover {
+        .nav-link {
+          box-shadow: 0 9px 9px -1px rgba(69, 90, 100, 0.1);
+          background: var(--pc-brand-color);
+          opacity: 1;
+
+          &:after {
+            content: '';
+            position: absolute;
+            right: -24px;
+            top: calc(50% - 10px);
+            border: 10px solid transparent;
+            border-left-color: $dark;
+            z-index: 1;
+          }
+        }
+      }
+    }
+
+    &[class*='bg-'] {
+      .nav-link {
+        color: #fff;
+      }
+    }
+  }
+
+  .pct-customizer {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    .tab-sidemenu {
+      z-index: 6;
+      overflow: hidden auto;
+      height: 100vh;
+    }
+  }
+}
+[data-pc-theme='dark'] {
+  &.tab-layout {
+    --pc-sidebar-background: #1c232f;
+    --pc-sidebar-color: #ced4dc;
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-main-active-color: #fff;
+    --pc-sidebar-main-active-background: #161c25;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-caption: var(--bs-primary);
+    --pc-sidebar-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    --pc-brand-color: #161c25;
+  }
+}
+// Tab Layout css end

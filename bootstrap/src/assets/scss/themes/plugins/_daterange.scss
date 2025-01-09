@@ -1,0 +1,166 @@
+/**  =====================
+    31. Daterange css start
+========================== **/
+
+.daterangepicker {
+  font-family: $font-family-sans-serif;
+  border: 1px solid $dropdown-border-color;
+  box-shadow: 0 0 25px transparentize($primary, 0.85);
+  background-color: $card-bg;
+
+  .calendar-table {
+    border: 1px solid $card-bg;
+    background-color: $card-bg;
+
+    td,
+    th {
+      color: $gray-600;
+    }
+
+    .next,
+    .prev {
+      span {
+        border-color: $gray-500;
+      }
+    }
+  }
+
+  td {
+    &.in-range {
+      background-color: lighten($primary, 29%);
+      color: $gray-700;
+    }
+
+    &.off,
+    &.off.end-date,
+    &.off.in-range,
+    &.off.start-date {
+      background-color: $card-bg;
+      color: $body-color;
+      opacity: 0.5;
+    }
+
+    &.active,
+    &.active:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+
+  td.available:hover,
+  th.available:hover {
+    background-color: $primary;
+    color: #fff;
+
+    > span {
+      border-color: #fff;
+    }
+  }
+
+  &:after {
+    border-bottom: 6px solid $card-bg;
+  }
+
+  &:before {
+    border-bottom: 7px solid $dropdown-border-color;
+  }
+
+  .ranges {
+    ul {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      @media (min-width: 564px) {
+        width: 160px;
+      }
+
+      li {
+        margin: 5px 10px;
+        transition: all 0.2s ease-in-out;
+
+        &.active {
+          background-color: $primary;
+        }
+
+        &:hover {
+          box-shadow: 0 15px 8px -9px rgba(0, 0, 0, 0.25);
+          background-color: $primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .drp-buttons {
+    border-top: 1px solid $dropdown-border-color;
+  }
+
+  &.show-ranges {
+    .drp-calendar.left {
+      border-left: 1px solid $dropdown-border-color;
+    }
+  }
+}
+// datepicker css start
+.datepicker-dropdown .datepicker-picker {
+  box-shadow: 0 1px 10px 0 rgba(69, 90, 100, 0.2);
+}
+
+.datepicker-view {
+  .week {
+    color: var(--bs-primary);
+  }
+}
+.datepicker span.datepicker-cell {
+  border-radius: $border-radius;
+}
+
+.datepicker-cell {
+  &.selected {
+    background-color: var(--bs-primary);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--bs-primary);
+      color: #fff;
+    }
+  }
+
+  &.highlighted:not(.selected):not(.range):not(.today) {
+    background-color: var(--bs-primary-light);
+    color: var(--bs-primary);
+    border-radius: 0;
+
+    &:not(.disabled):hover {
+      background-color: var(--bs-primary-light);
+      color: var(--bs-primary);
+    }
+
+    &.focused {
+      background-color: var(--bs-primary);
+      color: #fff;
+    }
+  }
+}
+
+.datepicker-input.in-edit {
+  border-color: var(--bs-primary);
+}
+.flatpickr-day {
+  &.selected,
+  &.startRange,
+  &.endRange {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+    &.inRange,
+    &:focus,
+    &:hover,
+    &.prevMonthDay,
+    &.nextMonthDay {
+      background: var(--bs-primary);
+      border-color: var(--bs-primary);
+    }
+  }
+}
+/**  =====================
+    31. Daterange css end
+========================== **/

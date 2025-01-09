@@ -1,0 +1,432 @@
+/**  =====================
+  24. User card css start
+==========================  **/
+.user-card {
+  .card-user-image {
+    width: 60px;
+    margin: -30px 15px 10px;
+    position: relative;
+    z-index: 5;
+    .chat-badge {
+      bottom: 4px;
+      right: 4px;
+    }
+  }
+  .saprator {
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--bs-border-color);
+      z-index: 1;
+    }
+
+    span {
+      font-size: 0.875rem;
+      padding: 8px 24px;
+      background: var(--bs-card-bg);
+      z-index: 5;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+  }
+}
+.user-cover-bg {
+  border-radius: var(--bs-border-radius);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  .cover-data {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: self-end;
+    justify-content: flex-end;
+    padding: 15px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.432) 100%);
+  }
+}
+.account-pills {
+  &.nav-pills {
+    .nav-link {
+      border-radius: 0;
+      border: 0;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      span {
+        display: flex;
+        align-items: center;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -2px;
+        width: 2px;
+        background: var(--bs-primary);
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+    .nav-link.active,
+    .show > .nav-link {
+      color: var(--bs-primary);
+      background: rgba(var(--bs-primary-rgb), 0.1);
+      &::after {
+        right: 0;
+      }
+    }
+  }
+}
+
+.acc-feeds-list {
+  .list-group-item {
+    border: none;
+    margin: 0;
+    @include media-breakpoint-down(md) {
+      padding: 15px 0 !important;
+      .feed-title {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .feed-title {
+    position: relative;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    &::before {
+      width: 1px;
+      height: 100%;
+      right: 5px;
+      top: 0;
+      border-right: 2px solid var(--bs-border-color);
+    }
+    &::after {
+      width: 12px;
+      height: 12px;
+      right: 0;
+      top: 10px;
+      border-radius: 50%;
+      background: var(--bs-card-bg);
+      border: 3px solid var(--bs-primary);
+    }
+  }
+}
+
+.user-profile-list {
+  background: transparent;
+  box-shadow: none;
+
+  &.card.table-card {
+    .datatable-top,
+    .datatable-bottom {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  table {
+    border-spacing: 0 10px;
+    border-collapse: separate;
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    tbody {
+      tr {
+        box-shadow: var(--pc-card-shadow);
+        background: var(--bs-card-bg);
+        border-radius: 4px;
+        position: relative;
+        .overlay-edit {
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: 0;
+          padding: 0 8px;
+          bottom: 0;
+          left: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .btn {
+            margin: 0 3px;
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .avtar {
+            margin: 0 3px;
+          }
+        }
+        &:hover {
+          td {
+            cursor: pointer;
+            background: rgba(var(--bs-primary-rgb), 1);
+            color: #fff;
+            h6,
+            .text-muted {
+              color: #fff !important;
+            }
+            .badge {
+              opacity: 0;
+            }
+            .overlay-edit {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    tr {
+      td {
+        vertical-align: middle;
+        border: none;
+        background: #fff;
+        position: relative;
+      }
+      th {
+        vertical-align: middle;
+        border: none;
+      }
+    }
+  }
+}
+
+.social-profile {
+  .img-profile-avtar {
+    border-radius: 50%;
+    width: 90px;
+    margin-top: -20%;
+    box-shadow: 0 0 0 3px var(--bs-card-bg);
+  }
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+
+    .img-profile-avtar {
+      margin-top: -70px;
+    }
+
+    .soc-profile-data {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.user-story-block {
+  display: flex;
+  align-items: flex-start;
+
+  .user-story {
+    min-width: 115px;
+    margin-bottom: 0;
+    margin-right: 8px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+      .card-img {
+        transform: scale(1.4);
+      }
+
+      .card-img-overlay {
+        backdrop-filter: blur(3px);
+      }
+    }
+
+    .card-img {
+      transition: all 0.15s ease-in-out;
+    }
+
+    .card-img-overlay {
+      transition: all 0.15s ease-in-out;
+
+      .img-user {
+        box-shadow: 0 0 0 2px var(--bs-card-bg);
+      }
+    }
+
+    &.add-story {
+      .card-img-overlay {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .btn-plus {
+          background: var(--bs-card-bg);
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 8px;
+          border: 1px dashed var(--bs-border-color);
+        }
+      }
+    }
+  }
+
+  .horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: darken($body-bg, 05%);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: darken($body-bg, 25%);
+    }
+  }
+}
+
+.img-post {
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 0;
+
+  .card-img {
+    transition: all 0.15s ease-in-out;
+  }
+
+  .card-img-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 35px;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+  }
+
+  &:hover {
+    .card-img {
+      transform: scale(1.2);
+    }
+
+    .card-img-overlay {
+      opacity: 1;
+      backdrop-filter: blur(10px);
+    }
+  }
+}
+.post-modal-lightbox {
+  backdrop-filter: blur(4px);
+}
+
+.comment-block {
+  .comment {
+    background: var(--bs-body-bg);
+    border-radius: var(--bs-border-radius);
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    margin-bottom: 24px;
+    + .comment-content {
+      margin-left: 65px;
+    }
+    &.sub-comment {
+      position: relative;
+      margin-left: 70px;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        background: var(--bs-body-bg);
+        border-radius: var(--bs-border-radius);
+      }
+      &:before {
+        width: 35px;
+        height: 2px;
+        right: 100%;
+        top: 40px;
+      }
+      &:after {
+        width: 2px;
+        height: 133px;
+        right: calc(100% + 32px);
+        top: -90px;
+      }
+      + .comment-content {
+        margin-left: 140px;
+      }
+    }
+  }
+  .comment-content {
+    margin-left: 57px;
+  }
+}
+.input-comment {
+  position: relative;
+  .form-control {
+    padding: 0.56rem 5.5rem 0.56rem 3.5rem;
+  }
+  .list-inline {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    &.start-0 {
+      padding-left: 0.35rem;
+    }
+    &.end-0 {
+      padding-right: 0.35rem;
+    }
+  }
+}
+.soc-create-group {
+  border: 2px dashed var(--bs-primary);
+}
+.social-community-card {
+  .carousel-indicators {
+    left: auto;
+    margin-left: auto;
+    margin-right: 0;
+    [data-bs-target] {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+    }
+  }
+}
+/**  =====================
+  24. User card css end
+==========================  **/

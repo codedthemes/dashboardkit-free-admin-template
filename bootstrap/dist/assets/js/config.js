@@ -1,0 +1,1 @@
+var caption_show="true",navbar_theme="dark",header_theme="light",preset_theme="preset-1",dark_layout="false",box_container="false",version="v9.0";

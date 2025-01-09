@@ -1,0 +1,90 @@
+<!-- Required Js -->
+<script src="../assets/js/plugins/popper.min.js"></script>
+<script src="../assets/js/plugins/simplebar.min.js"></script>
+<script src="../assets/js/plugins/bootstrap.min.js"></script>
+<script src="../assets/js/fonts/custom-font.js"></script>
+<script src="../assets/js/pcoded.js"></script>
+<script src="../assets/js/plugins/feather.min.js"></script>
+<div class="floting-button">
+  <a
+    href="https://codedthemes.com/item/dashboardkit-bootstrap-5-admin-template/"
+    target="_blank"
+    class="btn btn btn-danger buynowlinks d-inline-flex align-items-center gap-2"
+    data-bs-toggle="tooltip"
+    title="Buy Now"
+  >
+    <i class="ph-duotone ph-shopping-cart"></i>
+    <span>Buy Now</span>
+  </a>
+</div>
+@@if (pc_dark_layout == 'default') {
+<script>
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    dark_layout = 'true';
+  } else {
+    dark_layout = 'false';
+  }
+  layout_change_default();
+  if (dark_layout == 'true') {
+    layout_change('dark');
+  } else {
+    layout_change('light');
+  }
+</script>
+} @@if (pc_dark_layout != 'default') { @@if (pc_dark_layout == 'true') {
+<script>
+  layout_change('dark');
+</script>
+} @@if (pc_dark_layout == 'false') {
+<script>
+  layout_change('light');
+</script>
+} } @@if (pc_dark_navbar == 'true') {
+<script>
+  layout_sidebar_change('dark');
+</script>
+} @@if (pc_dark_navbar == 'false') {
+<script>
+  layout_sidebar_change('light');
+</script>
+}
+<!-- --------------------- -->
+@@if (pc_dark_navbar == 'true') {
+<script>
+  layout_sidebar_change('dark');
+</script>
+} @@if (pc_dark_navbar == 'false') {
+<script>
+  layout_sidebar_change('light');
+</script>
+}
+<!-- --------------------- -->
+@@if (pc_box_container == 'true') {
+<script>
+  change_box_container('true');
+</script>
+} @@if (pc_box_container == 'false') {
+<script>
+  change_box_container('false');
+</script>
+} @@if (pc_caption_show == 'true') {
+<script>
+  layout_caption_change('true');
+</script>
+} @@if (pc_caption_show == 'false') {
+<script>
+  layout_caption_change('false');
+</script>
+} @@if (pc_rtl_layout == 'true') {
+<script>
+  layout_rtl_change('true');
+</script>
+} @@if (pc_rtl_layout == 'false') {
+<script>
+  layout_rtl_change('false');
+</script>
+} @@if (pc_preset_theme != ""){
+<script>
+  preset_change('@@pc_preset_theme');
+</script>
+}

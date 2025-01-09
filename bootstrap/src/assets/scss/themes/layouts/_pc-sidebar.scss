@@ -1,0 +1,459 @@
+// ============================
+//    3. Sidebar css start
+// ============================
+
+.pc-sidebar {
+  background: var(--pc-sidebar-background);
+  width: $sidebar-width;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1026;
+  overflow: hidden;
+  box-shadow: var(--pc-sidebar-shadow);
+  border-right: var(--pc-sidebar-border);
+
+  .navbar-wrapper {
+    width: $sidebar-width;
+    background: inherit;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .pc-caption {
+    color: var(--pc-sidebar-caption-color);
+    display: block;
+    padding: 30px 8px 8px !important;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1.34;
+
+    font: {
+      size: 11px;
+      weight: 600;
+    }
+
+    &:first-child {
+      padding-top: 10px !important;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    svg,
+    i {
+      display: none;
+    }
+
+    label {
+      margin-bottom: 0;
+    }
+
+    span:not(.badge) {
+      display: block;
+      color: var(--pc-sidebar-color);
+      opacity: 0.5;
+      text-transform: capitalize;
+      margin-top: 4px;
+
+      font: {
+        size: 11px;
+        weight: 500;
+      }
+    }
+  }
+
+  .pc-micon {
+    margin-right: 15px;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+    i {
+      font-size: 20px;
+      vertical-align: middle;
+
+      &.material-icons-two-tone {
+        font-size: 22px;
+        display: inline-block;
+        background-color: var(--pc-sidebar-icon-color);
+      }
+    }
+
+    > svg {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+    }
+  }
+
+  .pc-link {
+    display: block;
+    padding: 14px 20px;
+    color: var(--pc-sidebar-color);
+    position: relative;
+
+    font: {
+      size: 13px;
+      weight: 400;
+    }
+
+    &:focus,
+    &.active,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .pc-navbar > .pc-item {
+    margin: 0 10px;
+
+    > .pc-link {
+      border-radius: var(--bs-border-radius);
+
+      &::after {
+        content: '';
+        border-radius: var(--bs-border-radius);
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        left: 2px;
+        bottom: 2px;
+        opacity: 0;
+      }
+    }
+
+    &.active {
+      > .pc-link {
+        font-weight: 500;
+        color: var(--pc-sidebar-main-active-color);
+        background: var(--pc-sidebar-main-active-background);
+
+        i {
+          &.material-icons-two-tone {
+            background-color: var(--pc-sidebar-main-active-color);
+          }
+        }
+      }
+    }
+
+    &:hover:not(.active) {
+      > .pc-link {
+        &:after {
+          background: var(--pc-sidebar-color);
+        }
+      }
+    }
+
+    .pc-submenu {
+      position: relative;
+
+      .pc-item {
+        > .pc-link {
+          &:after {
+            content: '→';
+            position: absolute;
+            top: 12px;
+            left: 25px;
+            color: var(--pc-sidebar-submenu-border-color);
+            transition: all 0.2s ease-in-out;
+          }
+        }
+
+        &.pc-trigger,
+        &.active {
+          > .pc-link {
+            font-weight: 500;
+            color: var(--pc-sidebar-active-color);
+          }
+        }
+
+        &:focus,
+        &:hover {
+          > .pc-link {
+            &:after {
+              transform: translateX(5px);
+            }
+          }
+        }
+
+        &.pc-trigger,
+        &.active,
+        &:focus,
+        &:hover {
+          > .pc-link {
+            color: var(--pc-sidebar-active-color);
+
+            &:after {
+              color: var(--pc-sidebar-active-color);
+            }
+          }
+        }
+      }
+    }
+
+    .pc-submenu {
+      .pc-link {
+        padding: 12px 30px 12px 60px;
+
+        &:after {
+          left: 28px;
+        }
+      }
+
+      .pc-submenu {
+        .pc-link {
+          padding: 12px 30px 12px 80px;
+
+          &:after {
+            left: 62px;
+          }
+        }
+
+        .pc-submenu {
+          .pc-link {
+            padding: 12px 30px 12px 95px;
+
+            &:after {
+              left: 79px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pc-item {
+    &.disabled {
+      a {
+        cursor: not-allowed;
+        user-select: none;
+      }
+    }
+  }
+
+  .pc-arrow {
+    float: right;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+
+    > svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .pc-badge {
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 1;
+    float: right;
+    background: var(--bs-primary);
+  }
+
+  .m-header {
+    height: $header-height;
+    background: var(--pc-brand-background);
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+
+    .logo-sm {
+      display: none;
+    }
+  }
+
+  .navbar-content {
+    position: relative;
+    height: calc(100vh - #{$header-height});
+    padding: 10px 0;
+  }
+
+  .card {
+    box-shadow: none;
+    margin: 15px;
+
+    &.nav-action-card {
+      background: var(--pc-brand-background);
+      border-top: none;
+    }
+  }
+
+  .pc-hasmenu {
+    &:not(.pc-trigger) {
+      > .pc-submenu {
+        display: none;
+      }
+    }
+
+    &.pc-trigger {
+      > .pc-submenu {
+        display: block;
+      }
+
+      > .pc-link {
+        > .pc-arrow {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+[data-pc-sidebar-caption='false'] {
+  .pc-sidebar .pc-caption {
+    display: none;
+  }
+}
+.pc-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+[data-pc-sidebar-caption='false'] {
+  .pc-sidebar .pc-caption {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navbar-overlay {
+    .pc-sidebar {
+      &.pc-over-menu-active {
+        .navbar-wrapper {
+          position: relative;
+          z-index: 5;
+        }
+      }
+
+      &:not(.pc-over-menu-active) {
+        left: -#{$sidebar-width};
+        box-shadow: none;
+      }
+    }
+  }
+
+  .pc-sidebar {
+    transition: width 0.2s ease;
+
+    ~ .pc-container .page-header,
+    ~ .pc-header {
+      transition: left 0.2s ease;
+    }
+
+    ~ .pc-footer,
+    ~ .pc-container {
+      transition: margin-left 0.2s ease;
+    }
+
+    &.pc-sidebar-hide {
+      width: 0;
+      --pc-sidebar-border: none;
+
+      ~ .pc-container .page-header,
+      ~ .pc-header {
+        left: 0;
+      }
+
+      ~ .pc-footer,
+      ~ .pc-container {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .pc-header .pc-h-item.pc-sidebar-popup {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pc-header .pc-h-item.pc-sidebar-collapse {
+    display: none;
+  }
+
+  .pc-sidebar {
+    left: -#{$sidebar-width};
+    box-shadow: none;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+
+    &.mob-sidebar-active {
+      left: 0;
+
+      .navbar-wrapper {
+        position: relative;
+        z-index: 5;
+        background: inherit;
+      }
+    }
+  }
+}
+
+.layout-2 {
+  .pc-sidebar {
+    .pc-navbar {
+      > .pc-item {
+        margin: 0;
+
+        > .pc-link {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          margin: 0;
+          padding-top: 23px;
+          padding-bottom: 23px;
+
+          &:after {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 0;
+          }
+        }
+
+        &.pc-hasmenu.pc-trigger,
+        &.active {
+          background-color: rgba(var(--pc-sidebar-color-rgb), 0.08);
+
+          > .pc-link {
+            &:after {
+              background: transparent;
+            }
+          }
+        }
+
+        .pc-submenu {
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          &:after {
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ============================
+//    3. Sidebar css end
+// ============================

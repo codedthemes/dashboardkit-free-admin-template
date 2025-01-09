@@ -1,39 +1,37 @@
-name: Node - SSH deploy
+name: Bootstrap deploy
 
 # Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches:
+      - main
+    paths:
+      - 'bootstrap/**'
+  #pull_request:
+  #  types:
+  #    - closed
+  #  branches:
+  #    - main
 
 jobs:
-  sftp-deploy:
-    name: 🎉 Deploy
+  #if_merged:
+  #  if: github.event.pull_request.merged == true
+  Bootstrap-Deploy:
+    name: 🎉 Bootstrap Deploy
     runs-on: ubuntu-latest
 
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v1
-
-      - name: Install Node.js 14
-        uses: actions/setup-node@v1
-        with:
-          node-version: "14.x"
-
-      - name: 🔨 Build Project
-        run: |
-          yarn    
-          gulp build-prod
+        uses: actions/checkout@v3
 
       - name: 📂 Deploy to Server
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           # ARGS: "-rltgoDzvO --delete"
           SOURCE: "dist/"
           REMOTE_HOST: 192.34.62.123
           REMOTE_USER: dashboardkit
-          TARGET: public_html/free-dashboardkit
-          EXCLUDE: "/node_modules/"
+          TARGET: public_html/bootstrap/free
+          EXCLUDE: "/bootstrap/node_modules/"
