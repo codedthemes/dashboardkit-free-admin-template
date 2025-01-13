@@ -27,17 +27,17 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
 
 #### Preview
 
-- [Demo](https://dashboardkit.io/free-dashboardkit/index.html)
+- [Demo](https://dashboardkit.io/bootstrap/free/)
 
 ## Pro version preview & Purchase
 
 #### Preview
 
-- [Demo](https://dashboardkit.io/bootstrap/navigation/index.html)
+- [Demo](https://dashboardkit.io/bootstrap/dashboard/analytics.html)
 
 #### Purchase
 
-- [Get DashboardKit](https://dashboardkit.io/product/dashboardkit-vanillajs-bootstrap-5-admin-dashboard/)
+- [Get DashboardKit](https://codedthemes.com/item/dashboardkit-bootstrap-5-admin-template/)
 
 ## Table of contents
 
@@ -59,7 +59,7 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
 
 ## Documentation
 
-DashboardKit documentation helps you out in all aspects from Installation to deployment. Link to access [Documentation](https://dashboardkit.io/bootstrap/docs/).
+DashboardKit documentation helps you out in all aspects from Installation to deployment. Link to access [Documentation](https://codedthemes.gitbook.io/dashboardkit-bootstrap).
 
 ## Technology Stack
 
