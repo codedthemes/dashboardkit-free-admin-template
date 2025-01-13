@@ -37,7 +37,7 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
 
 #### Purchase
 
-- [Get DashboardKit](https://dashboardkit.io/product/dashboardkit-vanillajs-bootstrap-5-admin-dashboard/)
+- [Get DashboardKit](https://codedthemes.com/item/dashboardkit-bootstrap-5-admin-template/)
 
 ## Table of contents
 
