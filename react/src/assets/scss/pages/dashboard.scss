@@ -1,0 +1,47 @@
+.flat-card {
+  .row-table {
+    display: table;
+    align-items: center;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    .br {
+      border-right: 1px solid var(--bs-border-color);
+    }
+
+    i {
+      font-size: 30px;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    h5 {
+      display: block;
+      margin-bottom: 0.3em;
+      margin-right: 0;
+    }
+
+    > [class*='col-'] {
+      display: table-cell;
+      float: none;
+      table-layout: fixed;
+      vertical-align: middle;
+
+      .row {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &[class*='widget-'] {
+    .row-table {
+      display: flex;
+    }
+  }
+}

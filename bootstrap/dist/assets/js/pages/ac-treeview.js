@@ -1,1 +1,69 @@
-(()=>{var e=document.querySelector("#tree-demo");let a=document.querySelector("#tree-msg");var l=new VanillaTree(e,{contextmenu:[{label:"Hey",action:function(e){alert("Hey "+e)}},{label:"Blah",action:function(e){alert("Blah "+e)}}]});l.add({label:"Label A",id:"a",opened:!0}),l.add({label:"Label B",id:"b"}),l.add({label:"Label A.A",parent:"a",id:"a.a",opened:!0,selected:!0}),l.add({label:"Label A.A.A",parent:"a.a"}),l.add({label:"Label A.A.B",parent:"a.a"}),l.add({label:"Label B.A",parent:"b"}),e.addEventListener("vtree-open",function(e){a.innerHTML=e.detail.id+" is opened"}),e.addEventListener("vtree-close",function(e){a.innerHTML=e.detail.id+" is closed"}),e.addEventListener("vtree-select",function(e){a.innerHTML=e.detail.id+" is selected"})})();
+'use strict';
+(function () {
+  // [ html-demo ]
+  const main = document.querySelector('#tree-demo');
+  const info = document.querySelector('#tree-msg');
+
+  const tree = new VanillaTree(main, {
+    contextmenu: [
+      {
+        label: 'Hey',
+        action: function (id) {
+          alert('Hey ' + id);
+        }
+      },
+      {
+        label: 'Blah',
+        action: function (id) {
+          alert('Blah ' + id);
+        }
+      }
+    ]
+  });
+
+  tree.add({
+    label: 'Label A',
+    id: 'a',
+    opened: true
+  });
+
+  tree.add({
+    label: 'Label B',
+    id: 'b'
+  });
+
+  tree.add({
+    label: 'Label A.A',
+    parent: 'a',
+    id: 'a.a',
+    opened: true,
+    selected: true
+  });
+
+  tree.add({
+    label: 'Label A.A.A',
+    parent: 'a.a'
+  });
+
+  tree.add({
+    label: 'Label A.A.B',
+    parent: 'a.a'
+  });
+
+  tree.add({
+    label: 'Label B.A',
+    parent: 'b'
+  });
+
+  main.addEventListener('vtree-open', function (evt) {
+    info.innerHTML = evt.detail.id + ' is opened';
+  });
+
+  main.addEventListener('vtree-close', function (evt) {
+    info.innerHTML = evt.detail.id + ' is closed';
+  });
+
+  main.addEventListener('vtree-select', function (evt) {
+    info.innerHTML = evt.detail.id + ' is selected';
+  });
+})();

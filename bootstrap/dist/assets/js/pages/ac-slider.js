@@ -1,1 +1,35 @@
-setTimeout(function(){tns({container:".slider1",items:1,slideBy:"page",autoplay:!0}),tns({container:".slider2",items:1,axis:"vertical",slideBy:"page",autoplay:!0}),tns({container:"#customize",items:3,center:!0,gutter:10,controlsContainer:"#customize-controls",navContainer:"#customize-thumbnails",navAsThumbnails:!0,autoplay:!0,autoplayTimeout:1e3,autoplayButton:"#customize-toggle"})});
+'use strict';
+(function () {
+  setTimeout(function () {
+    // [ slider ]
+    var slider = tns({
+      container: '.slider1',
+      items: 1,
+      slideBy: 'page',
+      autoplay: true
+    });
+
+    // [ Only-Nav slider ]
+    var slider = tns({
+      container: '.slider2',
+      items: 1,
+      axis: 'vertical',
+      slideBy: 'page',
+      autoplay: true
+    });
+
+    // [ Only-Dots slider ]
+    var slider = tns({
+      container: '#customize',
+      items: 3,
+      center: true,
+      gutter: 10,
+      controlsContainer: '#customize-controls',
+      navContainer: '#customize-thumbnails',
+      navAsThumbnails: true,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayButton: '#customize-toggle'
+    });
+  });
+})();
