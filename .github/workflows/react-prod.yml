@@ -17,7 +17,7 @@ on:
 jobs:
   #if_merged:
   #  if: github.event.pull_request.merged == true
-  Bootstrap-Deploy:
+  React-Deploy:
     name: 🎉 React Deploy
     runs-on: ubuntu-latest
 

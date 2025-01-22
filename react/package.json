@@ -68,5 +68,5 @@
     "prettier": "^3.4.1",
     "sass": "1.77.6"
   },
-  "packageManager": "yarn@4.4.1"
+  "packageManager": "yarn@4.6.0"
 }
