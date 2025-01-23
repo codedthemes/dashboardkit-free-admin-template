@@ -1,0 +1,72 @@
+{
+  "name": "dashboard-kit-react",
+  "version": "3.0.0",
+  "private": true,
+  "dependencies": {
+    "@tanem/react-nprogress": "^5.0.53",
+    "@vitejs/plugin-react": "^4.3.4",
+    "apexcharts": "^4.3.0",
+    "bootstrap": "5.3.3",
+    "feather-icons-react": "^0.7.0",
+    "lodash-es": "^4.17.21",
+    "react": "^18.3.1",
+    "react-apexcharts": "^1.7.0",
+    "react-bootstrap": "^2.10.4",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "simplebar-react": "^3.2.6",
+    "styled-components": "^6.1.13",
+    "vite": "^5.4.1",
+    "vite-tsconfig-paths": "^5.0.1",
+    "web-vitals": "^4.2.3",
+    "yup": "^1.4.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "knip": "knip"
+  },
+  "overrides": {
+    "autoprefixer": "10.4.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.3",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.15.0",
+    "env-cmd": "^10.1.0",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "knip": "^5.30.6",
+    "prettier": "^3.4.1",
+    "sass": "1.77.6"
+  },
+  "packageManager": "yarn@4.6.0"
+}

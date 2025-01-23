@@ -1,0 +1,65 @@
+/**======================================================================
+=========================================================================
+Template Name: DashboardKit - Most Complete Bootstrap Admin Template
+Author: DashboardKit
+Support: dashboardkit@gmail.com
+File: style.css
+=========================================================================
+=================================================================================== */
+// vendor css font
+
+// theme font
+@import '../fonts/feather';
+@import '../fonts/fontawesome';
+@import '../fonts/material';
+@import '../fonts/cryptofont';
+
+// main framework
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/variables-dark';
+
+@import 'settings/color-variables';
+@import 'settings/theme-variables';
+@import 'settings/bootstrap-variables';
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'react-modules/_tooltip';
+@import 'react-modules/_popover';
+@import 'react-modules/_carousel';
+
+// main framework
+@import 'themes/generic';
+@import 'themes/general';
+
+// Layouts
+@import 'themes/layouts/pc-sidebar';
+@import 'themes/layouts/pc-header';
+@import 'themes/layouts/pc-common';
+
+// Components
+@import 'themes/components/avatar';
+@import 'themes/components/badge';
+@import 'themes/components/button';
+@import 'themes/components/dropdown';
+@import 'themes/components/card';
+@import 'themes/components/progress';
+@import 'themes/components/table';
+@import 'themes/components/tabs';
+@import 'themes/components/form';
+
+// pages
+
+@import 'pages/dashboard';
+@import 'pages/icon-lauouts';
+@import 'pages/authentication';
+
+// custom plugins
+
+@import 'simplebar-react/dist/simplebar.min.css';
+@import 'themes/plugins/simplebar-scrollbar';
+
+// Customizer CSS
+@import 'customizer';
+
+@import 'react-common.scss';

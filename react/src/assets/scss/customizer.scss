@@ -1,0 +1,360 @@
+/**======================================================================
+=========================================================================
+Template Name: DashboardKit - Most Complete Bootstrap Admin Template
+Author: DashboardKit
+Support: https://codedthemes.support-hub.io/
+File: style.css
+=========================================================================
+=================================================================================== */
+// theme font
+// main framework
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/variables-dark';
+
+@import 'settings/color-variables';
+@import 'settings/theme-variables';
+@import 'settings/bootstrap-variables';
+
+$menu-styler: 375px;
+$pct-colors: ();
+$pct-colors: map-merge(
+  (
+    'primary': $primary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'dark': $dark
+  ),
+  $pct-colors
+);
+
+.pct-customizer {
+  position: fixed;
+  right: -#{$menu-styler};
+  top: 160px;
+  z-index: 1025;
+  transition: all 0.15s ease-in-out;
+
+  &.active {
+    right: 0;
+
+    .pct-c-btn {
+      padding-right: 0;
+    }
+  }
+
+  .pct-c-btn {
+    background: #fff;
+    display: block;
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    right: 100%;
+    top: 60px;
+    transition: all 0.15s ease-in-out;
+    box-shadow: -9px 0 18px -1px rgba(69, 90, 100, 0.1);
+
+    .btn {
+      padding: 4px 7px;
+      display: block;
+
+      + .btn {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .pct-c-content {
+    width: $menu-styler;
+    position: relative;
+    top: 0;
+    right: 0;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+    box-shadow: -9px 0 18px -1px rgba(69, 90, 100, 0.1);
+
+    .pct-header {
+      padding: 20px 30px;
+      border-bottom: 1px solid var(--bs-border-color);
+    }
+
+    .pct-body {
+      padding: 20px 30px;
+    }
+  }
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.doc-img,
+.theme-color {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  > a {
+    position: relative;
+    width: 35px;
+    height: 25px;
+    border-radius: 3px;
+    display: inline-block;
+    background: $body-bg;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+
+    + a {
+      margin-left: 5px;
+    }
+
+    span {
+      width: 100%;
+      position: absolute;
+
+      &:after,
+      &:before {
+        content: '';
+        height: 100%;
+        position: absolute;
+      }
+
+      &:before {
+        width: 32%;
+        left: 0;
+        background: var(--pc-sidebar-background);
+      }
+
+      &:after {
+        width: 70%;
+        right: 0;
+        background: $body-bg;
+      }
+    }
+
+    > span:nth-child(1) {
+      height: 40%;
+      top: 0;
+
+      &:after {
+        background: var(--pc-header-background);
+      }
+    }
+
+    > span:nth-child(2) {
+      height: 66%;
+      bottom: 0;
+    }
+  }
+
+  &.header-color {
+    @each $color, $value in $pct-colors {
+      > a {
+        &[data-value='bg-#{$color}'] {
+          > span:nth-child(1) {
+            &:after {
+              background: $value;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.brand-color {
+    @each $color, $value in $pct-colors {
+      > a {
+        &[data-value='bg-#{$color}'] {
+          > span:nth-child(1) {
+            &:before {
+              background: $value;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.doc-img {
+  > a {
+    width: 100px;
+    height: 65px;
+  }
+}
+// header color varient Start
+$header-c-background: #1c232f;
+$header-c-color: #fff;
+
+.pc-header {
+  &[class*='bg-'],
+  &.dark-header {
+    box-shadow: none;
+    background: $header-c-background;
+    color: $header-c-color;
+    @media (min-width: 1025px) {
+      .pc-head-link {
+        color: $header-c-color;
+
+        i {
+          color: $header-c-color;
+        }
+
+        .material-icons-two-tone {
+          background-color: $header-c-color;
+        }
+
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+          color: $header-c-color;
+          background: transparentize($white, 0.85);
+
+          .material-icons-two-tone {
+            background-color: $header-c-color;
+          }
+        }
+
+        .user-desc {
+          color: transparentize($header-c-color, 0.3);
+        }
+      }
+    }
+  }
+}
+// header color varient end
+// sidebar color varient Start
+$sidebar-c-background: #fff;
+$sidebar-c-color: #1c232f;
+$sidebar-c-active-color: $primary;
+$sidebar-c-caption: $primary;
+$sidebar-c-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+
+.pc-sidebar {
+  &.light-sidebar {
+    background: $sidebar-c-background;
+    box-shadow: $sidebar-c-shadow;
+
+    .pc-caption {
+      color: $sidebar-c-caption;
+    }
+
+    .pc-navbar {
+      > .pc-item {
+        > .pc-link {
+          border-radius: 5px;
+          margin-left: 10px;
+          margin-right: 10px;
+          padding: 14px 20px;
+        }
+      }
+    }
+
+    .pc-link {
+      color: $sidebar-c-color;
+      font-size: 14px;
+
+      .pc-micon {
+        i,
+        svg {
+          color: #525b69;
+          stroke: #525b69;
+          fill: #f2f2f2;
+        }
+
+        .material-icons-two-tone {
+          background-color: #525b69;
+        }
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $sidebar-c-active-color;
+      }
+    }
+
+    .pc-item.active,
+    .pc-item:hover {
+      > .pc-link {
+        color: $sidebar-c-active-color;
+      }
+    }
+
+    .pc-navbar {
+      > .pc-item {
+        &.active,
+        &:focus,
+        &:hover {
+          > .pc-link {
+            background: #dfe7f1;
+            color: $sidebar-c-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.minimenu {
+  .pc-sidebar.light-sidebar {
+    .pc-navbar {
+      > .pc-item {
+        > .pc-link {
+          padding: 20px 25px;
+          margin-left: 0;
+          margin-right: 0;
+          border-radius: 0;
+        }
+      }
+    }
+    .pc-item .pc-item:hover > .pc-link {
+      background: transparent;
+    }
+    .pc-submenu {
+      box-shadow: $sidebar-c-shadow;
+      background: $sidebar-c-background;
+    }
+  }
+}
+
+.pc-horizontal {
+  .topbar {
+    &.light-sidebar {
+      background: $sidebar-c-background;
+      box-shadow: $sidebar-c-shadow;
+
+      .pc-link {
+        color: $sidebar-c-color;
+
+        &:active,
+        &:focus,
+        &:hover {
+          color: $sidebar-c-active-color;
+        }
+      }
+    }
+  }
+}
+
+.creative-layout {
+  .pc-sidebar {
+    &.light-sidebar {
+      .pc-navbar {
+        > .pc-item {
+          + .pc-item {
+            > .pc-link {
+              border-top: 1px solid transparentize($sidebar-c-color, 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// sidebar color variant end
