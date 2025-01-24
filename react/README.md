@@ -13,7 +13,7 @@ It is modern concept dashboard design with eye catchy colors. Wish you happy to 
 
 :star: :star: :star: Support us by giving star (Top right of this page) if you like the theme :star: :star: :star:
 
-![Dashboardkit React Free Admin Template Preview Image](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-REACT-REPO%20-%20Gradient%20Able.jpg)
+![Dashboardkit React Free Admin Template Preview Image](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-REACT-REPO-Dashboard+kit.jpg)
 
 The [Pro version](https://codedthemes.com/item/dashboardkit-react-admin-template/) of Gradient able react template includes features such as Typescript, javascript, apps, authentication, advance components, form plugins, layouts, widgets, and more.
 
