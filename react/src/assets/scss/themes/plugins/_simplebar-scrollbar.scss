@@ -1,0 +1,44 @@
+.simplebar-scrollbar {
+  &:before {
+    background: #99a7cf;
+    transition: opacity 0.2s linear;
+  }
+
+  &.simplebar-visible:before {
+    opacity: 0.5;
+    transition: opacity 0s linear;
+  }
+}
+
+.simplebar-track {
+  &.simplebar-vertical {
+    top: 0;
+    width: 11px;
+
+    .simplebar-scrollbar:before {
+      top: 2px;
+      bottom: 2px;
+    }
+  }
+
+  &.simplebar-horizontal {
+    left: 0;
+    height: 11px;
+
+    .simplebar-scrollbar {
+      &:before {
+        height: 100%;
+        left: 2px;
+        right: 2px;
+      }
+
+      right: auto;
+      left: 0;
+      top: 2px;
+      height: 7px;
+      min-height: 0;
+      min-width: 10px;
+      width: auto;
+    }
+  }
+}
