@@ -3,9 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template/blob/main/LICENSE)
 
-Dashboardkit React Free Admin Template comes with variety of components like Button, Badges, Breadcrumb, & Authentication pages.
-
-The code structure is high flexible to use and modify.
+Dashboardkit React Free Admin Template comes with a various components like Button, Badges, Breadcrumb, & Authentication pages. The code structure is highly flexible to use and modify.
 
 Its design adapt any screen size easily even if retina screens.
 
