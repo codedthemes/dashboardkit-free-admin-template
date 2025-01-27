@@ -32,7 +32,7 @@ jobs:
 
       - name: 🔨 Build Project
         run: |
-          cd full-version
+          cd react
           yarn
           yarn build
 
