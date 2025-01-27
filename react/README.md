@@ -11,7 +11,7 @@ Its design adapts to any screen size easily even if retina screens. It is a mode
 
 ![Dashboardkit React Free Admin Template Preview Image](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-REACT-REPO-Dashboard+kit.jpg)
 
-The [Pro version](https://codedthemes.com/item/dashboardkit-react-admin-template/) of Gradient able react template includes features such as Typescript, javascript, apps, authentication, advance components, form plugins, layouts, widgets, and more.
+The [Pro version](https://codedthemes.com/item/dashboardkit-react-admin-template/) of Gradient able react template includes features such as Typescript, javascript, apps, authentication, advanced components, form plugins, layouts, widgets, and more.
 
 | [Dashboardkit Free](https://codedthemes.com/item/dashboardkit-free-react-admin-template/) | [Dashboardkit](https://codedthemes.com/item/dashboardkit-react-admin-template/) |
 | -------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
