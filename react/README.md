@@ -7,7 +7,7 @@ Dashboardkit React Free Admin Template comes with a various components like Butt
 
 Its design adapt any screen size easily even if retina screens.
 
-It is modern concept dashboard design with eye catchy colors. Wish you happy to use our product in your project.
+It is modern concept dashboard design with eye-catchy colors. Wish you happy to use our product in your project.
 
 :star: :star: :star: Support us by giving star (Top right of this page) if you like the theme :star: :star: :star:
 
