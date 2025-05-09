@@ -1,7 +1,6 @@
 /**  =====================
-      Generic-class css start
+    1. Generic-class css start
 ========================== **/
-
 /*====== Padding , Margin css starts ======*/
 $i: 0;
 @while $i<=50 {
@@ -52,7 +51,7 @@ $i: 0;
 }
 /*====== Padding , Margin css ends ======*/
 /*====== Font-size css starts ======*/
-$i: 10;
+$i: 6;
 @while $i<=80 {
   .f-#{$i} {
     font-size: #{$i}px;
@@ -93,16 +92,16 @@ $i: 1;
 /*====== border-width css ends ======*/
 /*====== background starts ======*/
 
+.text-header {
+  color: var(--bs-heading-color);
+}
 .bg-body {
-  background: $body-bg;
+  background: var(--bs-body-bg);
 }
 @each $color, $value in $theme-colors {
   .bg-light-#{$color} {
     background: shift-color($value, $soft-bg-level);
     color: $value;
-  }
-  .text-light-#{$color} {
-    color: shift-color($value, $soft-bg-level);
   }
 
   .icon-svg-#{$color} {
@@ -114,6 +113,9 @@ $i: 1;
     &.text-#{$color} {
       background-color: $value;
     }
+  }
+  .text-hover-#{$color}:hover {
+    color: $value !important;
   }
 }
 /*====== background ends ======*/
@@ -136,8 +138,14 @@ $i: 1;
   }
 }
 /*====== border color css ends ======*/
+/*====== brand color css start ======*/
+@each $color, $value in $brand-colors {
+  .bg-#{$color} {
+    background: $value;
+  }
+}
+/*====== brand color css ends ======*/
 /*====== text-color, background color css starts ======*/
-// social color variables
 $social-colors: (
   'facebook': #4267b2,
   'twitter': #42c0fb,
@@ -145,7 +153,7 @@ $social-colors: (
   'pinterest': #bf2131,
   'youtube': #e0291d,
   'googleplus': #c73e2e,
-  'instagram': #dd2a7b,
+  'instagram': #aa7c62,
   'viber': #7b519d,
   'behance': #0057ff,
   'dropbox': #3380ff,
@@ -280,7 +288,7 @@ $social-colors: (
 }
 /*====== more bootstrap colors start ======*/
 $more-colors: (
-  blue: (
+  'blue': (
     100: $blue-100,
     200: $blue-200,
     300: $blue-300,
@@ -291,7 +299,7 @@ $more-colors: (
     800: $blue-800,
     900: $blue-900
   ),
-  indigo: (
+  'indigo': (
     100: $indigo-100,
     200: $indigo-200,
     300: $indigo-300,
@@ -302,7 +310,7 @@ $more-colors: (
     800: $indigo-800,
     900: $indigo-900
   ),
-  purple: (
+  'purple': (
     100: $purple-100,
     200: $purple-200,
     300: $purple-300,
@@ -313,7 +321,7 @@ $more-colors: (
     800: $purple-800,
     900: $purple-900
   ),
-  pink: (
+  'pink': (
     100: $pink-100,
     200: $pink-200,
     300: $pink-300,
@@ -324,7 +332,7 @@ $more-colors: (
     800: $pink-800,
     900: $pink-900
   ),
-  red: (
+  'red': (
     100: $red-100,
     200: $red-200,
     300: $red-300,
@@ -335,7 +343,7 @@ $more-colors: (
     800: $red-800,
     900: $red-900
   ),
-  orange: (
+  'orange': (
     100: $orange-100,
     200: $orange-200,
     300: $orange-300,
@@ -346,7 +354,7 @@ $more-colors: (
     800: $orange-800,
     900: $orange-900
   ),
-  yellow: (
+  'yellow': (
     100: $yellow-100,
     200: $yellow-200,
     300: $yellow-300,
@@ -357,7 +365,7 @@ $more-colors: (
     800: $yellow-800,
     900: $yellow-900
   ),
-  green: (
+  'green': (
     100: $green-100,
     200: $green-200,
     300: $green-300,
@@ -368,7 +376,7 @@ $more-colors: (
     800: $green-800,
     900: $green-900
   ),
-  teal: (
+  'teal': (
     100: $teal-100,
     200: $teal-200,
     300: $teal-300,
@@ -379,7 +387,7 @@ $more-colors: (
     800: $teal-800,
     900: $teal-900
   ),
-  cyan: (
+  'cyan': (
     100: $cyan-100,
     200: $cyan-200,
     300: $cyan-300,
@@ -390,7 +398,7 @@ $more-colors: (
     800: $cyan-800,
     900: $cyan-900
   ),
-  gray: (
+  'gray': (
     100: $gray-100,
     200: $gray-200,
     300: $gray-300,
@@ -405,43 +413,26 @@ $more-colors: (
 @each $name, $value in $more-colors {
   $i: 100;
   @while $i<=900 {
-    .bg-#{'' + $name}-#{$i} {
-      color: color-contrast(map-get($value, $i));
+    .bg-#{$name}-#{$i} {
       background: map-get($value, $i);
     }
-    .text-#{'' + $name}-#{$i} {
+    .text-#{$name}-#{$i} {
       color: map-get($value, $i);
     }
     $i: $i + 100;
   }
 }
-
-.color-card {
-  .card-body {
-    margin: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    background: rgba(107, 117, 125, 0.08);
-    border-radius: $border-radius;
-  }
-}
-
-.color-block {
-  border-radius: $border-radius;
-  margin: 4px 0;
-
+:root {
   @each $name, $value in $more-colors {
     $i: 100;
-
     @while $i<=900 {
-      // &.bg-#{$name}-#{$i} {
-      //   color: color-contrast(map-get($value, $i));
-      // }
-
-      &.text-#{'' + $name}-#{$i} {
-        background-color: color-contrast(map-get($value, $i));
-      }
-
+      $temp: map-get($value, $i);
+      --bs-#{$name}-#{$i}: #{$temp};
       $i: $i + 100;
     }
   }
 }
 /*====== more bootstrap colors end ======*/
+/**  =====================
+    1. Generic-class css end
+========================== **/

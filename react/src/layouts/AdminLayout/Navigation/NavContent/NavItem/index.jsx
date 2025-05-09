@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useContext } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 // react-bootstrap
 import { ListGroup } from 'react-bootstrap';
@@ -20,9 +20,6 @@ export default function NavItem({ item }) {
   const windowSize = useWindowSize();
   const configContext = useContext(ConfigContext);
   const { dispatch } = configContext;
-  /* eslint-disable @typescript-eslint/no-unused-vars */
-  // @ts-ignore
-  const location = useLocation();
 
   let itemTitle = item.title;
   if (item.icon) {

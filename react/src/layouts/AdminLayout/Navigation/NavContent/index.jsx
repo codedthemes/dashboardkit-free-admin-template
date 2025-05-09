@@ -8,12 +8,15 @@ import { Card, ListGroup } from 'react-bootstrap';
 // project imports
 import NavGroup from './NavGroup';
 import { ConfigContext } from 'contexts/ConfigContext';
+import { BUY_NOW } from 'config/constant';
 
 // third party
 import SimpleBar from 'simplebar-react';
 
 // assets
 import logo from 'assets/images/logo.svg';
+import logoSM from 'assets/images/logo-sm.svg';
+import logoSMLight from 'assets/images/logo-sm-light.svg';
 
 // -----------------------|| NAV CONTENT ||-----------------------//
 
@@ -28,7 +31,7 @@ export default function NavContent({ navigation, activeNav }) {
       case 'group':
         if (activeNav) {
           navItem = (
-            <div key={`nav-group-${item.id}`}>
+            <div className={`pc-tabcontent ${item.id === activeNav ? 'active' : ''}`} key={`nav-group-${item.id}`}>
               <NavGroup group={item} />
             </div>
           );
@@ -50,7 +53,7 @@ export default function NavContent({ navigation, activeNav }) {
         <Card.Body>
           <h5 className="text-white">Upgrade To Pro</h5>
           <p className="text-white text-opacity-75">To get more features and components</p>
-          <a href="https://codedthemes.com/item/dashboardkit-react-admin-template/" target="_blank" className="btn btn-primary">
+          <a href={BUY_NOW} target="_blank" className="btn btn-primary">
             Buy Now
           </a>
         </Card.Body>
@@ -66,10 +69,13 @@ export default function NavContent({ navigation, activeNav }) {
     );
   }
 
+  let mheaderClass = ['m-header'];
+
   const mHeader = (
-    <div className="m-header">
+    <div className={mheaderClass.join(' ')}>
       <Link to="/dashboard/sales" className="b-brand">
         <img src={logo} alt="" className="logo logo-lg" />
+        <img src={collapseLayout ? logoSMLight : logoSM} alt="" className="logo logo-sm" />
       </Link>
     </div>
   );
@@ -79,11 +85,9 @@ export default function NavContent({ navigation, activeNav }) {
   mainContent = (
     <>
       {mHeader}
-
       <div className="navbar-content next-scroll">{navContentNode}</div>
     </>
   );
-
   return <>{mainContent}</>;
 }
 

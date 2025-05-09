@@ -8,9 +8,6 @@ import navigation from 'menu-items';
 import navitemcollapse from 'menu-items-collapse';
 import * as actionType from 'store/actions';
 
-// assets
-import avatar2 from 'assets/images/user/avatar-2.jpg';
-
 // -----------------------|| NAVIGATION ||-----------------------//
 
 export default function Navigation() {
@@ -23,7 +20,7 @@ export default function Navigation() {
     dispatch({ type: actionType.COLLAPSE_MENU });
   };
 
-  let navClass = 'dark-sidebar';
+  let navClass = ['dark-sidebar'];
 
   let navContent = <NavContent navigation={collapseLayout ? navitemcollapse.items : navigation.items} />;
   navClass = [...navClass, 'pc-sidebar'];

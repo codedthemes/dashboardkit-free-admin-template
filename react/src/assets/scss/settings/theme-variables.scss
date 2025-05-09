@@ -10,29 +10,34 @@
   --pc-active-background: rgba(var(--bs-primary-rgb), 0.12);
 
   // Navbar
-  --pc-sidebar-background: #1c232f;
-  --pc-sidebar-color: #ced4dc;
-  --pc-sidebar-color-rgb: #{to-rgb(#ced4dc)};
-  --pc-sidebar-icon-color: #778290;
-  --pc-sidebar-submenu-border-color: #778290;
-  --pc-sidebar-active-color: var(--bs-primary);
-  --pc-sidebar-main-active-color: #fff;
-  --pc-sidebar-main-active-background: #dfe7f1;
-  --pc-sidebar-shadow: 0px 0px 24px rgba(27, 46, 94, 0.05);
-  --pc-sidebar-caption-color: var(--bs-primary);
-  --pc-sidebar-border: none;
-  --pc-brand-background: #161c25;
+  .pc-sidebar.dark-sidebar {
+    --pc-sidebar-background: #1c232f;
+    --pc-sidebar-color: #ced4dc;
+    --pc-sidebar-color-rgb: #{to-rgb(#ced4dc)};
+    --pc-sidebar-submenu-border-color: var(--bs-gray-600);
+    --pc-sidebar-caption-color: var(--bs-blue-400);
+    --pc-sidebar-icon-color: #778290;
+    --pc-sidebar-active-icon-color: #fff;
+    --pc-sidebar-active-color: var(--bs-blue-400);
+    --pc-sidebar-main-active-color: #fff;
+    --pc-sidebar-main-active-background: #{lighten(#1c232f, 7%)};
+    --pc-sidebar-hover-background: #{lighten(#1c232f, 3%)};
+    --pc-sidebar-shadow: 0px 0px 24px rgba(27, 46, 94, 0.05);
+    --pc-sidebar-border: none;
+    --pc-brand-background: transparent;
+    --pc-topbar-background: #1c232f;
+    --pc-topbar-color: #b5bdca;
+  }
 
   // horizontal-menu
-  --pc-topbar-background: #1c232f;
-  --pc-topbar-color: #b5bdca;
   --pc-header-submenu-background: #fff;
   --pc-header-submenu-color: #1c232f;
 
   // header
-  --pc-header-background: #fff5;
+  --pc-header-background: #fff;
   --pc-header-color: #525b69;
-  --pc-header-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  --pc-header-color-rgb: #{to-rgb(#525b69)};
+  --pc-header-shadow: 0 1px 0 0 var(--bs-border-color);
 
   // card
   --pc-card-box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.1);

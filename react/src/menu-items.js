@@ -11,8 +11,7 @@ const menuItems = {
           id: 'dashboard',
           title: 'Dashboard',
           type: 'collapse',
-          icon: 'material-icons-two-tone',
-          iconname: 'home',
+          icon: 'ph-gauge',
           children: [
             {
               id: 'sales',
@@ -35,42 +34,27 @@ const menuItems = {
           id: 'typography',
           title: 'Typography',
           type: 'item',
-          icon: 'material-icons-two-tone',
-          iconname: 'text_fields',
+          icon: 'ph-compass-tool',
           url: '/typography'
         },
         {
           id: 'color',
           title: 'Color',
           type: 'item',
-          icon: 'material-icons-two-tone',
-          iconname: 'color_lens',
+          icon: 'ph-palette',
           url: '/color'
         },
         {
           id: 'icons',
           title: 'Icons',
           type: 'collapse',
-          icon: 'material-icons-two-tone',
-          iconname: 'history_edu',
+          icon: 'ph-flower-lotus',
           children: [
-            {
-              id: 'feather',
-              title: 'Feather',
-              type: 'item',
-              url: '/icons/Feather'
-            },
             {
               id: 'font-awesome-5',
               title: 'Font Awesome',
               type: 'item',
               url: '/icons/font-awesome-5'
-            },
-            {
-              id: 'material',
-              title: 'Material',
-              type: 'item',
-              url: '/icons/material'
             }
           ]
         }
@@ -87,8 +71,7 @@ const menuItems = {
           id: 'login',
           title: 'Login',
           type: 'item',
-          icon: 'material-icons-two-tone',
-          iconname: 'verified_user',
+          icon: 'ph-lock-key',
           url: '/login',
           target: true
         },
@@ -96,8 +79,7 @@ const menuItems = {
           id: 'register',
           title: 'Register',
           type: 'item',
-          icon: 'material-icons-two-tone',
-          iconname: 'person_add_alt_1',
+          icon: 'ph-user-circle-plus',
           url: '/register',
           target: true
         }
@@ -116,15 +98,13 @@ const menuItems = {
           type: 'item',
           url: '/sample-page',
           classes: 'nav-item',
-          icon: 'material-icons-two-tone',
-          iconname: 'storefront'
+          icon: 'ph-desktop'
         },
         {
           id: 'menu-level',
           title: 'Menu Levels',
           type: 'collapse',
-          icon: 'material-icons-two-tone',
-          iconname: 'list_alt',
+          icon: 'ph-tree-structure',
           children: [
             {
               id: 'menu-level-1.1',
@@ -172,8 +152,7 @@ const menuItems = {
           type: 'item',
           url: '#',
           classes: 'nav-item disabled',
-          icon: 'material-icons-two-tone',
-          iconname: 'power_off'
+          icon: 'ph-cloud-slash'
         }
       ]
     }

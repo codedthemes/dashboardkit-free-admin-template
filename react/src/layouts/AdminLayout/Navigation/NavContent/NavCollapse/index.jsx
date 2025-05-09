@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useContext, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // react-bootstrap
 import { ListGroup } from 'react-bootstrap';
@@ -22,11 +22,8 @@ export default function NavCollapse({ collapse, type }) {
   const configContext = useContext(ConfigContext);
   const { dispatch } = configContext;
   const windowSize = useWindowSize();
-  /* eslint-disable @typescript-eslint/no-unused-vars */
-  // @ts-ignore
-  const location = useLocation();
 
-  const { isOpen, isTrigger, collapseLayout } = configContext.state;
+  const { layout, isOpen, isTrigger, collapseLayout } = configContext.state;
 
   useEffect(() => {
     const currentIndex = document.location.pathname
@@ -65,7 +62,9 @@ export default function NavCollapse({ collapse, type }) {
   const openIndex = isOpen.findIndex((id) => id === collapse.id);
   if (openIndex > -1) {
     navItemClass = [...navItemClass, 'active'];
-    navLinkClass = [...navLinkClass, 'active'];
+    if (layout !== 'horizontal') {
+      navLinkClass = [...navLinkClass, 'active'];
+    }
   }
 
   const triggerIndex = isTrigger.findIndex((id) => id === collapse.id);
@@ -79,7 +78,9 @@ export default function NavCollapse({ collapse, type }) {
     .findIndex((id) => id === collapse.id);
   if (currentIndex > -1) {
     navItemClass = [...navItemClass, 'active'];
-    navLinkClass = [...navLinkClass, 'active'];
+    if (layout !== 'horizontal') {
+      navLinkClass = [...navLinkClass, 'active'];
+    }
   }
 
   const subContent = (
@@ -87,7 +88,9 @@ export default function NavCollapse({ collapse, type }) {
       <Link
         to="#"
         className={navLinkClass.join(' ')}
-        onClick={() => dispatch({ type: actionType.COLLAPSE_TOGGLE, menu: { id: collapse.id, type } })}
+        onClick={() => {
+          dispatch({ type: actionType.COLLAPSE_TOGGLE, menu: { id: collapse.id, type } });
+        }}
       >
         <NavIcon items={collapse} />
         {itemTitle}
@@ -104,15 +107,13 @@ export default function NavCollapse({ collapse, type }) {
     </>
   );
 
-  let mainContent;
-
-  mainContent = (
-    <ListGroup.Item as="li" bsPrefix=" " className={navItemClass.join(' ')}>
-      {subContent}
-    </ListGroup.Item>
+  return (
+    <>
+      <ListGroup.Item as="li" bsPrefix=" " className={navItemClass.join(' ')}>
+        {subContent}
+      </ListGroup.Item>
+    </>
   );
-
-  return <>{mainContent}</>;
 }
 
 NavCollapse.propTypes = { collapse: PropTypes.object, type: PropTypes.string };

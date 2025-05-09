@@ -6,7 +6,7 @@ export default function NavIcon({ items }) {
   if (items.icon) {
     navIcons = (
       <span className="pc-micon">
-        <i className={items.icon}>{items.iconname}</i>
+        <i className={`ph-duotone ${items.icon}`}></i>
       </span>
     );
   }

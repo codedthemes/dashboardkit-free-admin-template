@@ -30,6 +30,12 @@ function ConfigProvider({ children }) {
           collapseHeaderMenu: !stateData.collapseHeaderMenu
         };
 
+      case actionType.SIDEBAR_HIDE:
+        return {
+          ...stateData,
+          sidebarHide: !stateData.sidebarHide
+        };
+
       case actionType.COLLAPSE_TOGGLE:
         if (action.menu.type === 'sub') {
           open = stateData.isOpen;

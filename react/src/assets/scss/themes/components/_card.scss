@@ -1,5 +1,5 @@
 // ============================
-//     Card css start
+//    Card css start
 // ============================
 
 .card {
@@ -8,15 +8,12 @@
   transition: box-shadow 0.2s ease-in-out;
 
   .card-header {
-    border-bottom: 1px solid var(--bs-border-color);
+    border-bottom: 1px solid var(--bs-card-border-color);
 
     h5 {
       margin-bottom: 0;
-      // color: #525f71;
-      font: {
-        size: 14px;
-        weight: 600;
-      }
+      font-size: 0.875rem;
+      font-weight: 600;
 
       + p,
       + small {
@@ -27,13 +24,14 @@
         }
       }
     }
+
     .card-header-right {
-      right: 20px;
-      top: 20px;
-      display: inline-block;
+      right: 10px;
+      top: 10px;
       float: right;
       padding: 0;
       position: absolute;
+
       @media only screen and (max-width: 575px) {
         display: none;
       }
@@ -70,6 +68,7 @@
           outline: none;
         }
       }
+
       // custom toggler
       .btn.dropdown-toggle {
         border: none;
@@ -103,17 +102,8 @@
     }
   }
 
-  &.nav-action-card {
-    background: var(--pc-brand-background);
-
-    .card-header {
-      border-bottom: none;
-    }
-  }
-
   .card-footer {
     transition: box-shadow 0.2s ease-in-out;
-    border-top: 1px solid var(--bs-border-color);
   }
 
   &:hover {
@@ -121,16 +111,23 @@
       box-shadow: none;
     }
   }
-  @each $color, $value in $theme-colors {
-    // .card-footer.bg-#{$color},
-    &.bg-#{$color} {
-      box-shadow: 0 9px 9px -1px transparentize($value, 0.7);
-    }
-  }
 }
+
 @include media-breakpoint-down(sm) {
   .card {
     margin-bottom: 20px;
+    .card-header {
+      padding: 20px;
+      h5 {
+        font-size: 0.875rem;
+      }
+    }
+    .card-body {
+      padding: 20px;
+    }
   }
 }
-// Card css end
+
+// ============================
+//    Card css end
+// ============================

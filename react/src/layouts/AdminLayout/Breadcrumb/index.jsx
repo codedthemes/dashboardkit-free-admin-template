@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 // react-bootstrap
 import { ListGroup, Row, Col, Button, Dropdown } from 'react-bootstrap';
 
 // third party
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import FeatherIcon from 'feather-icons-react';
 
 // project imports
@@ -16,9 +16,6 @@ import { BASE_TITLE } from 'config/constant';
 export default function Breadcrumb() {
   const [main, setMain] = useState({});
   const [item, setItem] = useState({});
-  /* eslint-disable @typescript-eslint/no-unused-vars */
-  // @ts-ignore
-  const location = useLocation();
 
   useEffect(() => {
     navigation.items.map((item) => {

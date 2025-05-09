@@ -1,5 +1,5 @@
 // ============================
-//     Tabs css start
+//    Tabs css start
 // ============================
 
 .tabs-border {
@@ -38,7 +38,7 @@
       margin-bottom: 0;
 
       .nav-link {
-        color: $primary;
+        color: var(--bs-primary);
         background: shift-color($primary, $soft-bg-level);
         border-radius: 4px;
         transition: background 0.3s ease-out;
@@ -54,8 +54,11 @@
 
       &.active {
         color: #fff;
-        background: $primary;
+        background: var(--bs-primary);
       }
     }
   }
 }
+// ============================
+//    Tabs css end
+// ============================

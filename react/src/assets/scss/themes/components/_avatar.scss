@@ -6,6 +6,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--bs-border-radius);
   font: {
     size: 18px;
     weight: 600;
@@ -13,32 +14,43 @@
   width: 48px;
   height: 48px;
 
+  &.avatar-xxs {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    border-radius: var(--bs-border-radius);
+  }
+
   &.avatar-xs {
     width: 32px;
     height: 32px;
     font-size: 12px;
+    border-radius: var(--bs-border-radius);
   }
 
   &.avatar-s {
     width: 40px;
     height: 40px;
     font-size: 14px;
+    border-radius: var(--bs-border-radius);
   }
 
   &.avatar-l {
     width: 64px;
     height: 64px;
     font-size: 20px;
+    border-radius: var(--bs-border-radius-lg);
   }
 
   &.avatar-xl {
     width: 80px;
     height: 80px;
     font-size: 24px;
+    border-radius: var(--bs-border-radius-lg);
   }
 
   &.avatar-square {
-    border-radius: 4px;
+    border-radius: var(--bs-border-radius);
     border: 2px solid;
   }
 
@@ -50,6 +62,6 @@
     }
   }
 }
-@include media-breakpoint-down(sm) {
-}
-// Avatar css end
+// ============================
+//     Avatar css end
+// ============================
