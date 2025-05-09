@@ -36,12 +36,12 @@
   &:active,
   &:focus,
   &:hover {
-    background: var(--pc-active-background);
-    color: var(--bs-primary);
+    // background: var(--pc-active-background);
+    //color: var(--bs-primary);
 
     i {
       &.material-icons-two-tone {
-        background-color: var(--bs-primary);
+        // background-color: var(--bs-primary);
       }
     }
   }

@@ -13,6 +13,25 @@ var fileinclude = require('gulp-file-include');
 var browsersync = require('browser-sync');
 var htmlmin = require('gulp-htmlmin');
 const { parallel } = require('gulp');
+const fs = require('fs');
+
+var key_version = `v2.0.0`;
+var buy_now_link = "#"
+var g_key = `0`;
+var c_key = `0`;
+var p_key = `0`;
+
+try {
+  const versionData = JSON.parse(fs.readFileSync('key.json', 'utf8'));
+  key_version = `${versionData.version}`;
+  buy_now_link = `${versionData.buy_now_link}`;
+  g_key = `${versionData.google_tag}`;
+  c_key = `${versionData.clarity}`;
+  p_key = `${versionData.Pixel}`;
+
+} catch (error) {
+}
+
 
 // =======================================================
 // ----------- START: Dashboardkit Theme Configuration -----------
@@ -24,8 +43,8 @@ const dark_header = 'false'; // [ false , true ]
 const preset_theme = 'preset-1'; // [ preset-1 to preset-10 ]
 const dark_layout = 'false'; // [ false , true , default ]
 const rtl_layout = 'false'; // [ false , true ]
-const box_container = 'false'; // [ false , true ]
-const version = 'v3.1.0';
+const box_container = 'true'; // [ false , true ]
+const version = key_version;
 
 if (rtl_layout == 'true') {
   var rtltemp = 'rtl';
@@ -58,6 +77,11 @@ const layout = {
   pc_rtl_layout: rtl_layout,
   pc_box_container: box_container,
   pc_theme_version: version,
+  buy_now_link : buy_now_link,
+  g_key : g_key,
+  c_key : c_key,
+  p_key : p_key,
+
   bodySetup:
     'data-pc-preset="' +
     preset_theme +
@@ -83,14 +107,14 @@ const path = {
     html: 'src/html/**/*.html',
     css: 'src/assets/scss/*.scss',
     layoutjs: 'src/assets/js/*.js',
-    pagesjs: 'src/assets/js/pages/*.js',
+    pagesjs: 'src/assets/js/**/*.js',
     images: 'src/assets/images/**/*.{jpg,png}'
   },
   destination: {
     html: 'dist',
     css: 'dist/assets/css',
     layoutjs: 'dist/assets/js',
-    pagesjs: 'dist/assets/js/pages',
+    pagesjs: 'dist/assets/js',
     images: 'dist/assets/images'
   }
 };
@@ -203,7 +227,7 @@ gulp.task('default', gulp.series('cleandist', 'build-node-modules', 'sass', 'bui
 //  [ css minify ] start
 gulp.task('min-css', function () {
   // main style css
-  return gulp.src(path.src.css).pipe(sass()).pipe(autoprefixer()).pipe(cssmin()).pipe(gulp.dest(path.destination.css));
+  return gulp.src(path.src.css).pipe(sass()).pipe(autoprefixer()).pipe(gulp.dest(path.destination.css));
 });
 //  [ css minify ] end
 

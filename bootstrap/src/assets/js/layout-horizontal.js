@@ -1,3 +1,15 @@
+/**
+=========================================================================
+=========================================================================
+Template Name: Dashboardkit - Admin Template
+Author: Phoenixcoded
+Support: https://phoenixcoded.authordesk.app/
+File: layout-tab.js
+Description:  this file will contains defining code for build horizontal layouts
+              and handle funcnality of a horizontal layout in theme.
+=========================================================================
+=========================================================================
+*/
 'use strict';
 (function () {
   document.getElementsByTagName('body')[0].setAttribute('data-pc-layout', 'horizontal');
@@ -18,13 +30,9 @@
     document.querySelector('.navbar-content').innerHTML = pc_nav_content;
 
     if (docW >= 1024) {
-      setTimeout(() => {
-        reinit_horizontal_menu();
-      }, 500);
+      reinit_horizontal_menu();
     } else {
-      setTimeout(() => {
-        reinit_vertical_menu();
-      }, 500);
+      reinit_vertical_menu();
     }
   });
   function reinit_vertical_menu() {
