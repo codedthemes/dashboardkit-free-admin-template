@@ -2,12 +2,16 @@
 <script src="../assets/js/plugins/popper.min.js"></script>
 <script src="../assets/js/plugins/simplebar.min.js"></script>
 <script src="../assets/js/plugins/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/i18next.min.js"></script>
+<script src="../assets/js/plugins/i18nextHttpBackend.min.js"></script>
 <script src="../assets/js/fonts/custom-font.js"></script>
 <script src="../assets/js/pcoded.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/multi-lang.js"></script>
 <script src="../assets/js/plugins/feather.min.js"></script>
 <div class="floting-button">
   <a
-    href="https://codedthemes.com/item/dashboardkit-bootstrap-5-admin-template/"
+    href="@@buy_now_link"
     target="_blank"
     class="btn btn btn-danger buynowlinks d-inline-flex align-items-center gap-2"
     data-bs-toggle="tooltip"
@@ -48,7 +52,6 @@
   layout_sidebar_change('light');
 </script>
 }
-<!-- --------------------- -->
 @@if (pc_dark_navbar == 'true') {
 <script>
   layout_sidebar_change('dark');
@@ -58,7 +61,6 @@
   layout_sidebar_change('light');
 </script>
 }
-<!-- --------------------- -->
 @@if (pc_box_container == 'true') {
 <script>
   change_box_container('true');

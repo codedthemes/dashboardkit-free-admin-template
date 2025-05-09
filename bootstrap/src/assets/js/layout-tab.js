@@ -1,3 +1,15 @@
+/**
+=========================================================================
+=========================================================================
+Template Name: Dashboardkit - Admin Template
+Author: Phoenixcoded
+Support: https://phoenixcoded.authordesk.app/
+File: layout-tab.js
+Description:  this file will contains defining code for build tab layouts
+              and handle funcnality of a tab layout in theme.
+=========================================================================
+=========================================================================
+*/
 'use strict';
 (function () {
   document.getElementsByTagName('body')[0].setAttribute('data-pc-layout', 'tab');
@@ -59,7 +71,6 @@
               temp_blank_list = pc_new_list;
             }
             if (tmp_flag_count == 1) {
-              console.log(temp_blank_list);
               temp_blank_list += pc_new_list;
               pc_new_list = temp_blank_list;
               temp_blank_list = '';

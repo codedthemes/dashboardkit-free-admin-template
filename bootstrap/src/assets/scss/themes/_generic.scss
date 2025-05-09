@@ -422,6 +422,16 @@ $more-colors: (
     $i: $i + 100;
   }
 }
+:root {
+  @each $name, $value in $more-colors {
+    $i: 100;
+    @while $i<=900 {
+      $temp: map-get($value, $i);
+      --bs-#{$name}-#{$i}: #{$temp};
+      $i: $i + 100;
+    }
+  }
+}
 /*====== more bootstrap colors end ======*/
 /**  =====================
     1. Generic-class css end
