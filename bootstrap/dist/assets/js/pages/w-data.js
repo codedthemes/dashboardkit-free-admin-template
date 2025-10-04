@@ -1,1 +1,18 @@
-document.addEventListener("DOMContentLoaded",function(){document.querySelector(".customer-scroll")&&new SimpleBar(document.querySelector(".customer-scroll")),document.querySelector(".performance-scroll")&&new SimpleBar(document.querySelector(".performance-scroll")),document.querySelector(".feed-scroll")&&new SimpleBar(document.querySelector(".feed-scroll")),document.querySelector(".activity-scroll")&&new SimpleBar(document.querySelector(".activity-scroll")),document.querySelector(".recent-scroll")&&new SimpleBar(document.querySelector(".recent-scroll"))});
+'use strict';
+document.addEventListener('DOMContentLoaded', function () {
+  if (!!document.querySelector('.customer-scroll')) {
+    new SimpleBar(document.querySelector('.customer-scroll'));
+  }
+  if (!!document.querySelector('.performance-scroll')) {
+    new SimpleBar(document.querySelector('.performance-scroll'));
+  }
+  if (!!document.querySelector('.feed-scroll')) {
+    new SimpleBar(document.querySelector('.feed-scroll'));
+  }
+  if (!!document.querySelector('.activity-scroll')) {
+    new SimpleBar(document.querySelector('.activity-scroll'));
+  }
+  if (!!document.querySelector('.recent-scroll')) {
+    new SimpleBar(document.querySelector('.recent-scroll'));
+  }
+});

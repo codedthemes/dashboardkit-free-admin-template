@@ -1,1 +1,138 @@
-(()=>{document.getElementsByTagName("body")[0].setAttribute("data-pc-layout","compact"),document.querySelector(".navbar-content")&&new SimpleBar(document.querySelector(".navbar-content"));for(var e=document.querySelectorAll(".pc-navbar li .pc-submenu"),t=0;t<e.length;t++)e[t].style.display="none";for(var c=document.querySelector("#sidebar-hide"),r=(c&&c.addEventListener("click",function(){document.querySelector("body").classList.contains("pc-sidebar-hide")?document.querySelector("body").classList.remove("pc-sidebar-hide"):document.querySelector("body").classList.add("pc-sidebar-hide")}),document.querySelectorAll(".pc-navbar > li:not(.pc-caption)")),o=0;o<r.length;o++)new bootstrap.Tooltip(r[o],{trigger:"hover",placement:"right",title:r[o].children[0].children[1].innerHTML}),r[o].addEventListener("click",function(e){e.stopPropagation();e=e.target;if((e="I"==(e="SPAN"==e.tagName?e.parentNode:e).tagName?e.parentNode.parentNode:e).parentNode.classList.contains("pc-hasmenu"))if(e.parentNode.classList.contains("pc-trigger"))e.parentNode.classList.remove("pc-trigger"),document.querySelector(".pc-compact-submenu > .pc-compact-list .simplebar-content").innerHTML="",document.querySelector(".pc-sidebar").classList.remove("pc-compact-submenu-active"),document.querySelector("body").classList.remove("pc-compact-submenu-active");else{document.querySelector(".pc-compact-submenu > .pc-compact-title h5").innerHTML=e.children[1].innerHTML,document.querySelector(".pc-compact-submenu > .pc-compact-title .avtar").innerHTML=e.children[0].children[0].outerHTML,document.querySelector(".pc-compact-submenu > .pc-compact-title .avtar i").classList.add("text-white"),document.querySelector(".pc-sidebar").classList.add("pc-compact-submenu-active"),document.querySelector("body").classList.add("pc-compact-submenu-active");for(var t=e.parentNode.children[1].outerHTML,c=(document.querySelector(".pc-compact-submenu > .pc-compact-list")&&new SimpleBar(document.querySelector(".pc-compact-submenu > .pc-compact-list")),document.querySelector(".pc-compact-submenu > .pc-compact-list .simplebar-content").innerHTML=t,document.querySelectorAll("li.pc-trigger")),r=0;r<c.length;r++)c[r].classList.remove("pc-trigger");e.parentNode.classList.add("pc-trigger");for(var o=document.querySelectorAll(".pc-compact-list .simplebar-content>ul > li:not(.pc-caption)"),a=0;a<o.length;a++)o[a].addEventListener("click",function(e){e.stopPropagation();e=e.target;if((e="SPAN"==e.tagName?e.parentNode:e).parentNode.classList.contains("pc-trigger"))e.parentNode.classList.remove("pc-trigger"),slideUp(e.parentNode.children[1],200);else{for(var t=document.querySelectorAll(".pc-compact-list .simplebar-content>ul li.pc-trigger"),c=0;c<t.length;c++){var r=t[c];r.classList.remove("pc-trigger"),slideUp(r.children[1],200)}e.parentNode.classList.add("pc-trigger");e=e.parentNode.children[1];e&&slideDown(e,200)}});for(var n=document.querySelectorAll(".pc-compact-list .simplebar-content>ul > li:not(.pc-caption) li"),a=0;a<n.length;a++)n[a].addEventListener("click",function(e){var t=e.target;if("SPAN"==t.tagName&&(t=t.parentNode),e.stopPropagation(),t.parentNode.classList.contains("pc-trigger"))t.parentNode.classList.remove("pc-trigger"),slideUp(t.parentNode.children[1],200);else{for(var c=t.parentNode.parentNode.children,r=0;r<c.length;r++){var o=c[r];o.classList.remove("pc-trigger"),(o="LI"==o.tagName?o.children[0]:o).parentNode.classList.contains("pc-hasmenu")&&slideUp(o.parentNode.children[1],200)}t.parentNode.classList.add("pc-trigger");e=t.parentNode.children[1];e&&(e.removeAttribute("style"),slideDown(e,200))}})}else document.querySelector(".pc-sidebar").classList.remove("pc-compact-submenu-active"),document.querySelector("body").classList.remove("pc-compact-submenu-active")})})();
+'use strict';
+(function () {
+  document.getElementsByTagName('body')[0].setAttribute('data-pc-layout', 'compact');
+
+  if (!!document.querySelector('.navbar-content')) {
+    new SimpleBar(document.querySelector('.navbar-content'));
+  }
+
+  var elem = document.querySelectorAll('.pc-navbar li .pc-submenu');
+  for (var j = 0; j < elem.length; j++) {
+    elem[j].style.display = 'none';
+  }
+
+  var sidebar_hide = document.querySelector('#sidebar-hide');
+  if (sidebar_hide) {
+    sidebar_hide.addEventListener('click', function () {
+      if (document.querySelector('body').classList.contains('pc-sidebar-hide')) {
+        document.querySelector('body').classList.remove('pc-sidebar-hide');
+      } else {
+        document.querySelector('body').classList.add('pc-sidebar-hide');
+      }
+    });
+  }
+
+  var pc_link_click = document.querySelectorAll('.pc-navbar > li:not(.pc-caption)');
+  for (var i = 0; i < pc_link_click.length; i++) {
+    new bootstrap.Tooltip(pc_link_click[i], {
+      trigger: 'hover',
+      placement: 'right',
+      title: pc_link_click[i].children[0].children[1].innerHTML
+    });
+
+    pc_link_click[i].addEventListener('click', function (event) {
+      event.stopPropagation();
+
+      var targetElement = event.target;
+      if (targetElement.tagName == 'SPAN') {
+        targetElement = targetElement.parentNode;
+      }
+
+      if (targetElement.tagName == 'I') {
+        targetElement = targetElement.parentNode.parentNode;
+      }
+
+      if (targetElement.parentNode.classList.contains('pc-hasmenu')) {
+        if (targetElement.parentNode.classList.contains('pc-trigger')) {
+          targetElement.parentNode.classList.remove('pc-trigger');
+          document.querySelector('.pc-compact-submenu > .pc-compact-list .simplebar-content').innerHTML = '';
+          document.querySelector('.pc-sidebar').classList.remove('pc-compact-submenu-active');
+          document.querySelector('body').classList.remove('pc-compact-submenu-active');
+        } else {
+          document.querySelector('.pc-compact-submenu > .pc-compact-title h5').innerHTML = targetElement.children[1].innerHTML;
+          document.querySelector('.pc-compact-submenu > .pc-compact-title .avtar').innerHTML =
+            targetElement.children[0].children[0].outerHTML;
+          document.querySelector('.pc-compact-submenu > .pc-compact-title .avtar i').classList.add('text-white');
+          document.querySelector('.pc-sidebar').classList.add('pc-compact-submenu-active');
+          document.querySelector('body').classList.add('pc-compact-submenu-active');
+
+          var pc_new_list = targetElement.parentNode.children[1].outerHTML;
+          if (!!document.querySelector('.pc-compact-submenu > .pc-compact-list')) {
+            new SimpleBar(document.querySelector('.pc-compact-submenu > .pc-compact-list'));
+          }
+
+          document.querySelector('.pc-compact-submenu > .pc-compact-list .simplebar-content').innerHTML = pc_new_list;
+          var tc = document.querySelectorAll('li.pc-trigger');
+          for (var t = 0; t < tc.length; t++) {
+            var c = tc[t];
+            c.classList.remove('pc-trigger');
+          }
+
+          targetElement.parentNode.classList.add('pc-trigger');
+          var pc_link_click = document.querySelectorAll('.pc-compact-list .simplebar-content>ul > li:not(.pc-caption)');
+          for (var i = 0; i < pc_link_click.length; i++) {
+            pc_link_click[i].addEventListener('click', function (event) {
+              event.stopPropagation();
+              var targetElement = event.target;
+              if (targetElement.tagName == 'SPAN') {
+                targetElement = targetElement.parentNode;
+              }
+              if (targetElement.parentNode.classList.contains('pc-trigger')) {
+                targetElement.parentNode.classList.remove('pc-trigger');
+                slideUp(targetElement.parentNode.children[1], 200);
+              } else {
+                var tc = document.querySelectorAll('.pc-compact-list .simplebar-content>ul li.pc-trigger');
+                for (var t = 0; t < tc.length; t++) {
+                  var c = tc[t];
+                  c.classList.remove('pc-trigger');
+                  slideUp(c.children[1], 200);
+                }
+                targetElement.parentNode.classList.add('pc-trigger');
+                var tmp = targetElement.parentNode.children[1];
+                if (tmp) {
+                  slideDown(tmp, 200);
+                }
+              }
+            });
+          }
+
+          var pc_sub_link_click = document.querySelectorAll('.pc-compact-list .simplebar-content>ul > li:not(.pc-caption) li');
+          for (var i = 0; i < pc_sub_link_click.length; i++) {
+            pc_sub_link_click[i].addEventListener('click', function (event) {
+              var targetElement = event.target;
+              if (targetElement.tagName == 'SPAN') {
+                targetElement = targetElement.parentNode;
+              }
+              event.stopPropagation();
+              if (targetElement.parentNode.classList.contains('pc-trigger')) {
+                targetElement.parentNode.classList.remove('pc-trigger');
+                slideUp(targetElement.parentNode.children[1], 200);
+              } else {
+                var tc = targetElement.parentNode.parentNode.children;
+                for (var t = 0; t < tc.length; t++) {
+                  var c = tc[t];
+                  c.classList.remove('pc-trigger');
+                  if (c.tagName == 'LI') {
+                    c = c.children[0];
+                  }
+                  if (c.parentNode.classList.contains('pc-hasmenu')) {
+                    slideUp(c.parentNode.children[1], 200);
+                  }
+                }
+                targetElement.parentNode.classList.add('pc-trigger');
+                var tmp = targetElement.parentNode.children[1];
+                if (tmp) {
+                  tmp.removeAttribute('style');
+                  slideDown(tmp, 200);
+                }
+              }
+            });
+          }
+        }
+      } else {
+        document.querySelector('.pc-sidebar').classList.remove('pc-compact-submenu-active');
+        document.querySelector('body').classList.remove('pc-compact-submenu-active');
+      }
+    });
+  }
+})();
