@@ -78,10 +78,10 @@ strong {
 }
 
 .material-icons-two-tone {
-  background-color: $body-color;
   -webkit-text-fill-color: transparent;
   vertical-align: text-bottom;
   -webkit-background-clip: text;
+  background-color: $body-color;
 
   &.text-white {
     background-color: #fff;
@@ -357,7 +357,9 @@ svg.feather {
     height: 20px;
   }
 }
-
+.ph-duotone{
+  display: inline-block;
+}
 @media (min-width: 1600px) {
   .container {
     max-width: 1540px;

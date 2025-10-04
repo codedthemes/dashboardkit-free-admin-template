@@ -10,29 +10,29 @@ This page (folder) is a sneak peek into the premium features available in <b>ver
 
 ## Included in the Pro Version:
 
-[🚀 Dashboards](https://dashboardkit.io/bootstrap/dashboard/index.html) : Advanced dashboards with real-time insights and data visualizations for actionable metrics.
+[🚀 Dashboards](https://dashboardkit.cc/bootstrap/dashboard/index.html) : Advanced dashboards with real-time insights and data visualizations for actionable metrics.
 
-[📦 Widgets](https://dashboardkit.io/bootstrap/widget/w_statistics.html) : A curated library of pre-built widgets for enhanced functionality and faster development.
+[📦 Widgets](https://dashboardkit.cc/bootstrap/widget/w_statistics.html) : A curated library of pre-built widgets for enhanced functionality and faster development.
 
-[⚙️ Admin Panel](https://dashboardkit.io/bootstrap/admins/course-dashboard.html) : Fully responsive, user-friendly admin panels for efficient and seamless management.
+[⚙️ Admin Panel](https://dashboardkit.cc/bootstrap/admins/course-dashboard.html) : Fully responsive, user-friendly admin panels for efficient and seamless management.
 
-[🔧 Components](https://dashboardkit.io/bootstrap/elements/bc_alert.html) : A rich collection of reusable and customizable UI components.
+[🔧 Components](https://dashboardkit.cc/bootstrap/elements/bc_alert.html) : A rich collection of reusable and customizable UI components.
 
-[🚀 Advanced Components](https://dashboardkit.io/bootstrap/elements/ac_alert.html) : Sophisticated and innovative tools to enhance the overall design and functionality of your application.
+[🚀 Advanced Components](https://dashboardkit.cc/bootstrap/elements/ac_alert.html) : Sophisticated and innovative tools to enhance the overall design and functionality of your application.
 
-[📝 Forms](https://dashboardkit.io/bootstrap/forms/form_elements.html) : Dynamic and customizable forms with advanced validation features for a smooth user experience.
+[📝 Forms](https://dashboardkit.cc/bootstrap/forms/form_elements.html) : Dynamic and customizable forms with advanced validation features for a smooth user experience.
 
-[📊 Tables](https://dashboardkit.io/bootstrap/table/tbl_sizing.html) : Structured, interactive tables with sorting, filtering, and pagination options.
+[📊 Tables](https://dashboardkit.cc/bootstrap/table/tbl_sizing.html) : Structured, interactive tables with sorting, filtering, and pagination options.
 
-[📈 Charts](https://dashboardkit.io/bootstrap/chart/chart-apex.html) : Beautifully designed charts powered by modern data visualization libraries.
+[📈 Charts](https://dashboardkit.cc/bootstrap/chart/chart-apex.html) : Beautifully designed charts powered by modern data visualization libraries.
 
-[🔒 Authentication](https://dashboardkit.io/bootstrap/pages/register-v1.html) : Secure pages for login, registration, and password recovery, ensuring robust user management.
+[🔒 Authentication](https://dashboardkit.cc/bootstrap/pages/register-v1.html) : Secure pages for login, registration, and password recovery, ensuring robust user management.
 
-[🛒 E-commerce App](https://dashboardkit.io/bootstrap/application/ecom_product.html) : A complete e-commerce management system for handling products, inventory, and transactions.
+[🛒 E-commerce App](https://dashboardkit.cc/bootstrap/application/ecom_product.html) : A complete e-commerce management system for handling products, inventory, and transactions.
 
-[💬 Chat Messages](https://dashboardkit.io/bootstrap/application/chat.html) : An integrated chat system to enhance communication within your application.
+[💬 Chat Messages](https://dashboardkit.cc/bootstrap/application/chat.html) : An integrated chat system to enhance communication within your application.
 
-[👤 User Profile](https://dashboardkit.io/bootstrap/application/account-profile.html) : A sleek and customizable user profile page for managing user details and settings.
+[👤 User Profile](https://dashboardkit.cc/bootstrap/application/account-profile.html) : A sleek and customizable user profile page for managing user details and settings.
 
 ## Why Upgrade to the Pro Version?
 

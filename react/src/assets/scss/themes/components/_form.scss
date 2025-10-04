@@ -1,14 +1,6 @@
 // ============================
-//   19. Form css start
+//    Form css start
 // ============================
-
-.form-group {
-  margin-bottom: 1.3rem;
-
-  label {
-    font-weight: 500;
-  }
-}
 
 select.form-control,
 .form-control {
@@ -29,7 +21,8 @@ select.form-control,
 
 select.form-control {
   appearance: none;
-  background: #{$input-bg} url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")
+  background: #{$input-bg}
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")
     no-repeat right 0.75rem center/18px 25px;
 
   &[data-multiselectsplitter-firstselect-selector],
@@ -58,7 +51,7 @@ select.form-control {
   }
 
   > input {
-    color: var(--bs-body-color);
+    color: $body-color;
   }
 }
 
@@ -245,33 +238,6 @@ select.form-control {
 }
 
 // v1 end
-// v2 Start
-
-.form-v2 {
-  .form-group {
-    position: relative;
-
-    &.fill {
-      .floating-label {
-        opacity: 0.6;
-        font-size: 85%;
-      }
-    }
-  }
-
-  .floating-label {
-    position: absolute;
-    top: 6px;
-    left: 16px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .form-control {
-    height: auto;
-    padding-top: 30px;
-  }
-}
-// v2 end
 // Date picker start
 
 .datepicker {
@@ -305,11 +271,11 @@ select.form-control {
       &.next,
       &.prev {
         font-weight: 500;
-        color: var(--bs-body-color);
+        color: $body-color;
 
         i {
           font-size: 1.2rem;
-          color: var(--bs-body-color);
+          color: $body-color;
 
           &:before {
             line-height: 0;
@@ -323,7 +289,7 @@ select.form-control {
       }
 
       &.dow {
-        color: var(--bs-body-color);
+        color: $body-color;
         font-weight: 500;
       }
     }
@@ -351,13 +317,13 @@ select.form-control {
         &.active:hover,
         &.selected,
         &.selected:hover {
-          background: $primary;
+          background: var(--bs-primary);
           color: #fff;
         }
 
         &.today {
           position: relative;
-          background: $primary !important;
+          background: var(--bs-primary) !important;
           color: #fff !important;
 
           &:before {
@@ -393,7 +359,7 @@ select.form-control {
         &.active:hover,
         &.focused,
         &.focused:hover {
-          background: $primary;
+          background: var(--bs-primary);
           color: #fff;
         }
       }
@@ -538,7 +504,7 @@ select.form-control {
     &:focus,
     &:hover {
       background: transparentize($primary, 0.97);
-      color: $primary;
+      color: var(--bs-primary);
     }
   }
 }
@@ -635,14 +601,14 @@ select.form-control {
       .dropzone-filename {
         font-size: 0.9rem;
         font-weight: 500;
-        color: var(--bs-body-color);
+        color: $body-color;
         text-overflow: ellipsis;
         margin-right: 0.5rem;
 
         b {
           font-size: 0.9rem;
           font-weight: 500;
-          color: var(--bs-body-color);
+          color: $body-color;
         }
       }
 
@@ -677,7 +643,7 @@ select.form-control {
 
         &:hover {
           i {
-            color: $primary;
+            color: var(--bs-primary);
           }
         }
       }
@@ -1089,7 +1055,7 @@ $choices-icon-cross-inverse: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEi
   .is-focused &,
   .is-open & {
     border-width: 1px;
-    border-color: $primary;
+    border-color: var(--bs-primary);
     box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
   }
 
@@ -1401,7 +1367,15 @@ $choices-icon-cross-inverse: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEi
 body .tox-tinymce-aux {
   z-index: 1024;
 }
+.code-input::-webkit-inner-spin-button,
+.code-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+.code-input[type='number'] {
+  -moz-appearance: textfield;
+}
 // ============================
-//   19. Form css end
+//    Form css end
 // ============================

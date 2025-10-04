@@ -1,3 +1,15 @@
+/**
+=========================================================================
+=========================================================================
+Template Name: Dashboardkit - Admin Template
+Author: Phoenixcoded
+Support: https://phoenixcoded.authordesk.app/
+File: layout-compact.js
+Description:  this file will contains defining code for build compact layouts
+              and handle funcnality of a comapct layout in theme.
+=========================================================================
+=========================================================================
+*/
 'use strict';
 (function () {
   document.getElementsByTagName('body')[0].setAttribute('data-pc-layout', 'compact');
@@ -45,7 +57,9 @@
       if (targetElement.parentNode.classList.contains('pc-hasmenu')) {
         if (targetElement.parentNode.classList.contains('pc-trigger')) {
           targetElement.parentNode.classList.remove('pc-trigger');
-          document.querySelector('.pc-compact-submenu > .pc-compact-list .simplebar-content').innerHTML = '';
+          if (document.querySelector('.pc-compact-submenu > .pc-compact-list .simplebar-content')) {
+            document.querySelector('.pc-compact-submenu > .pc-compact-list .simplebar-content').innerHTML = '';
+          }
           document.querySelector('.pc-sidebar').classList.remove('pc-compact-submenu-active');
           document.querySelector('body').classList.remove('pc-compact-submenu-active');
         } else {

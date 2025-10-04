@@ -1,3 +1,18 @@
+/**
+=========================================================================
+=========================================================================
+Template Name: Dashboardkit - Admin Template
+Author: Phoenixcoded
+Support: https://phoenixcoded.authordesk.app/
+File: component.js
+Description:  this file will contains defining the code for to genarte
+              a code for for user visiblity purpose and allow user to 
+              direcly copy part of code for specific component 
+              in component page.
+=========================================================================
+=========================================================================
+*/
+
 'use strict';
 // =========================================================
 // ==================    ui kit model code   ===============

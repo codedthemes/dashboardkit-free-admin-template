@@ -8,12 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="A dashboard template comes with hundreds of UI components, elements, widgets, charts and pages." />
     <meta name="keywords" content="Dashboard template, admin template" />
-    <meta name="author" content="Codedthemes" />
+    <meta name="author" content="Phoenixcoded" />
 
     <!-- [Favicon] icon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <!-- [Google Font : Public Sans] icon -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700..700&display=swap" rel="stylesheet" />
+    <link href="assets/fonts/inter/inter.css" rel="stylesheet" />
     <!-- [phosphor Icons] https://phosphoricons.com/ -->
     <link rel="stylesheet" href="assets/fonts/phosphor/duotone/style.css" />
     <!-- [Tabler Icons] https://tablericons.com -->
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/fonts/material.css" />
     <!-- [Template CSS Files] -->
     <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
+    <link rel="stylesheet" href="assets/css/style-preset.css" />
 
     <link rel="stylesheet" href="assets/css/landing.css" />
   </head>
@@ -75,13 +76,28 @@
               <li class="nav-item px-1">
                 <a class="nav-link" target="_blank" href="elements/bc_alert.html">Components</a>
               </li>
+              <li class="nav-item px-1">
+                <a class="nav-link" href="https://phoenixcoded.gitbook.io/dashboard-kit/bootstrap" target="_blank">Documentation</a>
+              </li>
+              <li class="nav-item px-1 dropdown">
+                <a class="nav-link dropdown-toggle arrow-none d-inline-flex align-items-center" data-bs-toggle="dropdown" href="#"
+                  >Live Preview <i class="ti ti-chevron-down"></i
+                ></a>
+                <div class="dropdown-menu drp-technology nav-drp-tech-scrollble">
+                  <a class="dropdown-item gap-2" href="dashboard/index.html" target="_blank"
+                    ><img src="assets/images/landing/tech-bootstrap.svg" class="img-fluid wid-30" /> Bootstrap</a
+                  >
+                  <a class="dropdown-item gap-2" href="https://dashboardkit.cc/react/free/" target="_blank"
+                    ><img src="assets/images/landing/tech-react.svg" class="img-fluid wid-30" /> React</a
+                  >
+                </div>
+              </li>
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0 align-items-start">
               <li class="nav-item ms-2">
-                <a href="https://codedthemes.com/item/dashboardkit-bootstrap-5-admin-template/" target="_blank" class="btn btn-primary">
-                  Get Dashboardkit
-                  <i class="ph-duotone ph-arrow-square-out"></i>
-                </a>
+                <a href="@@buy_now_link" target="_blank" class="btn btn-light"
+                  >Get Dashboardkit <i class="ph-duotone ph-arrow-square-out"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -90,26 +106,33 @@
       <!-- [ Nav ] start -->
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-xl-4 col-lg-5 header-content">
+          <div class="col-xl-5 col-lg-5 header-content">
             <div
-              class="badge bg-white bg-opacity-10 rounded-pill text-lg px-3 py-2 border border-white border-opacity-25 mb-2 d-inline-flex align-items-center gap-2 lh-1"
+              class="badge rounded-pill text-md px-3 py-2 border border-white border-opacity-25 mb-2 d-inline-flex align-items-center gap-2 lh-1"
             >
-              <i class="ti ti-bulb text-warning text-xl"></i>
+              <i class="ti ti-bulb text-warning text-md"></i>
               Free & Premium
             </div>
-            <h1 class="text-white mb-3 lh-base">DashboardKit Admin Template</h1>
-            <p class="text-white f-16 mb-3 lh-lg">
-              A Dashboard Template to accelerate web development with a stunning design and tones of powerful pre-built of UI components,
-              elements, widgets, charts and pages.
+            <h1 class="text-white mb-4 lh-base">A Professional Grade Dashboard Template</h1>
+            <p class="text-white f-16 mb-5"
+              >DashboardKit is a fast and flexible dashboard template design and developed for your project needs.
             </p>
-            <div class="mt-4">
-              <a href="dashboard/index.html" class="btn btn-outline-primary me-2">Preview</a>
-              <a href="https://codedthemes.com/item/dashboardkit-bootstrap-5-admin-template/" target="_blank" class="btn btn-primary">
-                Buy Now
-              </a>
+            <a class="d-inline-block me-3 text-center" href="dashboard/index.html" target="_blank">
+              <img src="assets/images/landing/tech-bootstrap.svg" class="img-fluid wid-40" />
+              <p class="text-white">Bootstrap</p>
+            </a>
+            <a class="d-inline-block text-center" href="https://dashboardkit.cc/react/free/" target="_blank">
+              <img src="assets/images/landing/tech-react.svg" class="img-fluid wid-40" />
+              <p class="text-white">React Bootstrap</p>
+            </a>
+            <div class="mt-2">
+              <a href="@@buy_now_link" target="_blank" class="btn btn-primary me-2"
+                ><i class="ph-duotone ph-arrow-square-out"></i> Buy Now</a
+              >
+              <a href="dashboard/index.html" class="btn btn-outline-primary">Live Preview</a>
             </div>
           </div>
-          <div class="col-xl-8 col-lg-7">
+          <div class="col-xl-7 col-lg-7">
             <div>
               <img src="assets/images/landing/dashboardkit-bootstrap-admin-template.jpg" alt="img" class="img-fluid img-header" />
             </div>
@@ -158,26 +181,7 @@
     <script>
       preset_change('preset-1');
     </script>
-
     <!-- [Page Specific JS] start -->
-    <script>
-      // Start [ Menu hide/show on scroll ]
-      let ost = 0;
-      document.addEventListener('scroll', function () {
-        let cOst = document.documentElement.scrollTop;
-        if (cOst == 0) {
-          document.querySelector('.navbar').classList.add('top-nav-collapse');
-        } else if (cOst > ost) {
-          document.querySelector('.navbar').classList.add('top-nav-collapse');
-          document.querySelector('.navbar').classList.remove('default');
-        } else {
-          document.querySelector('.navbar').classList.add('default');
-          document.querySelector('.navbar').classList.remove('top-nav-collapse');
-        }
-        ost = cOst;
-      });
-      // End [ Menu hide/show on scroll ]
-    </script>
     <!-- [Page Specific JS] end -->
   </body>
 </html>

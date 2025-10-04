@@ -97,7 +97,7 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-      background: var(--pc-active-background);
+      background: rgba(var(--pc-header-color-rgb),.09) ;
       border-radius: 50%;
       transform: scale(0);
       transition: all 0.08s cubic-bezier(0.37, 0.24, 0.53, 0.99);
@@ -134,11 +134,11 @@
     &:focus,
     &:hover {
       text-decoration: none;
-      color: var(--bs-primary);
+      color: var(--pc-header-color);
 
       > svg,
       > i {
-        color: var(--bs-primary);
+        color: var(--pc-header-color);
         transform: scale(1.08);
       }
 
@@ -148,7 +148,7 @@
       }
 
       i.material-icons-two-tone {
-        background-color: var(--bs-primary);
+        background-color: var(--pc-header-color);
       }
     }
 
@@ -321,7 +321,13 @@
     .dropdown-body {
       border-bottom: 1px solid var(--bs-border-color);
     }
-
+    .profile-notification-scroll{
+      .list-group-item{
+        &.item-actions{
+          padding: 5px 10px;
+        }
+      }
+    }
     .dropdown-item {
       font-weight: 500;
       padding: 10px 15px;
@@ -335,12 +341,12 @@
         font-size: 24px;
       }
 
-      &:hover,
-      &:focus {
-        color: var(--bs-primary);
-        background: var(--pc-active-background);
-        border-color: var(--bs-border-color);
-      }
+      // &:hover,
+      // &:focus {
+      //   color: var(--bs-primary);
+      //   //background: var(--pc-active-background);
+      //   //border-color: var(--bs-border-color);
+      // }
 
       .user-group {
         .avtar,
@@ -367,7 +373,7 @@
       padding: 16px 20px;
     }
 
-    h5.text-truncate,
+    h6.text-truncate,
     p > .text-truncate {
       position: absolute;
       top: 0;
@@ -379,7 +385,11 @@
     .dropdown-body {
       border-bottom: 1px solid var(--bs-border-color);
     }
-
+    // .list-group-item {
+    //   &.unread {
+    //     background: rgba(var(--bs-body-vg-rgb), 0.3);
+    //   }
+    // }
     .list-group-item-action {
       &:active,
       &:hover,
@@ -388,7 +398,7 @@
       }
 
       .user-avtar,
-      h5 {
+      h6 {
         cursor: pointer;
       }
     }

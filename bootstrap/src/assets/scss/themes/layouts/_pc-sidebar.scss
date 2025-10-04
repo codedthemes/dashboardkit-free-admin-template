@@ -69,9 +69,9 @@
   }
 
   .pc-micon {
-    margin-right: 15px;
-    height: 24px;
-    width: 24px;
+    margin-right: 10px;
+    height: 22px;
+    width: 22px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -79,30 +79,34 @@
     i {
       font-size: 20px;
       vertical-align: middle;
+      color: var(--pc-sidebar-icon-color);
 
       &.material-icons-two-tone {
-        font-size: 22px;
+        font-size: 20px;
         display: inline-block;
         background-color: var(--pc-sidebar-icon-color);
       }
     }
 
     > svg {
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
       display: inline-block;
     }
   }
 
   .pc-link {
-    display: block;
-    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 2px 0;
     color: var(--pc-sidebar-color);
     position: relative;
+    border-radius: var(--bs-border-radius);
 
     font: {
-      size: 13px;
-      weight: 400;
+      size: 12px;
+      weight: 500;
     }
 
     &:focus,
@@ -128,6 +132,11 @@
         bottom: 2px;
         opacity: 0;
       }
+      &:focus,
+      &.active,
+      &:hover {
+        background-color: var(--pc-sidebar-hover-background);        
+      }
     }
 
     &.active {
@@ -135,7 +144,9 @@
         font-weight: 500;
         color: var(--pc-sidebar-main-active-color);
         background: var(--pc-sidebar-main-active-background);
-
+        .pc-micon i{
+          color: var(--pc-sidebar-active-icon-color);
+        }
         i {
           &.material-icons-two-tone {
             background-color: var(--pc-sidebar-main-active-color);
@@ -157,6 +168,8 @@
 
       .pc-item {
         > .pc-link {
+          border-radius: var(--bs-border-radius);
+          
           &:after {
             content: '→';
             position: absolute;
@@ -170,14 +183,15 @@
         &.pc-trigger,
         &.active {
           > .pc-link {
-            font-weight: 500;
+            font-weight: 600;
             color: var(--pc-sidebar-active-color);
           }
         }
-
+        
         &:focus,
         &:hover {
           > .pc-link {
+            background-color: var(--pc-sidebar-hover-background);
             &:after {
               transform: translateX(5px);
             }
@@ -189,10 +203,10 @@
         &:focus,
         &:hover {
           > .pc-link {
-            color: var(--pc-sidebar-active-color);
+            //color: var(--pc-sidebar-active-color);
 
             &:after {
-              color: var(--pc-sidebar-active-color);
+              //color: var(--pc-sidebar-active-color);
             }
           }
         }
@@ -201,7 +215,7 @@
 
     .pc-submenu {
       .pc-link {
-        padding: 12px 30px 12px 60px;
+        padding: 12px 30px 12px 52px;
 
         &:after {
           left: 28px;
@@ -241,6 +255,7 @@
 
   .pc-arrow {
     float: right;
+    margin-left: auto;
     display: inline-block;
     transition: all 0.2s ease-in-out;
 

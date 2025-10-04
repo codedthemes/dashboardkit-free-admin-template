@@ -13,6 +13,8 @@ File: style.css
 @import '../fonts/fontawesome';
 @import '../fonts/material';
 @import '../fonts/cryptofont';
+@import '../fonts/tabler-icons.min';
+@import '../fonts/phosphor/duotone/style';
 
 // main framework
 @import 'node_modules/bootstrap/scss/functions';
@@ -36,6 +38,7 @@ File: style.css
 @import 'themes/layouts/pc-sidebar';
 @import 'themes/layouts/pc-header';
 @import 'themes/layouts/pc-common';
+@import 'themes/layouts/pc-footer';
 
 // Components
 @import 'themes/components/avatar';
@@ -58,8 +61,5 @@ File: style.css
 
 @import 'simplebar-react/dist/simplebar.min.css';
 @import 'themes/plugins/simplebar-scrollbar';
-
-// Customizer CSS
-@import 'customizer';
 
 @import 'react-common.scss';

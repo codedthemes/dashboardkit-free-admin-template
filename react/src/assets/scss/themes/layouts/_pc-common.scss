@@ -6,18 +6,23 @@
   position: relative;
   top: $header-height;
   margin-left: $sidebar-width;
-  min-height: calc(100vh - #{$header-height});
+  min-height: calc(100vh - #{$header-height} - 59px);
 
-  .pcoded-content {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
+  .pc-content {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    @include media-breakpoint-down(xl) {
+      &.container {
+        max-width: 100%;
+      }
+    }
   }
 
   .page-header + .row {
-    padding-top: 50px;
+    padding-top: 70px;
   }
-  .page-header + .pcoded-content {
+  .page-header + .pc-content {
     padding-top: calc(30px + 55px);
   }
 }
@@ -74,7 +79,7 @@
 
     .breadcrumb-item {
       a:hover {
-        color: $primary;
+        color: var(--bs-primary);
       }
 
       + .breadcrumb-item::before {
@@ -218,8 +223,8 @@
   .pc-container {
     margin-left: 0;
     .page-header + .row,
-    .page-header + .pcoded-content,
-    .pcoded-content {
+    .page-header + .pc-content,
+    .pc-content {
       padding-top: 30px;
     }
   }
@@ -240,9 +245,33 @@
     }
   }
 }
+.footer-wrapper,
+.pc-content {
+  &.container {
+    @media (min-width: 768px) {
+      max-width: 540px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 720px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 960px;
+    }
+
+    @media (min-width: 1400px) {
+      max-width: 1140px;
+    }
+
+    @media (min-width: 1800px) {
+      max-width: 1500px;
+    }
+  }
+}
 @include media-breakpoint-down(sm) {
   .pc-container {
-    .pcoded-content {
+    .pc-content {
       padding: 20px;
     }
 
@@ -270,6 +299,14 @@
 
     .text-md-right {
       margin-top: 5px;
+    }
+  }
+}
+
+.footer-wrapper {
+  @include media-breakpoint-down(xl) {
+    &.container {
+      max-width: 100%;
     }
   }
 }
