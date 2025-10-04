@@ -3,13 +3,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/dashboardkit-free-bootstrap-admin-template/blob/main/LICENSE)
 
-DashboardKit Bootstrap 5 Admin Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20DashboardKit%20Bootstrap%205%20Admin%20Template&url=https://dashboardkit.io&via=codedthemes&hashtags=bootstrap,webdev,developers)
+DashboardKit Bootstrap 5 Admin Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20DashboardKit%20Bootstrap%205%20Admin%20Template&url=https://dashboardkit.cc&via=codedthemes&hashtags=bootstrap,webdev,developers)
 
 Save your development time with ready to use DashboardKit Bootstrap Admin Template. DashboardKit is made for everyone, no matter you are a novice developer, designer, project manager/owner. It is made by an Elite Author with having 5+ years of experience in dashboard making
 
-[Pro version](https://dashboardkit.io) of DashboardKit contains features like 10+ Ready to use layouts, Advance UI compoents, Form components & plugins, Advance Table examples, Chart, 11+ Apps, Extra page, and lots more.
+[Pro version](https://dashboardkit.cc) of DashboardKit contains features like 10+ Ready to use layouts, Advance UI compoents, Form components & plugins, Advance Table examples, Chart, 11+ Apps, Extra page, and lots more.
 
-![Berry React Material Admin Template](https://dashboardkit.io/adv-banner/git-main.gif)
+![Berry React Material Admin Template](https://dashboardkit.cc/adv-banner/git-main.gif)
 
 ## Why DashboardKit?
 
@@ -26,17 +26,17 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
 
 #### Preview
 
-- [Demo](https://dashboardkit.io/free-dashboardkit/index.html)
+- [Demo](https://dashboardkit.cc/free-dashboardkit/index.html)
 
 ## Pro version preview & Purchase
 
 #### Preview
 
-- [Demo](https://dashboardkit.io/bootstrap/navigation/index.html)
+- [Demo](https://dashboardkit.cc/bootstrap/navigation/index.html)
 
 #### Purchase
 
-- [Get DashboardKit](https://dashboardkit.io/product/dashboardkit-vanillajs-bootstrap-5-admin-dashboard/)
+- [Get DashboardKit](https://dashboardkit.cc/product/dashboardkit-vanillajs-bootstrap-5-admin-dashboard/)
 
 ## Table of contents
 
@@ -58,7 +58,7 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
 
 ## Documentation
 
-DashboardKit documentation helps you out in all aspects from Installation to deployment. Link to access [Documentation](https://dashboardkit.io/bootstrap/docs/).
+DashboardKit documentation helps you out in all aspects from Installation to deployment. Link to access [Documentation](https://dashboardkit.cc/bootstrap/docs/).
 
 ## Technology Stack
 
@@ -81,7 +81,7 @@ Please generate a Github issue if you found a bug in any version. We are trying 
 
 ## Follow us
 
-- Website [https://dashboardkit.io](https://dashboardkit.io)
+- Website [https://dashboardkit.cc](https://dashboardkit.cc)
 - Gumroad [https://gumroad.com/dashboardkit](https://gumroad.com/dashboardkit)
 - CodedThemes [https://codedthemes.com](https://codedthemes.com)
 - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
