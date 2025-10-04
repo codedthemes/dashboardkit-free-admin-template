@@ -9,7 +9,7 @@ Save your development time with ready to use DashboardKit Bootstrap Admin Templa
 
 [Pro version](https://dashboardkit.io) of DashboardKit contains features like 10+ Ready to use layouts, Advance UI compoents, Form components & plugins, Advance Table examples, Chart, 11+ Apps, Extra page, and lots more.
 
-![Berry React Material Admin Template](https://dashboardkit.io/adv-banner/git-main.gif)
+![Berry React Material Admin Template](https://dashboardkit.cc/adv-banner/git-main.gif)
 
 ## Why DashboardKit?
 
@@ -26,17 +26,17 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
 
 #### Preview
 
-- [Demo](https://dashboardkit.io/free-dashboardkit/index.html)
+- [Demo](https://dashboardkit.cc/free-dashboardkit/index.html)
 
 ## Pro version preview & Purchase
 
 #### Preview
 
-- [Demo](https://dashboardkit.io/bootstrap/navigation/index.html)
+- [Demo](https://dashboardkit.cc/bootstrap/navigation/index.html)
 
 #### Purchase
 
-- [Get DashboardKit](https://dashboardkit.io/product/dashboardkit-vanillajs-bootstrap-5-admin-dashboard/)
+- [Get DashboardKit](https://dashboardkit.cc/product/dashboardkit-vanillajs-bootstrap-5-admin-dashboard/)
 
 ## Table of contents
 
@@ -58,7 +58,7 @@ DashboardKit free Bootstrap 5 admin template includes the following feature page
 
 ## Documentation
 
-DashboardKit documentation helps you out in all aspects from Installation to deployment. Link to access [Documentation](https://dashboardkit.io/bootstrap/docs/).
+DashboardKit documentation helps you out in all aspects from Installation to deployment. Link to access [Documentation](https://dashboardkit.cc/bootstrap/docs/).
 
 ## Technology Stack
 
