@@ -5,19 +5,19 @@
 
 DashboardKit Bootstrap 5 Admin Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20DashboardKit%20Bootstrap%205%20Admin%20Template&url=https://dashboardkit.cc&via=codedthemes&hashtags=bootstrap,webdev,developers)
 
-Save your development time with ready to use DashboardKit Bootstrap Admin Template. DashboardKit is made for everyone, no matter you are a novice developer, designer, project manager/owner. It is made by an Elite Author with having 5+ years of experience in dashboard making
+Save your development time with a ready-to-use DashboardKit Bootstrap Admin Template. DashboardKit is made for everyone, no matter whether you are a novice developer, designer, project manager/owner. An Elite Author makes it with 5+ years of experience in dashboard making
 
-[Pro version](https://dashboardkit.cc) of DashboardKit contains features like 10+ Ready to use layouts, Advance UI compoents, Form components & plugins, Advance Table examples, Chart, 11+ Apps, Extra page, and lots more.
+[Pro version](https://dashboardkit.cc) of DashboardKit contains features like 10+ Ready to use layouts, Advanced UI components, Form components & plugins, Advanced Table examples, Chart, 11+ Apps, Extra page, and lots more.
 
-![Berry React Material Admin Template](https://dashboardkit.cc/adv-banner/git-main.gif)
+![Dashboard Kit Admin Template](https://dashboardkit.cc/adv-banner/git-main.gif)
 
 ## Why DashboardKit?
 
-DashboardKit free Bootstrap 5 admin template includes the following feature pages with having MIT license usage.
+DashboardKit free Bootstrap 5 admin template includes the following feature pages with MIT license usage.
 
 - Professional UI design
-- Bootstrap 5 UI components with Pure Javascript
-- Fully Responsive, all modern browser supported
+- Bootstrap 5 UI components with Pure JavaScript
+- Fully Responsive, all modern browsers supported
 - Gulp/non-Gulp Support
 - Flexible & High-Performance code
 - Easy Documentation Guide
