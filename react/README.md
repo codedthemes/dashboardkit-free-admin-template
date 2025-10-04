@@ -27,7 +27,7 @@ The [Pro version](https://codedthemes.com/item/dashboardkit-react-admin-template
 
 DashboardKit offers everything needed to build an advanced dashboard application. In the initial release, we included following high-end features,
 
-- Support React18.
+- Support React 18.
 - Professional user interface.
 - Bootstrap React components.
 - Fully responsive, all modern browser supported.
@@ -39,13 +39,13 @@ DashboardKit offers everything needed to build an advanced dashboard application
 
 #### Preview
 
-- [Demo](https://dashboardkit.io/react/free)
+- [Demo](https://dashboardkit.cc/react/free)
 
 ## Pro version preview & Purchase
 
 #### Preview
 
-- [Demo](https://dashboardkit.io/react/default/)
+- [Demo](https://dashboardkit.cc/react/default/)
 
 #### Purchase
 
@@ -104,7 +104,7 @@ DashboardKit is managed by Team [CodedThemes](https://codedthemes.com).
 
 ## Issues
 
-Please generate a [GitHub issue](https://github.com/codedthemes/dashboardkit-free-admin-template/issues) if you found a bug in any version. We are try our best to resolve the issue.
+Please generate a [GitHub issue](https://github.com/codedthemes/dashboardkit-free-admin-template/issues) if you found a bug in any version. We are trying our best to resolve the issue.
 
 ## License
 
@@ -112,7 +112,7 @@ Please generate a [GitHub issue](https://github.com/codedthemes/dashboardkit-fre
 
 ## Follow us
 
-- Website [https://dashboardkit.io](https://dashboardkit.io)
+- Website [https://dashboardkit.cc](https://dashboardkit.io)
 - Gumroad [https://gumroad.com/dashboardkit](https://gumroad.com/dashboardkit)
 - CodedThemes [https://codedthemes.com](https://codedthemes.com)
 - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
