@@ -7,7 +7,7 @@ DashboardKit Bootstrap 5 Admin Dashboard Template [![Tweet](https://img.shields.
 
 Save your development time with ready to use DashboardKit Bootstrap Admin Template. DashboardKit is made for everyone, no matter you are a novice developer, designer, project manager/owner. It is made by an Elite Author with having 5+ years of experience in dashboard making
 
-[Pro version](https://dashboardkit.io) of DashboardKit contains features like 10+ Ready to use layouts, Advance UI compoents, Form components & plugins, Advance Table examples, Chart, 11+ Apps, Extra page, and lots more.
+[Pro version](https://dashboardkit.cc) of DashboardKit contains features like 10+ Ready to use layouts, Advance UI compoents, Form components & plugins, Advance Table examples, Chart, 11+ Apps, Extra page, and lots more.
 
 ![Berry React Material Admin Template](https://dashboardkit.cc/adv-banner/git-main.gif)
 
@@ -81,7 +81,7 @@ Please generate a Github issue if you found a bug in any version. We are trying 
 
 ## Follow us
 
-- Website [https://dashboardkit.io](https://dashboardkit.io)
+- Website [https://dashboardkit.cc](https://dashboardkit.cc)
 - Gumroad [https://gumroad.com/dashboardkit](https://gumroad.com/dashboardkit)
 - CodedThemes [https://codedthemes.com](https://codedthemes.com)
 - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
