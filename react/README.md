@@ -1,4 +1,4 @@
-# Dashboardkit React Free Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20DashboardKit%20Bootstrap%205%20Admin%20Template&url=https://dashboardkit.io&via=codedthemes&hashtags=bootstrap,webdev,developers)
+# Dashboardkit React Free Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20DashboardKit%20Bootstrap%205%20Admin%20Template&url=https://dashboardkit.cc&via=codedthemes&hashtags=bootstrap,webdev,developers)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/dashboardkit-free-admin-template/blob/main/LICENSE)
